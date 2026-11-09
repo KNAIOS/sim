@@ -1,0 +1,18 @@
+{
+  "cases": 24,
+  "frequency_bins": 99,
+  "maximum_rate_error_mbps": 1.7053025658242404e-13,
+  "modes": {
+    "full_targets": 18,
+    "equal_fallback": 3,
+    "preserve_service": 3
+  },
+  "input_hashes": {
+    "..\\standard_channel_20260920\\results\\manuscript_validation_v1\\LOS_example.npz": "06b026d2ccd237485576d3e7f276dd6c152144a897ebab460c4734d8c9ba08d9",
+    "..\\standard_channel_20260920\\results\\manuscript_validation_v1\\NLOS_example.npz": "d1569e2f7d5d9e06d6dcf56f9294d984339ca9eff659e36ec827d9e50993bae9",
+    "joint_power\\wideband_power.py": "a8bd29281a1e340b18f7e975cabb2027ea8d4d2329170e345fbcc18f14bdd576",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\check_wideband_power.py": "be97320a56709b8985177bbd0017255c2dbfb24af8ee203f730371a705fa83d8"
+  },
+  "used_for_training": false,
+  "scope": "Numerical consistency on previously seen UMi examples; not new R3 policy evidence"
+}

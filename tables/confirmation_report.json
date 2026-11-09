@@ -1,0 +1,36 @@
+{
+  "independent_drops": 40,
+  "episodes": 120,
+  "slots": 16800,
+  "energy_saving_percent": 1.1883544746353563,
+  "energy_difference_ci95": [
+    -3.0636813278547477,
+    -0.21285452914397146
+  ],
+  "learned_mean_outage": 0.007857142857142858,
+  "reference_mean_outage": 0.005476190476190476,
+  "learned_outage_upper95": 0.014346726190476168,
+  "reference_outage_upper95": 0.009345238095238096,
+  "energy_supported": true,
+  "reliability_supported": true,
+  "independent_confirmation_passed": true,
+  "globally_optimal_proven": false,
+  "equal_reliability_proven": false,
+  "old_exploratory_sample_pooled": false,
+  "resamples": 10000,
+  "bootstrap_seed": 2026092260,
+  "maximum_replay_errors": {
+    "rate_mbps": 3.126388037344441e-13,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "allocator_modes": {
+    "full_targets": 16478,
+    "preserve_service": 322
+  },
+  "all_prespecified_samples_retained": true,
+  "completed_utc": "2026-09-22T15:48:04.755788+00:00"
+}

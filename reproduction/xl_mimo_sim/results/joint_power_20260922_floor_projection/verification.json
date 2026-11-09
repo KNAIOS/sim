@@ -1,0 +1,98 @@
+{
+  "new_episodes": 108,
+  "reference_episodes": 276,
+  "verified_slots": 15120,
+  "verified_decisions": 3780,
+  "max_physical_errors": {
+    "rate_mbps": 7.66249286243692e-11,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "physical_floor_matches_realized_known_failures": true,
+  "ledger_correct": true,
+  "remaining_count_at_least_physical_floor": true,
+  "uncertainty": "Descriptive bootstrap on reused validation; not independent significance",
+  "caveat": "Lower-bound consistency is not a safety upper bound or proof of savings",
+  "gate": {
+    "passed": true,
+    "reference": {
+      "method": "PRS budget",
+      "nominal_energy_j": 119.79966775574927,
+      "worst_outage": 0.01726190476190476
+    },
+    "feasible_baselines": [
+      {
+        "method": "PRS original",
+        "nominal_energy_j": 119.9814137008091,
+        "worst_outage": 0.007142857142857142
+      },
+      {
+        "method": "PRS tuned",
+        "nominal_energy_j": 119.9814137008091,
+        "worst_outage": 0.007142857142857142
+      },
+      {
+        "method": "Full power",
+        "nominal_energy_j": 285.22734232169245,
+        "worst_outage": 0.0
+      },
+      {
+        "method": "PRS budget",
+        "nominal_energy_j": 119.79966775574927,
+        "worst_outage": 0.01726190476190476
+      }
+    ],
+    "families": [
+      {
+        "method": "Floor Value PRS-added",
+        "nominal_energy_j": 125.74437863628327,
+        "nominal_saving": -0.04962209822362973,
+        "per_seed_nominal_energy": {
+          "11": 124.59243033748753,
+          "22": 126.89632693507902
+        },
+        "per_seed_outage": {
+          "11": [
+            0.020833333333333332,
+            0.0369047619047619,
+            0.044047619047619044
+          ],
+          "22": [
+            0.017261904761904763,
+            0.03214285714285714,
+            0.050595238095238096
+          ]
+        },
+        "passed": false
+      },
+      {
+        "method": "Floor Value Visitation-added",
+        "nominal_energy_j": 116.67357342709136,
+        "nominal_saving": 0.026094348901129494,
+        "per_seed_nominal_energy": {
+          "11": 116.28068586600752,
+          "22": 117.06646098817521
+        },
+        "per_seed_outage": {
+          "11": [
+            0.010714285714285713,
+            0.0369047619047619,
+            0.03988095238095238
+          ],
+          "22": [
+            0.019642857142857142,
+            0.042261904761904764,
+            0.03988095238095238
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "required_saving": 0.01,
+    "independent_test": false,
+    "development_launched": false
+  }
+}

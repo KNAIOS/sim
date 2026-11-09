@@ -1,0 +1,8 @@
+{
+  "exogenous_train": 24,
+  "exogenous_validation": 12,
+  "behavior_trajectories": 72,
+  "states": 576,
+  "train_states_per_arm": 384,
+  "common_prediction_validation_states": 192
+}

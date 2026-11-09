@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "nominal_saving_vs_stronger_prs": -0.11872223845624053,
+  "per_seed_outage": {
+    "11": [
+      0.01488095238095238,
+      0.016666666666666663,
+      0.03392857142857143
+    ],
+    "22": [
+      0.010119047619047618,
+      0.01607142857142857,
+      0.036904761904761905
+    ]
+  },
+  "nominal_energy_by_seed": {
+    "11": 133.69016217976647,
+    "22": 134.76158923726035
+  },
+  "nominal_stronger_prs_energy": 119.9814137008091,
+  "required_saving": 0.01,
+  "post_hoc_validation": true,
+  "original_gate_preserved": true,
+  "development_launched": false
+}

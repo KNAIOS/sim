@@ -1,0 +1,93 @@
+{
+  "input_hashes": {
+    "joint_power\\strong_headroom\\study.py": "a14521d51e5b8ced9af1491efce3ac3660184976328d29d1743554ef0cc743e6",
+    "joint_power\\strong_headroom\\test_study.py": "f0365673dc6d02e69d693305529deaac87c0356a5940c84333a32bf319ceb980",
+    "joint_power\\strong_headroom\\__init__.py": "6d2dc4a31fe8131836d374f2cae5ca85ace339fcd48dbc7f897452b174b4801a",
+    "joint_power\\strong_headroom\\PLAN.md": "a8fdfc2cef144f10b509ee549e5a50627bc1e1cf761434a3a711c5cf0a2013e7",
+    "joint_power\\anchor_confirmation\\domain_prs.py": "8ec71d3c7dd024f17472eaf2526bc87ac07dbad37eb2d7313fe186419202f4a1",
+    "joint_power\\model.py": "b537cb066563c4e32975d5f7e1584c09c7a5c081707c84cf9be96b2b5f112106",
+    "joint_power\\calibrated\\calibration.py": "5fa90c5283f7920b781e7b09589d81d3d02ff428c572ae849fb0e5033c86ca7c",
+    "joint_power\\postdecision\\encoding.py": "b9be497bfe6efcf486fac6035e594fb389d40bcaffe16c09a8412090286dce80",
+    "joint_power\\rollout\\verify.py": "7532be6af0b93a0e5dbd8997f6fdf0635f7f85105cd1a68d5ae568f0a0a59d3c",
+    "results\\joint_power_20260922_anchor_confirmation\\expanded_comparison\\output_hashes.json": "9189df58d51ee0c7ead982d939b72b45bc30f55ff4e38bb8cfa59c0ab4a5c63c"
+  },
+  "stream": 5109220000,
+  "trajectories_per_scenario": 4,
+  "root_slots": [
+    20,
+    60,
+    100
+  ],
+  "config": {
+    "mode": "validation",
+    "carrier_ghz": 14.0,
+    "bandwidth_mhz": 40.0,
+    "noise_figure_db": 7.0,
+    "subarrays": 16,
+    "antennas_per_subarray": 8,
+    "users": 3,
+    "array_aperture_m": 12.0,
+    "clusters_per_user": 4,
+    "slot_s": 0.05,
+    "episode_steps": 140,
+    "horizon": 8,
+    "visibility_discount": 0.93,
+    "uncertainty_penalty": 0.65,
+    "scan_period": 0,
+    "pilot_fraction": 0.015,
+    "symbols_per_processing_block": 200.0,
+    "wake_delay_slots": 4,
+    "speeds_mps": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "wake_delays": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "train_episodes": 110,
+    "test_trajectories": 20,
+    "controller_seeds": [
+      11,
+      22,
+      33
+    ],
+    "outage_target": 0.05,
+    "demand_levels_mbps": [
+      360.0,
+      460.0,
+      560.0
+    ],
+    "tx_power_w": 1.2,
+    "pa_efficiency": 0.4,
+    "fixed_power_w": 8.0,
+    "active_subarray_w": 2.0,
+    "waking_subarray_w": 1.2,
+    "sleeping_subarray_w": 0.05,
+    "wake_energy_j": 0.1,
+    "sleep_energy_j": 0.01,
+    "scan_energy_j_per_subarray": 0.002,
+    "compute_efficiency_gflop_w": 75.0,
+    "rl_hidden": 64,
+    "rl_lr": 0.0004,
+    "rl_gamma": 0.98,
+    "replay_size": 20000,
+    "epsilon_start": 0.8,
+    "epsilon_end": 0.04,
+    "dual_initial": 8.0,
+    "dual_lr": 5.0,
+    "seed": 2026
+  },
+  "training_diagnostic": true,
+  "oracle_not_deployable": true,
+  "host_environment_changed": false
+}

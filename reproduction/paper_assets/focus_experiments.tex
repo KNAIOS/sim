@@ -1,0 +1,52 @@
+\subsection{Protocol and Independent Confirmation}
+\rev{The primary comparison uses half-load urban microcell (UMi) NLOS and a common requested-count range of 4--16. This regime was selected in a 20-drop exploration. A subsequent protocol fixed 40 new independent channel-demand drops, the two trained models, ranking/admission parameters, and the primary comparator before generating confirmation data. All prescribed runs are retained; the two samples are analyzed separately without retraining or parameter changes.}
+
+\rev{Sionna 2.1.0 supplies UMi channels using TR 38.901 V16.1 parameters}~\cite{tr38901v16,sionna210}.
+\rev{A half-wavelength $8\times16$ single-V omnidirectional panel assigns one eight-element column to each module. BS/UE heights are 10/1.5 m; horizontal UE positions are (25,-12), (35,0), (28,14) m. Unnormalized path loss and shadowing, fixed large-scale geometry, and 2-m/s Doppler define the transfer test. Its .161-m aperture differs from the 12-m geometric training array. Each episode spans 140 slots (7 s). Half load scales nominal demands of 360/460/560 Mbit/s to 180/230/280 Mbit/s, with switching probability .04 per slot.}
+
+\rev{Physical rates average spectral efficiency over 99 frequency bins. Per-bin RZF uses user-total flat-PSD powers. Monotone required-power iteration with 42-step scalar bisections and at most 200 iterations replaces the narrowband solve. Power/service checks retain equal-power fallback; reaching the iteration limit is not a proof of infeasibility. The learned features remain center-frequency-based, whereas the current failure lower bound uses active wideband CSI. All methods share this allocator and (3).}
+
+\rev{The exploration compares BA-RL4, PRS4, budget-aware B-PRS4, current-wideband-informed budget search WB-B4, and full activation. WB-B4 is the primary matched-information reference: its eight-slot assessment uses the current active wideband rate and seven causal center-frequency forecasts, without future or sleeping-module CSI. Confirmation evaluates only BA-RL4 and WB-B4. Each learned seed runs all 40 new drops; the deterministic reference runs each once, giving 120 executions but 40 independent drops.}
+
+\subsection{Energy Saving and Reliability}
+\begin{table}[!t]
+\caption{\rev{Half-load UMi NLOS with 4--16 commands. Samples are separate. Active denotes mean physically available modules.}}
+\label{tab:focus}
+\centering\footnotesize
+\revbox{\input{revision_table.tex}}
+\end{table}
+
+\rev{In independent confirmation (Table~I), BA-RL4 consumes 131.06 J versus 132.63 J for WB-B4: a 1.19\% mean saving, computed as $(E_{\rm ref}-E_{\rm RL})/E_{\rm ref}$. Mean outage is .786\% versus .548\%. The corresponding one-sided 95\% upper bounds are 1.435\% and .935\%, below the 5\% target. The prespecified confirmation rule requires both bounds at most 5\% and the paired energy interval strictly below zero.}
+
+\begin{figure}[!t]
+\centering\revbox{\includegraphics[width=.96\columnwidth]{revision_paired.pdf}}
+\caption{\rev{BA-RL4 minus WB-B4 in half-load UMi NLOS. Points are paired means; bars are crossed 95\% bootstrap intervals over drops and two trained seeds (4000 exploratory, 10000 confirmation resamples). Negative values favor BA-RL4. Confirmation supports lower energy, not equal outage.}}
+\label{fig:focus}
+\end{figure}
+
+\rev{Figure~1 confirms a -1.576-J energy difference with 95\% interval [-3.064,-.213] J. The outage difference is +.238 percentage points with interval [-.042,.655]; meeting the target does not establish equal reliability. Crossed bootstrap resampling preserves paired drops and samples both trained seeds. The earlier 1.70\% exploratory saving is reported separately. Its 54.08\% saving against full activation represents the total sleeping benefit, not the incremental learning gain.}
+
+\begin{table}[!t]
+\caption{\rev{Confirmation-only mean energy accounting (J). Difference is BA-RL4 minus WB-B4; rounding may affect sums.}}
+\label{tab:components}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\revbox{\input{revision_components.tex}}
+\end{table}
+
+\rev{Table~II explains the net saving. BA-RL4 lowers the mean available count from 4.42 to 4.33, reducing circuit/processing energy by 1.546 J. PA energy increases by .175 J, while switching and pilot energy decrease by .178 and .028 J. Thus circuit and switching reductions outweigh the extra transmit-power cost. Independent numerical replay verifies physical rates and energy accounting for all 16800 confirmation slots.}
+
+\subsection{Auxiliary Heuristic Sensitivity}
+\rev{Figure~2 evaluates the geometric model separately. Low/nominal/high speed-demand pairs are (.5 m/s,.85), (2 m/s,1), and (3 m/s,1.15), with eight independent traces per condition. Five predeclared settings vary $\beta$ over 0/.65/1.3 at $\eta_v=.93$ and $\eta_v$ over .8/.93/1 at $\beta=.65$. Model weights and $\alpha$ are fixed; searches receive identical ranking parameters.}
+
+\begin{figure}[!t]
+\centering\revbox{\includegraphics[width=.96\columnwidth]{focus_sensitivity.pdf}}
+\caption{\rev{Geometric-model sensitivity: BA-RL4 change from default $(\beta,\eta_v)=(.65,.93)$, in energy (J) and outage (percentage points). Eight paired traces per condition and two seeds; crossed 95\% intervals. All five settings are retained. Larger uncertainty penalties need not improve reliability.}}
+\label{fig:sensitivity}
+\end{figure}
+
+\rev{Increasing $\beta$ to 1.3 raises low/nominal energy by 6.453/4.763 J, with intervals [2.606,10.563]/[2.481,7.608] J, without improving mean outage. At high load it saves 5.116 J against B-PRS4 but has higher outage. The default is retained. These results quantify heuristic sensitivity rather than probability calibration or UMi-specific robustness.}
+
+\subsection{Discussion and Operating Scope}
+\rev{The confirmed gain concerns the full controller in the specified regime. Earlier half-load NLOS exploration gives expanded 1--16 WB-B1 125.99 J at 4.714\% outage; 4--16 is an algorithmic domain, not a hardware minimum. Half-load LOS favors WB-B4 (117.68 versus 119.49 J, zero outage for both). In geometric high-load confirmation, the 2.03\% mean saving has an interval including zero, and Myopic4 uses 1.88 J less than BA-RL4. These contrasts locate the demonstrated benefit rather than support universal search dominance or an essential long-term energy head.}
+
+\rev{The compact-panel test validates transfer to standardized channels, not moving near-field visibility-region dynamics. Fixed large-scale geometry, ideal active CSI, and two training seeds bound generalization. Energy uses analytical hardware settings and excludes controller computation. The confirmed 1.576-J saving per 7 s corresponds to .225 W: an additional controller-power differential exceeding this value would offset the modeled gain. Deployment-level net saving therefore requires measurement.}

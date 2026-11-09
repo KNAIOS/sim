@@ -1,0 +1,108 @@
+{
+  "channel_stream": 965000000,
+  "demand_stream": 966000000,
+  "loads": [
+    0.5,
+    1.0
+  ],
+  "trajectories_per_state": 20,
+  "frequency_samples": 99,
+  "config": {
+    "mode": "validation",
+    "carrier_ghz": 14.0,
+    "bandwidth_mhz": 40.0,
+    "noise_figure_db": 7.0,
+    "subarrays": 16,
+    "antennas_per_subarray": 8,
+    "users": 3,
+    "array_aperture_m": 0.1606031025,
+    "clusters_per_user": 4,
+    "slot_s": 0.05,
+    "episode_steps": 140,
+    "horizon": 8,
+    "visibility_discount": 0.93,
+    "uncertainty_penalty": 0.65,
+    "scan_period": 0,
+    "pilot_fraction": 0.015,
+    "symbols_per_processing_block": 200.0,
+    "wake_delay_slots": 4,
+    "speeds_mps": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "wake_delays": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "train_episodes": 110,
+    "test_trajectories": 20,
+    "controller_seeds": [
+      11,
+      22,
+      33
+    ],
+    "outage_target": 0.05,
+    "demand_levels_mbps": [
+      360.0,
+      460.0,
+      560.0
+    ],
+    "tx_power_w": 1.2,
+    "pa_efficiency": 0.4,
+    "fixed_power_w": 8.0,
+    "active_subarray_w": 2.0,
+    "waking_subarray_w": 1.2,
+    "sleeping_subarray_w": 0.05,
+    "wake_energy_j": 0.1,
+    "sleep_energy_j": 0.01,
+    "scan_energy_j_per_subarray": 0.002,
+    "compute_efficiency_gflop_w": 75.0,
+    "rl_hidden": 64,
+    "rl_lr": 0.0004,
+    "rl_gamma": 0.98,
+    "replay_size": 20000,
+    "epsilon_start": 0.8,
+    "epsilon_end": 0.04,
+    "dual_initial": 8.0,
+    "dual_lr": 5.0,
+    "seed": 2026
+  },
+  "sionna": "2.1.0",
+  "torch": "2.9.1+cpu",
+  "status": "frozen policy evaluation on new independent standardized drops; no retuning on these outcomes",
+  "scenario": "UMi TR38.901 V16.1, fixed topology, per-drop LSPs, 2m/s Doppler within CIR",
+  "limitations": [
+    "compact far-field planar array, not original 12m near-field model",
+    "fixed topology/LSPs over each 7s episode, not stateful large-scale mobility",
+    "common active centre-frequency CSI for decisions; ideal active per-bin CSI for physical RZF",
+    "33-to-297 quadrature pilot motivated 99 bins; this is not an OFDM waveform simulation",
+    "analytical RF/baseband power proxy, not measured power",
+    "candidate has only two training seeds; manuscript method has five",
+    "no continuous-time fading reconstruction or intra-slot reliability guarantee"
+  ],
+  "checkpoints": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\revision_20260905\\checkpoints\\RA-FVV_11.pt": "edf7e8dc2fa61584e0cd34df55e6d440dd3a35f31301cc9337fd848fc39d0dd4",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\revision_20260905\\checkpoints\\RA-FVV_22.pt": "d5bdbd20927f25735fb532101b6468e616464a121f05d632840472939b4c9700",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\revision_20260905\\checkpoints\\RA-FVV_33.pt": "8bf89b7c86e96836d9881bc9a7212eca4512526c387e4b55c8d5f91814c65d64",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\revision_20260905\\checkpoints\\RA-FVV_44.pt": "966491a87f2b18874a4e4c38b453fff151a2ec2af06fde9062ad16fe6412ca6e",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\revision_20260905\\checkpoints\\RA-FVV_55.pt": "830b7e3b0ad8762ec7dfc86704a90f70c3af99a69654b5cbacce1f8fe58d4b5d",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\major_revision_20260920_rate_ablation\\rate_seed11.pt": "b1aac8dd9ff1254836d639db479c79897e60d4df9d48b7c0d22a4f67bed52704",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\major_revision_20260920_rate_ablation\\rate_seed22.pt": "2287b9a1c2db5deeff28b95b2c739c7c9a5cc05659c0adf5047ad889283900ab"
+  },
+  "source_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\standard_channel_20260920\\manuscript_validation.py": "4688d8c3cb69ef44b58c8b649d4f36cdba36410be749e5f3cfaa43bf8cd07e48",
+    "D:\\\u5f85\u53d1\u8868\u520a\\standard_channel_20260920\\umi_channel.py": "186056643ff186e02848c817c476f3a6f367e44c81490bf4e92bc7414e028ae6",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\major_revision\\pilot.py": "084dfe57eef1af936807a7db57f75c0bd33f1bdc6fe4edd9aa38d2107ba77b2d",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\major_revision\\rate_context.py": "360f0b9404cb3699905c8dca6a0e953daceeee9e8f3939561067a1264c96e682",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\major_revision\\wideband.py": "7bef200e6279035de0c42c32070519ef57d034ce58ccad394dc14eaa73945e34"
+  }
+}

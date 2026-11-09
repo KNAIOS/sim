@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "per_seed_outage": {
+    "11": [
+      0.0,
+      0.0023809523809523807,
+      0.05297619047619047
+    ],
+    "22": [
+      0.0,
+      0.002976190476190476,
+      0.015476190476190477
+    ]
+  },
+  "nominal_saving": {
+    "Calibrated full": 0.21267414658899708,
+    "PRS power": -0.12171216735985202
+  },
+  "nominal_energy_by_seed": {
+    "11": 151.09608076142518,
+    "22": 124.12349073656898
+  },
+  "selected_episodes": [
+    40,
+    160
+  ],
+  "primary_baselines_below_outage_limit": false,
+  "independent_confirmation": false,
+  "manuscript_replacement_authorized_by_result": false
+}

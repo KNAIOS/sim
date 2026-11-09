@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "selected_strength": 128,
+  "calibrated": {
+    "strength": 128,
+    "objective": 0.18558722990565002,
+    "bce": 0.18522228300571442,
+    "energy_mse": 3.6494689993560314e-05,
+    "brier": 0.009867053478956223,
+    "mean_prediction": 0.08385499566793442,
+    "mean_actual": 0.0936858132481575,
+    "mean_risk_error": -0.009830817580223083
+  },
+  "analytic": {
+    "objective": 0.3549741681199521,
+    "bce": 0.3546092212200165,
+    "energy_mse": 3.6494689993560314e-05,
+    "brier": 0.011419428512454033,
+    "mean_prediction": 0.08821195363998413,
+    "mean_actual": 0.0936858132481575,
+    "mean_risk_error": -0.00547385960817337
+  },
+  "clipped_analytic": {
+    "objective": 0.1911826606374234,
+    "bce": 0.1908177137374878,
+    "energy_mse": 3.6494689993560314e-05,
+    "brier": 0.011203828267753124,
+    "mean_prediction": 0.09642482548952103,
+    "mean_actual": 0.0936858132481575,
+    "mean_risk_error": 0.0027390122413635254
+  },
+  "training_trajectories": 48,
+  "validation_trajectories": 12,
+  "training_branches": 28560,
+  "validation_branches": 7140,
+  "scope": "Shared histogram correction, not RL or distribution-free reliability evidence"
+}

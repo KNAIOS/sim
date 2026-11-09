@@ -1,0 +1,26 @@
+{
+  "further_causal_probe_justified": false,
+  "long_energy_head_motivated": false,
+  "long_energy_gap_fraction": 0.0023448941759848466,
+  "nominal_full": {
+    "scenario": 1,
+    "reference": "Expanded budgetPRS",
+    "horizon": -1,
+    "trajectories": 4,
+    "roots": 12,
+    "mean_delta_j": -1.4500528084817568,
+    "ci_low": -4.0575061778811,
+    "ci_high": -0.029876090944232676,
+    "mean_relative_saving": 0.013902260825756532,
+    "improved_root_fraction": 0.5,
+    "mean_delta_failed": -3.25,
+    "mean_delta_circuit_j": -1.2133192000000008,
+    "mean_delta_pa_j": -0.13140027514842448,
+    "mean_delta_switching_j": -0.0825,
+    "mean_delta_pilot_j": -0.022833333333333344,
+    "mean_first_block_delta_j": 0.0009339765960821866,
+    "mean_later_delta_j": -1.4509867850778388
+  },
+  "diagnostic_only": true,
+  "R1_closed": false
+}

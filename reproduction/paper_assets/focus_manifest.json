@@ -1,0 +1,28 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\episodes.csv": "74d722a478977bd3175d3320819e09f2d9f0d603875f22149126856c45fff783",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\summary.csv": "247b68cbfe230d17d8583dbb9c622e5fefef16e5b8abc9adcf1e62cbbeabb271",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\paired.csv": "f974735d71c034e2520d89d064fead9122e3a55d373f00c5c72d664625d23812",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_sensitivity\\paired.csv": "71eeef9d1baf519427c26f2a9bd78ef40efbdac980889a27d53f93c9186be04f"
+  },
+  "source_sha256": "cc15e5802985e18a87f3636d68ba6abb58ef9da1a55c215c077dfc378eb8f022",
+  "state": "NLOS",
+  "load": 0.5,
+  "allowed_counts": [
+    4,
+    16
+  ],
+  "independent_drops": 20,
+  "learned_seeds": [
+    11,
+    22
+  ],
+  "executions": 120,
+  "saved_paired_intervals": 6,
+  "means_recomputed_from_all_subset_episodes": true,
+  "original_data_changed": false,
+  "title_and_nonexperiment_sections_unchanged": true,
+  "scope_chosen_after_broad_evaluation": true,
+  "new_simulations": 0,
+  "new_training": 0
+}

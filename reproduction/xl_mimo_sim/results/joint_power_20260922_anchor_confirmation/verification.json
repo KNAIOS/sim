@@ -1,0 +1,63 @@
+{
+  "episodes": 408,
+  "exogenous_traces": 24,
+  "trajectories_per_scenario": 8,
+  "verified_slots": 57120,
+  "max_physical_errors": {
+    "rate_mbps": 2.0662582755903713e-11,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "gate": {
+    "passed": true,
+    "reference": {
+      "method": "PRS budget",
+      "energy_j": 119.9989643157385,
+      "worst_outage": 0.011904761904761904
+    },
+    "feasible_baselines": [
+      {
+        "method": "PRS original",
+        "energy_j": 120.17238045560839,
+        "worst_outage": 0.008333333333333333
+      },
+      {
+        "method": "PRS budget",
+        "energy_j": 119.9989643157385,
+        "worst_outage": 0.011904761904761904
+      },
+      {
+        "method": "Full power",
+        "energy_j": 285.1264050081238,
+        "worst_outage": 0.0
+      }
+    ],
+    "per_seed_outage": {
+      "11": [
+        0.01369047619047619,
+        0.027083333333333334,
+        0.03184523809523809
+      ],
+      "22": [
+        0.015178571428571428,
+        0.03839285714285714,
+        0.03392857142857143
+      ]
+    },
+    "per_seed_nominal_energy": {
+      "11": 101.46424172021607,
+      "22": 100.02778450115986
+    },
+    "nominal_energy_j": 100.74601311068795,
+    "nominal_saving": 0.16044264477477177,
+    "required_saving": 0.02,
+    "independent_confirmation": true,
+    "scope": "Fresh frozen-policy confirmation; not matched-outage or hard safety proof"
+  },
+  "uncertainty": "Whole-trajectory/seed descriptive bootstrap; only two training seeds",
+  "source_and_weights_frozen": true,
+  "old_failures_retained": true
+}

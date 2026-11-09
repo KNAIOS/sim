@@ -1,0 +1,39 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\rollout\\extend_prices.py": "c9c1f6ab75a69bb5d19c07302e8e7a410bc706be9b10438506e7be700557cee1",
+    "joint_power\\rollout\\PRICE_EXTENSION_PLAN.md": "93bf70d181110f4f5d57724eb8bdab7ee2a2ec7be22a37c2166db789a2d5cd3c",
+    "results\\joint_power_20260922_rollout_absolute\\validation\\output_hashes.json": "da2176cd1328b82d31706bb8807499111727e7412229730ef820360f19da5b49",
+    "results\\joint_power_20260922_rollout_absolute\\training_hashes.json": "5fcaab37b42ca3a0b64bbe15addc3f809b4780720e24cfebf27241cc77a52a0a",
+    "joint_power\\rollout\\control.py": "7cf2192ad952148e5212cfefb103c4f9c211e54bb48f9d2e48982f78019190d0"
+  },
+  "checkpoints": {
+    "MC signed 11": {
+      "path": "results\\joint_power_20260922_rollout\\probe\\seed11_epoch020.pt",
+      "sha256": "6abaaf147b3859ad9f467946a4cdc2a604c150face291a28b37d52b3c1a0479a",
+      "epoch": 20
+    },
+    "MC absolute 11": {
+      "path": "results\\joint_power_20260922_rollout_absolute\\seed11_selected.pt",
+      "sha256": "82d1f72251f308e97c7bf7b0e2e0b20b7373b39ef0b7da16dab0d284cd2139d1",
+      "epoch": 20
+    },
+    "MC signed 22": {
+      "path": "results\\joint_power_20260922_rollout\\probe\\seed22_epoch020.pt",
+      "sha256": "82d7430b74c909a596d72fd0aa9c49ab60b03bf7444a437e314e7af9d551ddf8",
+      "epoch": 20
+    },
+    "MC absolute 22": {
+      "path": "results\\joint_power_20260922_rollout_absolute\\seed22_selected.pt",
+      "sha256": "846b50ee59181d3bf1ed5531adbe8ef8913d183a0efe149b49de38aff390e1ea",
+      "epoch": 20
+    }
+  },
+  "post_hoc_validation_only": true,
+  "prices": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ]
+}

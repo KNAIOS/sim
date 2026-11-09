@@ -1,0 +1,4 @@
+scenario,states,below_current_slot,below_causal_floor,positive_floor,max_deficit
+0,280,6,6,8,0.9426028169691563
+1,280,8,8,16,1.2369202971458435
+2,280,3,3,23,0.44048821926116943

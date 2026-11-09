@@ -1,0 +1,86 @@
+{
+  "input_hashes": {
+    "joint_power\\matched_four\\control.py": "384532a91a09a2d5ad82baac1636e4d5e4166a3e6223a1e5d432a524df357343",
+    "joint_power\\matched_four\\study.py": "49a8f56cfcb16d6b4bbbb82ad46626c88952b241446a036dfd99dc7ac71ea29f",
+    "joint_power\\matched_four\\test_control.py": "e0f2ca77dc596716346eead706f55f2b7923d5f5f06890902c1a369e8cc987b8",
+    "joint_power\\matched_four\\__init__.py": "eed9fec7b4858cffc6e6e5f09f3a2a1d751246679faaccf678bd6344cc30fe3b",
+    "joint_power\\matched_four\\PLAN.md": "b046cfc0ebb168ad462c03c80afc5b1fdceb78296d209196635f8b089abcf2c7",
+    "results\\joint_power_20260922_strong_headroom\\output_hashes.json": "906d6410215ddebad5d9fb4f0914e0dfc27279ec6c3d9321c69c3b7afa7bedf6",
+    "results\\joint_power_20260922_strong_headroom\\target_budget_v2\\output_hashes.json": "4a8f953d974c5e1abf5366c0e7a8aecb9d170b04d70af075e343f799d864a5c2",
+    "joint_power\\baseline_anchor\\control.py": "a55b523bc03357f965699689fddd212a9f4dda212330551c59e954c189ecf9d3",
+    "joint_power\\floor_projection\\control.py": "6c8a95a96ed9404551e86c7bf345193626228f6a8466fda44c116317d3877554"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "stream": 5209220000,
+  "trajectories_per_scenario": 4,
+  "specifications": [
+    [
+      "Energy Value min4",
+      11
+    ],
+    [
+      "Energy Value min4",
+      22
+    ],
+    [
+      "Energy Myopic min4",
+      11
+    ],
+    [
+      "Energy Myopic min4",
+      22
+    ],
+    [
+      "Energy Value min1",
+      11
+    ],
+    [
+      "Energy Value min1",
+      22
+    ],
+    [
+      "PRS original",
+      0
+    ],
+    [
+      "PRS budget",
+      0
+    ],
+    [
+      "Raw full min4",
+      0
+    ],
+    [
+      "Energy Raw min4",
+      0
+    ],
+    [
+      "Full array",
+      0
+    ]
+  ],
+  "no_retuning": true,
+  "fixed_policy_domain_ablation": true,
+  "host_environment_changed": false
+}

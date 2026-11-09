@@ -1,0 +1,8 @@
+{
+  "results\\joint_power_20260922_aggregation\\control_validation\\candidate_episodes.csv": "20c015062af6cd5b19d0063cd8a6f8e117dfb3ef5d3c4ed02ef30ce6d66ef80b",
+  "results\\joint_power_20260922_aggregation\\control_validation\\gate.json": "66f040cb9742e894c74a0c5529bdc490dae1a553c9cd45e978ff38f636fb50c7",
+  "results\\joint_power_20260922_aggregation\\control_validation\\manifest.json": "895588148e0e87b0318876e71fca218fc268eea053921248494a3a1427330ddc",
+  "results\\joint_power_20260922_aggregation\\control_validation\\selected_episodes.csv": "752da0ea7fcbbee426ce0c567367b1cdac3f335ae10b91f77657c0655637630f",
+  "results\\joint_power_20260922_aggregation\\control_validation\\selection.json": "b471fcde0216244a45260e73e19267041a6d693211e361709b9164419a8d659b",
+  "results\\joint_power_20260922_aggregation\\control_validation\\summary.csv": "74a24e2c0e432eebb664167ebd7c84c8341387bf9368e94d3240f835b669884d"
+}

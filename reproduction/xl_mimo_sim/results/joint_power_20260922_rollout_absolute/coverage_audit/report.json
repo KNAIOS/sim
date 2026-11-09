@@ -1,0 +1,35 @@
+{
+  "training_states": 192,
+  "training_min_active": 4,
+  "training_max_active": 16,
+  "training_states_below4": 0,
+  "summary": [
+    {
+      "scenario": 0,
+      "decisions": 280,
+      "fraction_below_training_min": 0.7035714285714286,
+      "mean_active_before_action": 2.9392857142857145
+    },
+    {
+      "scenario": 1,
+      "decisions": 280,
+      "fraction_below_training_min": 0.30357142857142855,
+      "mean_active_before_action": 5.4035714285714285
+    },
+    {
+      "scenario": 2,
+      "decisions": 280,
+      "fraction_below_training_min": 0.060714285714285714,
+      "mean_active_before_action": 7.1535714285714285
+    }
+  ],
+  "replayed_episodes": 24,
+  "replayed_slots": 3360,
+  "unchanged_previously_verified_episodes": 84,
+  "max_rate_error_mbps": 5.059064278611913e-12,
+  "max_energy_component_error_j": 0.0,
+  "source_sha256": "1840cb0ea752963ac888ee5f49fb74bfbe591a74e48770d68807206c4f1dcda8",
+  "scope": "A measured count-support gap, not a proof that it causes the entire performance deficit",
+  "post_hoc_validation_only": true,
+  "development_launched": false
+}

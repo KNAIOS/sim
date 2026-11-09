@@ -1,0 +1,20 @@
+{
+  "results\\joint_power_20260922_strong_headroom\\episodes.csv": "1bb99ac9052ce44eb88b80ad788b885ebee22ad8503234585676b0c63cc1802f",
+  "results\\joint_power_20260922_strong_headroom\\gate.json": "524dfa81bfba5f8dc8395293d7773cbbca443d139fd4f76dbd8856f014dfae25",
+  "results\\joint_power_20260922_strong_headroom\\labels_0_0.npz": "0c9e06643c002f8358bfbe21cfd7e045fd459765569c5e0f9ffdad5789fa819c",
+  "results\\joint_power_20260922_strong_headroom\\labels_0_1.npz": "facd46e5174493084da9fed7c4976f986d4e9b8f530318de5b79f60ad9022080",
+  "results\\joint_power_20260922_strong_headroom\\labels_0_2.npz": "a620fc1a082160f9be83c30de9d468b05ecbc5633df06490f6309316912bea9c",
+  "results\\joint_power_20260922_strong_headroom\\labels_0_3.npz": "822ae009d37997b2e1a70e0c50a1e5cfa3b61326b3bd1c2179868a6a81a4d387",
+  "results\\joint_power_20260922_strong_headroom\\labels_1_0.npz": "e1f702f01a4c63c14789ecb2c4a044d7eacbb36635cf3134df210f54a58cead2",
+  "results\\joint_power_20260922_strong_headroom\\labels_1_1.npz": "d3901afb135787dc1e1513ebec922de107e9568fbd47d876b4f92b3124f7ee0c",
+  "results\\joint_power_20260922_strong_headroom\\labels_1_2.npz": "6fd13e8847da7829141ec7c16967dceea13e25ce73359813a1c32fb10610c743",
+  "results\\joint_power_20260922_strong_headroom\\labels_1_3.npz": "8ffb551bf11a8e12501baaffe2171aff89cc19db986e1726e520691620a03b22",
+  "results\\joint_power_20260922_strong_headroom\\labels_2_0.npz": "400bcb7b1e4e8a6a4de976f5cd58dc3ef56030c72dac219caf51828fb8fff48e",
+  "results\\joint_power_20260922_strong_headroom\\labels_2_1.npz": "03b68ce118ae798dfce46598cb716d70fb88ddd8803ae1110a5438807c08796d",
+  "results\\joint_power_20260922_strong_headroom\\labels_2_2.npz": "432fb7d96a7c85ecc07627ddb228863ca1f7e9f67c97578da2ad747b76bd6d49",
+  "results\\joint_power_20260922_strong_headroom\\labels_2_3.npz": "cecb5c3007066579fc3dba660b4c14bf09fbf9465080f936e79308e68b203941",
+  "results\\joint_power_20260922_strong_headroom\\manifest.json": "b469c46c15abda8e4bdad9d558822caa195254b29ab1bdfe2a4c6ffbdbee1755",
+  "results\\joint_power_20260922_strong_headroom\\report.json": "af48c7293a49bdc996cb24a181dced46e6efea87ed20ddf0d90e6f1b3387dde5",
+  "results\\joint_power_20260922_strong_headroom\\roots.csv": "8a73e4670d9019545438c5bc4fb65810c4aab45c77160c1e285c5b387849f073",
+  "results\\joint_power_20260922_strong_headroom\\summary.csv": "5b627fd071cde19d4275b9f8b2949e024d87d477a3f251e5afa9074f60987d61"
+}

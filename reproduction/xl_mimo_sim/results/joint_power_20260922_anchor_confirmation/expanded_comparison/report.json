@@ -1,0 +1,227 @@
+{
+  "gate": {
+    "passed": false,
+    "nominal_energy_j": 100.74601311068795,
+    "nominal_saving": -0.07069041347575178,
+    "reference": {
+      "method": "Expanded budgetPRS",
+      "energy_j": 94.09443835743242,
+      "worst_outage": 0.044047619047619044
+    },
+    "per_seed": {
+      "11": {
+        "energy_j": 101.46424172021607,
+        "outage": [
+          0.01369047619047619,
+          0.027083333333333334,
+          0.03184523809523809
+        ]
+      },
+      "22": {
+        "energy_j": 100.02778450115986,
+        "outage": [
+          0.015178571428571428,
+          0.03839285714285714,
+          0.03392857142857143
+        ]
+      }
+    },
+    "feasible_baselines": [
+      {
+        "method": "PRS original",
+        "energy_j": 120.17238045560839,
+        "worst_outage": 0.008333333333333333
+      },
+      {
+        "method": "PRS budget",
+        "energy_j": 119.9989643157385,
+        "worst_outage": 0.011904761904761904
+      },
+      {
+        "method": "Full power",
+        "energy_j": 285.1264050081238,
+        "worst_outage": 0.0
+      },
+      {
+        "method": "Expanded PRS",
+        "energy_j": 94.83309885825545,
+        "worst_outage": 0.03571428571428571
+      },
+      {
+        "method": "Expanded budgetPRS",
+        "energy_j": 94.09443835743242,
+        "worst_outage": 0.044047619047619044
+      }
+    ],
+    "original_policy_and_thresholds_unchanged": true
+  },
+  "pooled_frontier": [
+    {
+      "scenario": 0,
+      "seed": 0,
+      "bound": "matched",
+      "learned_energy_j": 90.95935745825514,
+      "learned_outage": 0.01443452380952381,
+      "target_outage": 0.01443452380952381,
+      "first": "PRS original",
+      "second": "Expanded PRS",
+      "first_probability": 0.2301587301587301,
+      "mixture_expected_energy_j": 92.32705381327993,
+      "mixture_expected_outage": 0.01443452380952381,
+      "difference_j": -1.3676963550247905,
+      "saving": 0.01481360336473847
+    },
+    {
+      "scenario": 0,
+      "seed": 0,
+      "bound": "target5pct",
+      "learned_energy_j": 90.95935745825514,
+      "learned_outage": 0.01443452380952381,
+      "target_outage": 0.05,
+      "first": "Raw full",
+      "second": "Raw full",
+      "first_probability": 1.0,
+      "mixture_expected_energy_j": 83.67199773039498,
+      "mixture_expected_outage": 0.020535714285714282,
+      "difference_j": 7.287359727860164,
+      "saving": -0.08709436759644773
+    },
+    {
+      "scenario": 1,
+      "seed": 0,
+      "bound": "matched",
+      "learned_energy_j": 100.74601311068795,
+      "learned_outage": 0.03273809523809523,
+      "target_outage": 0.03273809523809523,
+      "first": "PRS budget",
+      "second": "Expanded PRS",
+      "first_probability": 0.08333333333333343,
+      "mixture_expected_energy_j": 96.93025431304571,
+      "mixture_expected_outage": 0.03273809523809523,
+      "difference_j": 3.8157587976422462,
+      "saving": -0.03936602482563267
+    },
+    {
+      "scenario": 1,
+      "seed": 0,
+      "bound": "target5pct",
+      "learned_energy_j": 100.74601311068795,
+      "learned_outage": 0.03273809523809523,
+      "target_outage": 0.05,
+      "first": "Raw full",
+      "second": "Expanded PRS",
+      "first_probability": 0.4210526315789476,
+      "mixture_expected_energy_j": 92.96607978960482,
+      "mixture_expected_outage": 0.05,
+      "difference_j": 7.779933321083135,
+      "saving": -0.08368571998184926
+    },
+    {
+      "scenario": 2,
+      "seed": 0,
+      "bound": "matched",
+      "learned_energy_j": 129.84950554772234,
+      "learned_outage": 0.032886904761904756,
+      "target_outage": 0.032886904761904756,
+      "first": "Raw coarse",
+      "second": "Expanded PRS",
+      "first_probability": 0.11151079136690631,
+      "mixture_expected_energy_j": 129.89500644880994,
+      "mixture_expected_outage": 0.032886904761904756,
+      "difference_j": -0.04550090108759264,
+      "saving": 0.00035028984047602574
+    },
+    {
+      "scenario": 2,
+      "seed": 0,
+      "bound": "target5pct",
+      "learned_energy_j": 129.84950554772234,
+      "learned_outage": 0.032886904761904756,
+      "target_outage": 0.05,
+      "first": "Raw coarse",
+      "second": "Expanded PRS",
+      "first_probability": 0.5251798561151079,
+      "mixture_expected_energy_j": 126.57599806895144,
+      "mixture_expected_outage": 0.05,
+      "difference_j": 3.2735074787709095,
+      "saving": -0.025861992231636988
+    }
+  ],
+  "intervals": [
+    {
+      "scenario": 0,
+      "reference": "matched",
+      "ci_low": -13.560434902762088,
+      "ci_high": 8.846898130124572
+    },
+    {
+      "scenario": 0,
+      "reference": "target5pct",
+      "ci_low": 3.4545101292191065,
+      "ci_high": 11.60790092243975
+    },
+    {
+      "scenario": 0,
+      "reference": "Expanded PRS",
+      "ci_low": 2.487961470686864,
+      "ci_high": 10.872952027632861
+    },
+    {
+      "scenario": 0,
+      "reference": "Expanded budgetPRS",
+      "ci_low": 2.57309831238077,
+      "ci_high": 10.844265252174432
+    },
+    {
+      "scenario": 1,
+      "reference": "matched",
+      "ci_low": -3.585441574094977,
+      "ci_high": 6.451948066460319
+    },
+    {
+      "scenario": 1,
+      "reference": "target5pct",
+      "ci_low": 4.393828871069177,
+      "ci_high": 12.520835494104299
+    },
+    {
+      "scenario": 1,
+      "reference": "Expanded PRS",
+      "ci_low": 2.239269171886758,
+      "ci_high": 10.286920361222172
+    },
+    {
+      "scenario": 1,
+      "reference": "Expanded budgetPRS",
+      "ci_low": 3.1637836822163794,
+      "ci_high": 10.78883343401251
+    },
+    {
+      "scenario": 2,
+      "reference": "matched",
+      "ci_low": -7.444602728360298,
+      "ci_high": 7.458569150258299
+    },
+    {
+      "scenario": 2,
+      "reference": "target5pct",
+      "ci_low": -1.46208506028901,
+      "ci_high": 9.69804158914768
+    },
+    {
+      "scenario": 2,
+      "reference": "Expanded PRS",
+      "ci_low": -12.55532261956039,
+      "ci_high": 7.291467193243589
+    },
+    {
+      "scenario": 2,
+      "reference": "Expanded budgetPRS",
+      "ci_low": -9.570151067131592,
+      "ci_high": 8.291556591814327
+    }
+  ],
+  "old_seven_baseline_gate_superseded": true,
+  "finite_empirical_mixtures_not_deployed": true,
+  "R1_closed": false
+}

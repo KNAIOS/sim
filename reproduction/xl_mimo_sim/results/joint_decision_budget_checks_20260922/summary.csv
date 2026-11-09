@@ -1,0 +1,5 @@
+method,samples,median_ms,p95_ms
+PRS power selection,400,0.66415,0.7718899999999996
+Joint full selection,400,2.3767,2.798875
+Joint coarse selection,400,1.645,1.9252999999999993
+PDS-branch selection,400,3.5586,4.1206949999999996

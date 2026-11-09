@@ -1,0 +1,38 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\risk_only\\train.py": "4de1ad468af26ff3eef26c7c0fe47a08e8c8d019606bd58a8b0f311f1562df23",
+    "joint_power\\risk_only\\model.py": "4a900b16d0770e9c511baf92e34f8abca69003e1970a99d7301a8235a9a5d7a4",
+    "joint_power\\risk_only\\test_model.py": "01d1d5152042a765a31ed6255cdffda3342bd38a4c3b69c941b5396a3c2cd56f",
+    "joint_power\\risk_only\\PLAN.md": "10e5354db98d6f5590d9cf973268edefd3957e5d4c280d07cbf481c2750e939c",
+    "joint_power\\rollout\\probe.py": "c9f4bb21c8e39f01ead79a2d668c142a9bffb66db8654431644c3c14fc0d7551",
+    "results\\joint_power_20260922_risk_only\\collection_hashes.json": "bc891429fc6fe1fd5a257ca94d964562766226854d005b2e194eb7ce66006392"
+  },
+  "arms": [
+    "risk_only",
+    "joint"
+  ],
+  "seeds": [
+    11,
+    22
+  ],
+  "checkpoints": [
+    0,
+    20,
+    40,
+    60,
+    80
+  ],
+  "training_frequency": 0.03626595810055733,
+  "frequency_definition": "sum failures / sum capacity over root-actions",
+  "normalization": "training mean/std; std floor 0.05; standardized clamp [-10,10]",
+  "selection": "minimum validation risk loss, earlier epoch on ties",
+  "epochs": 80,
+  "batch_roots": 16,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5,
+  "permutation_seed": "same as model seed, dedicated torch.Generator",
+  "prediction_only": true,
+  "host_environment_changed": false
+}

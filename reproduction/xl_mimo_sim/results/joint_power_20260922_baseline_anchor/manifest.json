@@ -1,0 +1,42 @@
+{
+  "input_hashes": {
+    "joint_power\\baseline_anchor\\control.py": "a55b523bc03357f965699689fddd212a9f4dda212330551c59e954c189ecf9d3",
+    "joint_power\\baseline_anchor\\study.py": "7525440fae79280cfd50e75d7807a98e0f7b8e53c0c01e6facdaa6fe0f18878f",
+    "joint_power\\baseline_anchor\\test_control.py": "3c5c0cf9623eb689150f41edc20a62e51a63f85fe40600d4af3f187c6b7d0a3c",
+    "joint_power\\baseline_anchor\\__init__.py": "ed6ec7f3f5150e943ccbd04247650826f8771dc25b69d9970d8daea551a9f52b",
+    "joint_power\\baseline_anchor\\PLAN.md": "cc5ade46a9433af24e3bad52755aa264b5625ef39cbd6bc9d6e68f1e00b05ddc",
+    "results\\joint_power_20260922_floor_projection\\output_hashes.json": "1085600fcb84dcb7028864f2893e4fc5b9dd704b7cc07a9f10c5ead5cc93c53c",
+    "results\\joint_power_20260922_floor_confirmation\\output_hashes.json": "ff954f2141e84a2480d6daec3c8c649547a339796bb7d4864f7c6bc7a1238f94"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "streams": [
+    3909220000,
+    4009220000
+  ],
+  "both_streams_previously_inspected": true,
+  "primary": "Energy Value",
+  "host_environment_changed": false,
+  "retraining": false,
+  "parameter_search": false
+}

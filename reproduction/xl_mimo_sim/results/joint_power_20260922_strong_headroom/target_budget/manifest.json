@@ -1,0 +1,10 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\strong_headroom\\budget_analysis.py": "d075d77492dba11b79a7ac8d2e18f2e7589580e3056f4a7d2bacbc387c9c7e73",
+    "joint_power\\strong_headroom\\BUDGET_PLAN.md": "4314901ad42ca0279d89e9067b34ec645d82acc0444e78b0285670b16092c99c",
+    "results\\joint_power_20260922_strong_headroom\\output_hashes.json": "906d6410215ddebad5d9fb4f0914e0dfc27279ec6c3d9321c69c3b7afa7bedf6"
+  },
+  "posthoc": true,
+  "no_new_simulation": true,
+  "uses_future_outcomes": true
+}

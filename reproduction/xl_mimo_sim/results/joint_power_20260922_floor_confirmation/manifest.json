@@ -1,0 +1,115 @@
+{
+  "input_hashes": {
+    "joint_power\\floor_confirmation\\study.py": "c027085a1def04d1c864067a27cb833aa567f34341e1e37f314c158ec2314d2d",
+    "joint_power\\floor_confirmation\\__init__.py": "e25e57cd368fe12c9af578973eaf428ee290c627bce3f9d1d120e309b1fa960c",
+    "joint_power\\floor_confirmation\\PLAN.md": "73c2713f62a8629ef3883390b4e8ff8ac198ebe910d1983bcba1d74d7c5ecf39",
+    "results\\joint_power_20260922_floor_projection\\output_hashes.json": "1085600fcb84dcb7028864f2893e4fc5b9dd704b7cc07a9f10c5ead5cc93c53c",
+    "results\\joint_power_20260922_floor_projection\\manifest.json": "7e36d3864d7ff9675e78ef256f948d74092d7438d1f160e4769eaeacafdc6009"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "fixed_specifications": [
+    [
+      "Floor Value",
+      11,
+      0.1
+    ],
+    [
+      "Floor Myopic",
+      11,
+      0.1
+    ],
+    [
+      "Value",
+      11,
+      0.1
+    ],
+    [
+      "Fixed-price Value",
+      11,
+      4.0
+    ],
+    [
+      "Floor Value",
+      22,
+      0.1
+    ],
+    [
+      "Floor Myopic",
+      22,
+      0.1
+    ],
+    [
+      "Value",
+      22,
+      0.1
+    ],
+    [
+      "Fixed-price Value",
+      22,
+      4.0
+    ],
+    [
+      "PRS original",
+      0,
+      0.05
+    ],
+    [
+      "PRS budget",
+      0,
+      1.0
+    ],
+    [
+      "Raw full",
+      0,
+      0.05
+    ],
+    [
+      "Raw coarse",
+      0,
+      0.0
+    ],
+    [
+      "Full power",
+      0,
+      0.05
+    ],
+    [
+      "Raw budget",
+      0,
+      0.0
+    ],
+    [
+      "Floor Raw budget",
+      0,
+      0.0
+    ]
+  ],
+  "stream": 4009220000,
+  "previously_examined": false,
+  "split": "development",
+  "selected_family": "Visitation-added",
+  "no_retuning": true,
+  "prs_tuned_alias": "PRS original: both use0.05",
+  "host_environment_changed": false
+}

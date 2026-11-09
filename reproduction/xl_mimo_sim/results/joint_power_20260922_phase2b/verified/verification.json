@@ -1,0 +1,56 @@
+{
+  "episodes": 120,
+  "independent_environment_trajectories": 12,
+  "slots": 16800,
+  "errors": {
+    "rate_mbps": 2.9558577807620168e-12,
+    "energy_j": 0.0,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "episode_energy_j": 6.821210263296962e-13
+  },
+  "calibration": {
+    "validation_trajectories": 12,
+    "brier_difference": -0.0015523760812357068,
+    "trajectory_bootstrap_ci95": [
+      -0.003652169241104275,
+      0.00024367038313357635
+    ],
+    "caveat": "Validation selection, descriptive only; no universal probability calibration claim"
+  },
+  "outcome": {
+    "passed": false,
+    "per_seed_outage": {
+      "11": [
+        0.0,
+        0.0023809523809523807,
+        0.05297619047619047
+      ],
+      "22": [
+        0.0,
+        0.002976190476190476,
+        0.015476190476190477
+      ]
+    },
+    "nominal_saving": {
+      "Calibrated full": 0.21267414658899708,
+      "PRS power": -0.12171216735985202
+    },
+    "nominal_energy_by_seed": {
+      "11": 151.09608076142518,
+      "22": 124.12349073656898
+    },
+    "selected_episodes": [
+      40,
+      160
+    ],
+    "primary_baselines_below_outage_limit": false,
+    "independent_confirmation": false,
+    "manuscript_replacement_authorized_by_result": false
+  },
+  "sources_preserved": true,
+  "audit_source_sha256": "5ec145c4323c4c9d5154efe606e5b2f7a38df30225f521e0a983e22f4adb455d",
+  "scope": "Physical accounting and descriptive statistics, not scientific completion"
+}

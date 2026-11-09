@@ -1,0 +1,136 @@
+{
+  "pooled": [
+    {
+      "scenario": 0,
+      "seed": 0,
+      "bound": "matched",
+      "target_outage": 0.01443452380952381,
+      "learned_energy_j": 90.95935745825514,
+      "learned_outage": 0.01443452380952381,
+      "first": "PRS original",
+      "second": "Raw full",
+      "first_probability": 0.29710144927536214,
+      "mixture_expected_energy_j": 93.9190320281979,
+      "mixture_expected_outage": 0.01443452380952381,
+      "learned_minus_mixture_j": -2.959674569942763,
+      "saving": 0.03151304379983555
+    },
+    {
+      "scenario": 0,
+      "seed": 0,
+      "bound": "target5pct",
+      "target_outage": 0.05,
+      "learned_energy_j": 90.95935745825514,
+      "learned_outage": 0.01443452380952381,
+      "first": "Raw full",
+      "second": "Raw full",
+      "first_probability": 1.0,
+      "mixture_expected_energy_j": 83.67199773039498,
+      "mixture_expected_outage": 0.020535714285714282,
+      "learned_minus_mixture_j": 7.287359727860164,
+      "saving": -0.08709436759644773
+    },
+    {
+      "scenario": 1,
+      "seed": 0,
+      "bound": "matched",
+      "target_outage": 0.03273809523809523,
+      "learned_energy_j": 100.74601311068795,
+      "learned_outage": 0.03273809523809523,
+      "first": "PRS budget",
+      "second": "Empty Raw budget",
+      "first_probability": 0.48356807511737093,
+      "mixture_expected_energy_j": 105.75399889734284,
+      "mixture_expected_outage": 0.03273809523809523,
+      "learned_minus_mixture_j": -5.007985786654885,
+      "saving": 0.047355048876366546
+    },
+    {
+      "scenario": 1,
+      "seed": 0,
+      "bound": "target5pct",
+      "target_outage": 0.05,
+      "learned_energy_j": 100.74601311068795,
+      "learned_outage": 0.03273809523809523,
+      "first": "PRS budget",
+      "second": "Empty Raw budget",
+      "first_probability": 0.21126760563380273,
+      "mixture_expected_energy_j": 98.24301713127969,
+      "mixture_expected_outage": 0.05,
+      "learned_minus_mixture_j": 2.5029959794082686,
+      "saving": -0.025477596805313585
+    },
+    {
+      "scenario": 2,
+      "seed": 0,
+      "bound": "matched",
+      "target_outage": 0.032886904761904756,
+      "learned_energy_j": 129.84950554772234,
+      "learned_outage": 0.032886904761904756,
+      "first": "PRS budget",
+      "second": "Raw coarse",
+      "first_probability": 0.63659793814433,
+      "mixture_expected_energy_j": 134.47728735134964,
+      "mixture_expected_outage": 0.032886904761904756,
+      "learned_minus_mixture_j": -4.6277818036273,
+      "saving": 0.034413110903525834
+    },
+    {
+      "scenario": 2,
+      "seed": 0,
+      "bound": "target5pct",
+      "target_outage": 0.05,
+      "learned_energy_j": 129.84950554772234,
+      "learned_outage": 0.032886904761904756,
+      "first": "PRS budget",
+      "second": "Raw coarse",
+      "first_probability": 0.34020618556701027,
+      "mixture_expected_energy_j": 129.0248283488512,
+      "mixture_expected_outage": 0.05,
+      "learned_minus_mixture_j": 0.824677198871143,
+      "saving": -0.006391616322413807
+    }
+  ],
+  "intervals": [
+    {
+      "scenario": 0,
+      "bound": "matched",
+      "ci_low": -18.164055893855632,
+      "ci_high": 8.80801113908278
+    },
+    {
+      "scenario": 0,
+      "bound": "target5pct",
+      "ci_low": 3.450012081596812,
+      "ci_high": 11.62449026416272
+    },
+    {
+      "scenario": 1,
+      "bound": "matched",
+      "ci_low": -9.306403664202815,
+      "ci_high": 0.06740511105678385
+    },
+    {
+      "scenario": 1,
+      "bound": "target5pct",
+      "ci_low": -2.0909591103519176,
+      "ci_high": 11.318014927385338
+    },
+    {
+      "scenario": 2,
+      "bound": "matched",
+      "ci_low": -12.163748509063206,
+      "ci_high": 3.68409241149471
+    },
+    {
+      "scenario": 2,
+      "bound": "target5pct",
+      "ci_low": -4.864132828460015,
+      "ci_high": 7.522388157243021
+    }
+  ],
+  "empirical_expectations_only": true,
+  "no_retuning": true,
+  "no_global_optimality_claim": true,
+  "caveat": "Posthoc finite-policy envelope and refitted plug-in bootstrap, not independent mixture deployment"
+}

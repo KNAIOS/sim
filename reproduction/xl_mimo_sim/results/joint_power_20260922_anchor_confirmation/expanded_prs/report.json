@@ -1,0 +1,81 @@
+{
+  "episodes": 48,
+  "verified_slots": 6720,
+  "max_physical_errors": {
+    "rate_mbps": 2.0662582755903713e-11,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "summary": [
+    {
+      "scenario": 0,
+      "method": "Expanded PRS",
+      "energy_j": 84.60319925525702,
+      "outage": 0.01875,
+      "circuit_j": 78.477766,
+      "pa_j": 5.240433255257024,
+      "switching_j": 0.51875,
+      "pilot_j": 0.36624999999999996,
+      "mean_active": 1.1785714285714286
+    },
+    {
+      "scenario": 0,
+      "method": "Expanded budgetPRS",
+      "energy_j": 84.57440318699963,
+      "outage": 0.026190476190476188,
+      "circuit_j": 78.1850356,
+      "pa_j": 5.507367586999642,
+      "switching_j": 0.52125,
+      "pilot_j": 0.36075,
+      "mean_active": 1.157142857142857
+    },
+    {
+      "scenario": 1,
+      "method": "Expanded PRS",
+      "energy_j": 94.83309885825545,
+      "outage": 0.03571428571428571,
+      "circuit_j": 86.229874,
+      "pa_j": 6.684724858255458,
+      "switching_j": 1.4175,
+      "pilot_j": 0.501,
+      "mean_active": 1.607142857142857
+    },
+    {
+      "scenario": 1,
+      "method": "Expanded budgetPRS",
+      "energy_j": 94.09443835743242,
+      "outage": 0.044047619047619044,
+      "circuit_j": 85.4144132,
+      "pa_j": 6.879525157432415,
+      "switching_j": 1.3125,
+      "pilot_j": 0.48800000000000004,
+      "mean_active": 1.5642857142857143
+    },
+    {
+      "scenario": 2,
+      "method": "Expanded PRS",
+      "energy_j": 130.78969566425005,
+      "outage": 0.028273809523809524,
+      "circuit_j": 118.2498552,
+      "pa_j": 9.106840464250038,
+      "switching_j": 2.3000000000000003,
+      "pilot_j": 1.133,
+      "mean_active": 3.8142857142857145
+    },
+    {
+      "scenario": 2,
+      "method": "Expanded budgetPRS",
+      "energy_j": 128.7324406099953,
+      "outage": 0.041071428571428564,
+      "circuit_j": 116.0169156,
+      "pa_j": 9.359525009995313,
+      "switching_j": 2.2662500000000003,
+      "pilot_j": 1.08975,
+      "mean_active": 3.6571428571428566
+    }
+  ],
+  "primary_policy_unchanged": true
+}

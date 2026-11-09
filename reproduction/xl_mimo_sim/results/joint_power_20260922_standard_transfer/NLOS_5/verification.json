@@ -1,0 +1,16 @@
+{
+  "episodes": 18,
+  "slots": 2520,
+  "maximum_errors": {
+    "rate_mbps": 7.389644451905042e-13,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "modes": {
+    "full_targets": 1695,
+    "preserve_service": 825
+  }
+}

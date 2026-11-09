@@ -1,0 +1,129 @@
+{
+  "input_hashes": {
+    "joint_power\\floor_projection\\control.py": "6c8a95a96ed9404551e86c7bf345193626228f6a8466fda44c116317d3877554",
+    "joint_power\\floor_projection\\study.py": "42c2f150ee98dbbb62d7a8e691db3a62ab08b999ea6dec86b12be28d5791a407",
+    "joint_power\\floor_projection\\test_control.py": "ac58da6c5196765cc753ba1737e6ffcc2f8131fbef1c887d2a43654765641620",
+    "joint_power\\floor_projection\\__init__.py": "28a9e328c8578da2458e7413c31e5bdde0351da9f93287f72df436bda2b1ef0a",
+    "joint_power\\floor_projection\\PLAN.md": "51a2f654fb013e69345a7302c91ba0859a506c2a7bee47a5f957be214fa87bdd",
+    "joint_power\\risk_budget\\physical_floor.py": "19d9ee5f9ed811d5399b1d8732c9d6b256d21d5970cfb20e8eabae69111d33a7",
+    "results\\joint_power_20260922_risk_budget\\selection.json": "ca51b9345447e782dc74296d75bc19aef22eab75dc870c01d278ffce213e0e0a",
+    "results\\joint_power_20260922_risk_budget\\output_hashes.json": "930089b8034db398f9c4f8adc6948cabaffc0fba9d0bd9fcd2d2247ad1629025"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "fixed_selections": [
+    {
+      "method": "Value PRS-added",
+      "seed": 11,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        130.53099442533693,
+        0.04583333333333333
+      ]
+    },
+    {
+      "method": "Myopic PRS-added",
+      "seed": 11,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        129.84550234901855,
+        0.04345238095238095
+      ]
+    },
+    {
+      "method": "Value PRS-added",
+      "seed": 22,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        125.59825017986257,
+        0.04404761904761905
+      ]
+    },
+    {
+      "method": "Myopic PRS-added",
+      "seed": 22,
+      "parameter": 0.0,
+      "validation_key": [
+        0.0,
+        205.90062196406802,
+        0.010714285714285714
+      ]
+    },
+    {
+      "method": "Value Visitation-added",
+      "seed": 11,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        129.50009559440235,
+        0.03988095238095238
+      ]
+    },
+    {
+      "method": "Myopic Visitation-added",
+      "seed": 11,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        132.3430307990118,
+        0.04285714285714285
+      ]
+    },
+    {
+      "method": "Value Visitation-added",
+      "seed": 22,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        128.77691103446833,
+        0.042261904761904764
+      ]
+    },
+    {
+      "method": "Myopic Visitation-added",
+      "seed": 22,
+      "parameter": 0.1,
+      "validation_key": [
+        0.0,
+        126.06245795306177,
+        0.049999999999999996
+      ]
+    },
+    {
+      "method": "Raw budget",
+      "seed": 0,
+      "parameter": 0.0,
+      "validation_key": [
+        0.1464285714285714,
+        100.71291960691362,
+        0.19642857142857142
+      ]
+    }
+  ],
+  "stream": 3909220000,
+  "previously_examined_validation": true,
+  "host_environment_changed": false
+}

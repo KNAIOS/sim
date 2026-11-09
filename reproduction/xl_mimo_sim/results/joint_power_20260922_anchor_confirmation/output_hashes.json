@@ -1,0 +1,11 @@
+{
+  "results\\joint_power_20260922_anchor_confirmation\\decisions.csv": "02a6ff22dbf5a3309875ccadfaea0ee4ae753f9847a82de196c394e8e032d997",
+  "results\\joint_power_20260922_anchor_confirmation\\episodes.csv": "99f121ba6978d29eb1a8d5ec1c871c7f1b7167592e470ba60fe61c7758a4617c",
+  "results\\joint_power_20260922_anchor_confirmation\\episode_ledgers.csv": "deb3c0aff60d7ae3672faea7b7c064d03a71d9ff1b66199587035c19aea70236",
+  "results\\joint_power_20260922_anchor_confirmation\\gate.json": "973a4dc18060fe02087c537ed53c0f1c30a48229853c9c92f8895e240e1cce51",
+  "results\\joint_power_20260922_anchor_confirmation\\manifest.json": "f8fa52e6e7470a48defc42d73f427aba32260f09e4f16ae28033061d6bd5c526",
+  "results\\joint_power_20260922_anchor_confirmation\\paired_differences.csv": "9b2bad8a985ff0727316284713353ae46215e1821853616c303c0159e2b53189",
+  "results\\joint_power_20260922_anchor_confirmation\\slots.csv": "a9bdf9e32360cb9c47a3f7f36541603e302678295519b788320fec959de088b0",
+  "results\\joint_power_20260922_anchor_confirmation\\summary.csv": "8214ac5a1fa69470acb0bb592abb1a7ae4d6c69c8a7166d6bc35bc56e56473f3",
+  "results\\joint_power_20260922_anchor_confirmation\\verification.json": "bd0634398b82aae72be2b46e6cc5ceb57c55278580fe6b5abed551ee7e774508"
+}

@@ -1,0 +1,8 @@
+{
+  "source_sha256": "1b4e6290fef10a3d6a725519b90814b355864db79f9f9e9068dda6787a8f9ab3",
+  "frozen_inputs_and_outputs_unchanged": true,
+  "replayed_episodes": 16,
+  "decision_intervals": 560,
+  "policy_modified": false,
+  "scope": "Retrospective selected-action diagnosis, not counterfactual causation or confirmation"
+}

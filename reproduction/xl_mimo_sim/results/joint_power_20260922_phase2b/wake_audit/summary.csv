@@ -1,0 +1,28 @@
+scenario,method,wakes,closed_before_data_slot,reached_data_slot,horizon_censored
+0,Full fixed,0.0,0.0,0.0,0.0
+0,Full power,0.0,0.0,0.0,0.0
+0,PRS power,0.0,0.0,0.0,0.0
+0,Raw full,0.75,0.25,0.5,0.0
+0,Raw coarse,2.25,0.75,1.5,0.0
+0,Calibrated full,0.0,0.0,0.0,0.0
+0,Calibrated coarse,0.0,0.0,0.0,0.0
+0,Myopic,0.0,0.0,0.0,0.0
+0,RL,49.25,32.0,15.75,1.5
+1,Full fixed,0.0,0.0,0.0,0.0
+1,Full power,0.0,0.0,0.0,0.0
+1,PRS power,5.25,0.25,5.0,0.0
+1,Raw full,8.5,4.25,4.25,0.0
+1,Raw coarse,11.75,4.0,7.75,0.0
+1,Calibrated full,0.0,0.0,0.0,0.0
+1,Calibrated coarse,0.0,0.0,0.0,0.0
+1,Myopic,0.25,0.25,0.0,0.0
+1,RL,37.125,18.625,17.5,1.0
+2,Full fixed,0.0,0.0,0.0,0.0
+2,Full power,0.0,0.0,0.0,0.0
+2,PRS power,21.5,3.0,17.75,0.75
+2,Raw full,20.0,6.25,13.5,0.25
+2,Raw coarse,21.0,4.75,16.25,0.0
+2,Calibrated full,3.75,0.5,3.25,0.0
+2,Calibrated coarse,1.5,0.0,1.5,0.0
+2,Myopic,4.5,1.25,3.25,0.0
+2,RL,49.0,23.75,23.875,1.375

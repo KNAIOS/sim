@@ -1,0 +1,19 @@
+method,scenario,episodes,mean_final_failed,fraction_exceeding_pathwise_target,mean_no_feasible_fraction
+Value PRS-added,0,8,8.0,0.125,0.025
+Value PRS-added,1,8,15.375,0.25,0.18571428571428572
+Value PRS-added,2,8,18.875,0.5,0.42142857142857143
+Myopic PRS-added,0,8,5.625,0.125,0.5321428571428571
+Myopic PRS-added,1,8,9.0,0.125,0.6035714285714285
+Myopic PRS-added,2,8,11.375,0.125,0.6678571428571429
+Value Visitation-added,0,8,6.375,0.0,0.03214285714285714
+Value Visitation-added,1,8,16.625,0.375,0.13214285714285715
+Value Visitation-added,2,8,16.75,0.125,0.3857142857142857
+Myopic Visitation-added,0,8,8.875,0.25,0.08571428571428572
+Myopic Visitation-added,1,8,15.5,0.375,0.18214285714285713
+Myopic Visitation-added,2,8,19.5,0.375,0.35
+Raw budget,0,4,12.75,0.25,0.05714285714285714
+Raw budget,1,4,38.25,1.0,0.1357142857142857
+Raw budget,2,4,82.5,1.0,0.3642857142857143
+PRS budget,0,4,0.0,0.0,0.0
+PRS budget,1,4,0.0,0.0,0.0
+PRS budget,2,4,7.25,0.0,0.0

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "PRS-added",
+    "seed": 11,
+    "parameter": 2.0,
+    "validation_key": [
+      0.0,
+      126.76530135334446,
+      0.04702380952380952
+    ]
+  },
+  {
+    "method": "PRS-added",
+    "seed": 22,
+    "parameter": 4.0,
+    "validation_key": [
+      0.0,
+      131.14225674109937,
+      0.02857142857142857
+    ]
+  },
+  {
+    "method": "Visitation-added",
+    "seed": 11,
+    "parameter": 4.0,
+    "validation_key": [
+      0.0,
+      136.2693423398161,
+      0.04107142857142857
+    ]
+  },
+  {
+    "method": "Visitation-added",
+    "seed": 22,
+    "parameter": 4.0,
+    "validation_key": [
+      0.0,
+      128.2253125040978,
+      0.04285714285714285
+    ]
+  }
+]

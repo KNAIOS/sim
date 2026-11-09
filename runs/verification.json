@@ -1,0 +1,10 @@
+{
+  "copied_files_checked": 1593,
+  "frozen_records_checked": 537,
+  "confirmation_episodes": 120,
+  "independent_drops": 40,
+  "slots": 16800,
+  "energy_saving_percent": 1.1883544746353558,
+  "original_data_modified": false,
+  "verification": "hash, saved episode means, energy ledger and slot counts; no new simulation"
+}

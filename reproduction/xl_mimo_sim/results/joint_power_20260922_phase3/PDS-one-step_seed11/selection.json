@@ -1,0 +1,14 @@
+{
+  "variant": "PDS-one-step",
+  "seed": 11,
+  "selected_episode": 80,
+  "selected_price": 8.0,
+  "validation_key": [
+    0.0,
+    132.7146314912849,
+    0.04047619047619047
+  ],
+  "updates": 22148,
+  "transitions": 5600,
+  "parameters": 44482
+}

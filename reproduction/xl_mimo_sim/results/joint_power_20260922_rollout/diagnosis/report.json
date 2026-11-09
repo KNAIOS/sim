@@ -1,0 +1,19 @@
+{
+  "passed_for_probe": true,
+  "nominal_validation": {
+    "split": "validation",
+    "scenario": 1,
+    "method": "HindsightFull",
+    "states": 32,
+    "trajectories": 4,
+    "energy_delta_j": -1.4158901122909247,
+    "energy_ci_low": -2.3453279881803515,
+    "energy_ci_high": -0.9088815544655808,
+    "failures_delta": 0.0,
+    "fraction_extra_failures": 0.0,
+    "fraction_gain_at_least_point2_no_extra_failure": 1.0,
+    "local_gain_but_full_energy_loss": 0.0
+  },
+  "source_sha256": "547ce78aa7984870b1c2eb56a2a74e2234dc7c4d64d0a9656b5009181210362e",
+  "scope": "Overlapping single interventions, not additive episode savings or deployable clairvoyant controller; no policy-improvement guarantee"
+}

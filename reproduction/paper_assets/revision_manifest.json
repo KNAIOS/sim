@@ -1,0 +1,26 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\episodes.csv": "74d722a478977bd3175d3320819e09f2d9f0d603875f22149126856c45fff783",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\summary.csv": "247b68cbfe230d17d8583dbb9c622e5fefef16e5b8abc9adcf1e62cbbeabb271",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_standard_transfer\\paired.csv": "f974735d71c034e2520d89d064fead9122e3a55d373f00c5c72d664625d23812",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_focus_confirmation\\episodes.csv": "d4e649f1a073743130a0154d193bd6fb0db3949cec87c5352ff29a5a8e6892d6",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_focus_confirmation\\summary.csv": "119d6675b64fb1a421e1c4596a00f86b3e59c0dcea7f689058739ab9cfa4a729",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_focus_confirmation\\paired.csv": "6f71721fe7ec77ed445aa1744017a8a14bfd585bcc357bf31b9f94aa472f3ee9",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_focus_confirmation\\report.json": "f3e6041737d8403544d409b568f1b31660eb42646bd688ef39a4790d34693893",
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\results\\joint_power_20260922_sensitivity\\paired.csv": "71eeef9d1baf519427c26f2a9bd78ef40efbdac980889a27d53f93c9186be04f",
+    "D:\\\u5f85\u53d1\u8868\u520a\\ICECAI2026_JointRevision_Working\\focus_sensitivity.pdf": "e549463c12784e5f64c76b794a1796e2522eb748defe8473e805095a0e8756fe"
+  },
+  "builder_sha256": "c11b18889ebb8216d3b0a28045ab158f27c9574b92e4ad21e8d8b225095afd90",
+  "old_new_samples_pooled": false,
+  "means_recomputed": true,
+  "saved_intervals_unchanged": true,
+  "original_experiment_data_changed": false,
+  "confirmation_drops": 40,
+  "exploratory_drops": 20,
+  "confirmation_executions": 120,
+  "exploratory_table_executions": 120,
+  "energy_saving_percent": 1.1883544746353558,
+  "additional_controller_power_break_even_w": 0.22516603238776156,
+  "new_training_runs": 0,
+  "new_simulations": 0
+}

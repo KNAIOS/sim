@@ -1,0 +1,22 @@
+{
+  "LOS": {
+    "pathloss_max_error_db": 0.0
+  },
+  "NLOS": {
+    "pathloss_max_error_db": 0.0
+  },
+  "lsp": {
+    "independent_drops": 1024,
+    "log10_ds_mean": -7.4169565359052765,
+    "target_log10_ds_mean": -7.422261902173363,
+    "log10_ds_std": 0.38965619011869496,
+    "target_log10_ds_std": 0.38,
+    "sf_mean_db": -0.03264594907868761,
+    "sf_std_db": 4.125391031587413,
+    "target_sf_std_db": 4.0
+  },
+  "reproducibility": "exact",
+  "zero_doppler": "constant",
+  "nonzero_doppler_relative_change": 0.43047600578619066,
+  "scope": "implementation checks, not complete 3GPP multi-cell calibration"
+}

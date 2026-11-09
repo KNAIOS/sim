@@ -1,0 +1,98 @@
+{
+  "input_hashes": {
+    "joint_power\\standard_transfer\\check_examples.py": "00bf52710e4cd5bd43ebb8b5aa02f5edd1cb3dd8cad440fef000680f60a34674",
+    "joint_power\\standard_transfer\\control.py": "af8b2f6547215984e0ff0941033d13a46c9d90a18ddc75be6cce8a1a8d3435e9",
+    "joint_power\\standard_transfer\\environment.py": "e627dd3c54fc89e7833d331122c0c495fc1931b8b348757e3231eb3dd7e456c2",
+    "joint_power\\standard_transfer\\study.py": "39bb8189475f64766c321c7c2d7f49d4b25d89242ae7e66ad62e5a14886de7ee",
+    "joint_power\\standard_transfer\\test_control.py": "2eafe7f18f6823b4279c42cdad3813786dc74f4e471c712d131dd154646eb7c8",
+    "joint_power\\standard_transfer\\test_environment.py": "de8e8e55fb1b2f7c4a612d654e5aedb1307b7a6180f0b79bfe6f4f2eaddb02a3",
+    "joint_power\\standard_transfer\\test_study.py": "672e8a34ab4830ba9c1409421e72689bfbb545b845c153faa069f6b1f765aeae",
+    "joint_power\\standard_transfer\\verify.py": "411eb097d04e012930abc6ebe6a38aff0da22f5728432e45260878ed74281deb",
+    "joint_power\\standard_transfer\\__init__.py": "bf25346760a9c88d4e64645316ab20bcf56704149516b0c704901c70d7b8c4e4",
+    "joint_power\\standard_transfer\\PLAN.md": "9348941cca8cf3f8145d45ca3aa0155a47f96b6bb5d88610b87b8c751f6d072f",
+    "joint_power\\standard_transfer\\README.md": "0568412711c79d6afbc08fda4ca70569b242e4fc11cea9394d3f91a4d228b7ac",
+    "D:\\\u5f85\u53d1\u8868\u520a\\standard_channel_20260920\\umi_channel.py": "186056643ff186e02848c817c476f3a6f367e44c81490bf4e92bc7414e028ae6",
+    "joint_power\\wideband_power.py": "a8bd29281a1e340b18f7e975cabb2027ea8d4d2329170e345fbcc18f14bdd576",
+    "major_revision\\budget_search.py": "8c1f18a7c838723dae640073b92760f1235f1214f0e2b812857ef35330b22f2d",
+    "joint_power\\model.py": "b537cb066563c4e32975d5f7e1584c09c7a5c081707c84cf9be96b2b5f112106",
+    "joint_power\\postdecision\\encoding.py": "b9be497bfe6efcf486fac6035e594fb389d40bcaffe16c09a8412090286dce80",
+    "joint_power\\matched_four\\control.py": "384532a91a09a2d5ad82baac1636e4d5e4166a3e6223a1e5d432a524df357343"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "channel_stream": 5809220000,
+  "demand_stream": 5909220000,
+  "independent_drops_per_state": 20,
+  "loads": [
+    0.5,
+    1.0
+  ],
+  "method_specs": [
+    [
+      "Value4",
+      11
+    ],
+    [
+      "Value4",
+      22
+    ],
+    [
+      "PRS4",
+      0
+    ],
+    [
+      "budgetPRS4",
+      0
+    ],
+    [
+      "PRS1",
+      0
+    ],
+    [
+      "budgetPRS1",
+      0
+    ],
+    [
+      "WBbudgetPRS4",
+      0
+    ],
+    [
+      "WBbudgetPRS1",
+      0
+    ],
+    [
+      "Full array",
+      0
+    ]
+  ],
+  "alpha": 0.1,
+  "minimum_primary_command": 4,
+  "no_retraining_or_selection": true,
+  "sionna": "2.1.0",
+  "torch": "2.9.1+cpu",
+  "numpy": "2.5.3",
+  "python": "3.12.13 (main, May 10 2026, 19:35:37) [MSC v.1944 64 bit (AMD64)]",
+  "host_environment_changed": false,
+  "original_references_preserved": true,
+  "scope": "UMi compact far-field fading transfer, not moving near-field VR or field calibration"
+}

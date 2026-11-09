@@ -1,0 +1,4 @@
+{
+  "source_sha256": "510ca8a6e29e0d401cb3ea4a4fcd71c2bc2636059c246038d6e7204b2400230c",
+  "caveat": "A wake without a data-serving slot may still acquire CSI; not proof it has zero future value"
+}

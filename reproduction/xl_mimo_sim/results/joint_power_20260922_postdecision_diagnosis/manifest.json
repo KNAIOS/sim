@@ -1,0 +1,15 @@
+{
+  "input_hashes": {
+    "joint_power\\postdecision\\diagnose.py": "8568c9177263eae7362a7313d44265b99e49e5a8235f02f06fcdc4e7f4d1e07a",
+    "joint_power\\postdecision\\encoding.py": "b9be497bfe6efcf486fac6035e594fb389d40bcaffe16c09a8412090286dce80",
+    "joint_power\\postdecision\\test_encoding.py": "061b756b92c31cd579fe640c5d6a382d900ad54444bfbafa2f90a6bff0bbdeed",
+    "joint_power\\postdecision\\__init__.py": "c1a439acbcc6b0bf7b603094315eacfd602b17dfe7a9d919bdaf70d6f0c198a8",
+    "joint_power\\postdecision\\PLAN.md": "b7349be663d4603934b9c1ba4c0fa5ac10109bc2a1b291045ab8206ba1f39a95",
+    "results\\joint_power_20260922_phase2b\\calibration\\selected.pt": "c218e90d6c5bb95ab70a02631db429cfd6168251146b6cbbb752303f8e46786b",
+    "results\\joint_power_20260922_phase2b\\seed11\\selected.pt": "78104e5234527857e2877dfb55d8d845fb685f86e131205212be85d35839427a",
+    "results\\joint_power_20260922_phase2b\\seed22\\selected.pt": "c823caffdd320666f31a0a18e6d441da660442d3956244ef2b4fc5bed08879a0",
+    "joint_power\\model.py": "b537cb066563c4e32975d5f7e1584c09c7a5c081707c84cf9be96b2b5f112106"
+  },
+  "stream": 3109220000,
+  "scope": "Training diagnosis, not independent evaluation"
+}

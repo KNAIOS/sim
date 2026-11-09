@@ -1,0 +1,40 @@
+{
+  "gate": {
+    "passed": false,
+    "nominal_saving": -0.0011626954057502026,
+    "reference": "PRS budget",
+    "reference_energy_j": 121.04892476816428,
+    "per_seed": {
+      "11": {
+        "nominal_energy_j": 121.39625626878215,
+        "outage": [
+          0.0,
+          0.0,
+          0.03928571428571428
+        ]
+      },
+      "22": {
+        "nominal_energy_j": 120.98307932494431,
+        "outage": [
+          0.0,
+          0.0,
+          0.04523809523809523
+        ]
+      }
+    },
+    "inference_domain_ablation_only": true,
+    "not_physical_minimum_evidence": true,
+    "R1_closed": false
+  },
+  "episodes": 132,
+  "physical_slots": 18480,
+  "max_physical_errors": {
+    "rate_mbps": 6.195932655828074e-12,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "original_reference_unchanged": true
+}

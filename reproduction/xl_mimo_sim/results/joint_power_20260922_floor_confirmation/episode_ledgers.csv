@@ -1,0 +1,181 @@
+method,seed,scenario,trajectory,parameter,final_failed,pathwise_target_exceeded
+Floor Value,11,0,0,0.1,10,0
+Floor Myopic,11,0,0,0.1,5,0
+Value,11,0,0,0.1,10,0
+Fixed-price Value,11,0,0,4.0,2,0
+Floor Value,22,0,0,0.1,14,0
+Floor Myopic,22,0,0,0.1,14,0
+Value,22,0,0,0.1,14,0
+Fixed-price Value,22,0,0,4.0,4,0
+PRS original,0,0,0,0.05,0,0
+PRS budget,0,0,0,1.0,0,0
+Raw full,0,0,0,0.05,34,1
+Raw coarse,0,0,0,0.0,42,1
+Full power,0,0,0,0.05,0,0
+Raw budget,0,0,0,0.0,34,1
+Floor Raw budget,0,0,0,0.0,34,1
+Floor Value,11,0,1,0.1,8,0
+Floor Myopic,11,0,1,0.1,7,0
+Value,11,0,1,0.1,8,0
+Fixed-price Value,11,0,1,4.0,7,0
+Floor Value,22,0,1,0.1,8,0
+Floor Myopic,22,0,1,0.1,14,0
+Value,22,0,1,0.1,8,0
+Fixed-price Value,22,0,1,4.0,9,0
+PRS original,0,0,1,0.05,0,0
+PRS budget,0,0,1,1.0,0,0
+Raw full,0,0,1,0.05,24,1
+Raw coarse,0,0,1,0.0,18,0
+Full power,0,0,1,0.05,0,0
+Raw budget,0,0,1,0.0,24,1
+Floor Raw budget,0,0,1,0.0,24,1
+Floor Value,11,0,2,0.1,18,0
+Floor Myopic,11,0,2,0.1,22,1
+Value,11,0,2,0.1,18,0
+Fixed-price Value,11,0,2,4.0,23,1
+Floor Value,22,0,2,0.1,16,0
+Floor Myopic,22,0,2,0.1,21,0
+Value,22,0,2,0.1,16,0
+Fixed-price Value,22,0,2,4.0,16,0
+PRS original,0,0,2,0.05,0,0
+PRS budget,0,0,2,1.0,0,0
+Raw full,0,0,2,0.05,21,0
+Raw coarse,0,0,2,0.0,18,0
+Full power,0,0,2,0.05,0,0
+Raw budget,0,0,2,0.0,21,0
+Floor Raw budget,0,0,2,0.0,21,0
+Floor Value,11,0,3,0.1,2,0
+Floor Myopic,11,0,3,0.1,5,0
+Value,11,0,3,0.1,2,0
+Fixed-price Value,11,0,3,4.0,0,0
+Floor Value,22,0,3,0.1,0,0
+Floor Myopic,22,0,3,0.1,3,0
+Value,22,0,3,0.1,0,0
+Fixed-price Value,22,0,3,4.0,0,0
+PRS original,0,0,3,0.05,0,0
+PRS budget,0,0,3,1.0,0,0
+Raw full,0,0,3,0.05,9,0
+Raw coarse,0,0,3,0.0,7,0
+Full power,0,0,3,0.05,0,0
+Raw budget,0,0,3,0.0,9,0
+Floor Raw budget,0,0,3,0.0,9,0
+Floor Value,11,1,0,0.1,8,0
+Floor Myopic,11,1,0,0.1,8,0
+Value,11,1,0,0.1,8,0
+Fixed-price Value,11,1,0,4.0,0,0
+Floor Value,22,1,0,0.1,11,0
+Floor Myopic,22,1,0,0.1,2,0
+Value,22,1,0,0.1,11,0
+Fixed-price Value,22,1,0,4.0,5,0
+PRS original,0,1,0,0.05,0,0
+PRS budget,0,1,0,1.0,6,0
+Raw full,0,1,0,0.05,52,1
+Raw coarse,0,1,0,0.0,18,0
+Full power,0,1,0,0.05,0,0
+Raw budget,0,1,0,0.0,52,1
+Floor Raw budget,0,1,0,0.0,52,1
+Floor Value,11,1,1,0.1,16,0
+Floor Myopic,11,1,1,0.1,16,0
+Value,11,1,1,0.1,16,0
+Fixed-price Value,11,1,1,4.0,0,0
+Floor Value,22,1,1,0.1,9,0
+Floor Myopic,22,1,1,0.1,9,0
+Value,22,1,1,0.1,9,0
+Fixed-price Value,22,1,1,4.0,0,0
+PRS original,0,1,1,0.05,0,0
+PRS budget,0,1,1,1.0,6,0
+Raw full,0,1,1,0.05,70,1
+Raw coarse,0,1,1,0.0,27,1
+Full power,0,1,1,0.05,0,0
+Raw budget,0,1,1,0.0,70,1
+Floor Raw budget,0,1,1,0.0,70,1
+Floor Value,11,1,2,0.1,6,0
+Floor Myopic,11,1,2,0.1,6,0
+Value,11,1,2,0.1,6,0
+Fixed-price Value,11,1,2,4.0,0,0
+Floor Value,22,1,2,0.1,7,0
+Floor Myopic,22,1,2,0.1,22,1
+Value,22,1,2,0.1,7,0
+Fixed-price Value,22,1,2,4.0,1,0
+PRS original,0,1,2,0.05,0,0
+PRS budget,0,1,2,1.0,0,0
+Raw full,0,1,2,0.05,4,0
+Raw coarse,0,1,2,0.0,4,0
+Full power,0,1,2,0.05,0,0
+Raw budget,0,1,2,0.0,4,0
+Floor Raw budget,0,1,2,0.0,4,0
+Floor Value,11,1,3,0.1,23,1
+Floor Myopic,11,1,3,0.1,23,1
+Value,11,1,3,0.1,23,1
+Fixed-price Value,11,1,3,4.0,26,1
+Floor Value,22,1,3,0.1,25,1
+Floor Myopic,22,1,3,0.1,23,1
+Value,22,1,3,0.1,25,1
+Fixed-price Value,22,1,3,4.0,20,0
+PRS original,0,1,3,0.05,0,0
+PRS budget,0,1,3,1.0,0,0
+Raw full,0,1,3,0.05,39,1
+Raw coarse,0,1,3,0.0,47,1
+Full power,0,1,3,0.05,0,0
+Raw budget,0,1,3,0.0,34,1
+Floor Raw budget,0,1,3,0.0,34,1
+Floor Value,11,2,0,0.1,35,1
+Floor Myopic,11,2,0,0.1,33,1
+Value,11,2,0,0.1,35,1
+Fixed-price Value,11,2,0,4.0,39,1
+Floor Value,22,2,0,0.1,41,1
+Floor Myopic,22,2,0,0.1,27,1
+Value,22,2,0,0.1,41,1
+Fixed-price Value,22,2,0,4.0,31,1
+PRS original,0,2,0,0.05,10,0
+PRS budget,0,2,0,1.0,10,0
+Raw full,0,2,0,0.05,61,1
+Raw coarse,0,2,0,0.0,50,1
+Full power,0,2,0,0.05,4,0
+Raw budget,0,2,0,0.0,88,1
+Floor Raw budget,0,2,0,0.0,88,1
+Floor Value,11,2,1,0.1,18,0
+Floor Myopic,11,2,1,0.1,20,0
+Value,11,2,1,0.1,18,0
+Fixed-price Value,11,2,1,4.0,8,0
+Floor Value,22,2,1,0.1,14,0
+Floor Myopic,22,2,1,0.1,21,0
+Value,22,2,1,0.1,14,0
+Fixed-price Value,22,2,1,4.0,7,0
+PRS original,0,2,1,0.05,0,0
+PRS budget,0,2,1,1.0,0,0
+Raw full,0,2,1,0.05,46,1
+Raw coarse,0,2,1,0.0,41,1
+Full power,0,2,1,0.05,0,0
+Raw budget,0,2,1,0.0,44,1
+Floor Raw budget,0,2,1,0.0,44,1
+Floor Value,11,2,2,0.1,10,0
+Floor Myopic,11,2,2,0.1,8,0
+Value,11,2,2,0.1,10,0
+Fixed-price Value,11,2,2,4.0,0,0
+Floor Value,22,2,2,0.1,11,0
+Floor Myopic,22,2,2,0.1,14,0
+Value,22,2,2,0.1,11,0
+Fixed-price Value,22,2,2,4.0,3,0
+PRS original,0,2,2,0.05,3,0
+PRS budget,0,2,2,1.0,2,0
+Raw full,0,2,2,0.05,87,1
+Raw coarse,0,2,2,0.0,27,1
+Full power,0,2,2,0.05,0,0
+Raw budget,0,2,2,0.0,87,1
+Floor Raw budget,0,2,2,0.0,87,1
+Floor Value,11,2,3,0.1,21,0
+Floor Myopic,11,2,3,0.1,21,0
+Value,11,2,3,0.1,21,0
+Fixed-price Value,11,2,3,4.0,1,0
+Floor Value,22,2,3,0.1,9,0
+Floor Myopic,22,2,3,0.1,9,0
+Value,22,2,3,0.1,9,0
+Fixed-price Value,22,2,3,4.0,2,0
+PRS original,0,2,3,0.05,1,0
+PRS budget,0,2,3,1.0,1,0
+Raw full,0,2,3,0.05,47,1
+Raw coarse,0,2,3,0.0,25,1
+Full power,0,2,3,0.05,0,0
+Raw budget,0,2,3,0.0,48,1
+Floor Raw budget,0,2,3,0.0,48,1

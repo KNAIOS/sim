@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "PRS-added",
+    "seed": 11,
+    "epoch": 20,
+    "validation_prediction_loss": 10.980788230895996
+  },
+  {
+    "arm": "PRS-added",
+    "seed": 22,
+    "epoch": 20,
+    "validation_prediction_loss": 11.235635757446289
+  },
+  {
+    "arm": "Visitation-added",
+    "seed": 11,
+    "epoch": 20,
+    "validation_prediction_loss": 11.152545928955078
+  },
+  {
+    "arm": "Visitation-added",
+    "seed": 22,
+    "epoch": 20,
+    "validation_prediction_loss": 11.555211067199707
+  }
+]

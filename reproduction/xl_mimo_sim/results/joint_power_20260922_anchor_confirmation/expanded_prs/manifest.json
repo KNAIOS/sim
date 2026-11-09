@@ -1,0 +1,12 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\anchor_confirmation\\domain_prs.py": "8ec71d3c7dd024f17472eaf2526bc87ac07dbad37eb2d7313fe186419202f4a1",
+    "joint_power\\anchor_confirmation\\DOMAIN_PLAN.md": "9d7cc670da8e51db16ddf3024b65838b4346b1ce840d3aab5338280a09ebc5ad",
+    "results\\joint_power_20260922_anchor_confirmation\\output_hashes.json": "b96d5b55e722e6e9156203b11a1497018f220efbc11f2fbc2dff15d62fff9e1a"
+  },
+  "stream": 4409220000,
+  "action_domain": "all counts1..16",
+  "post_confirmation_baseline_addition": true,
+  "retuned": false,
+  "host_environment_changed": false
+}

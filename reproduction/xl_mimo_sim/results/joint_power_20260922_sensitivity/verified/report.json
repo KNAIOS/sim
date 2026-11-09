@@ -1,0 +1,14 @@
+{
+  "episodes": 984,
+  "slots": 137760,
+  "independent_traces": 24,
+  "summary_rows": 123,
+  "paired_rows": 108,
+  "all_slot_aggregates_verified": true,
+  "default_baseline_equivalence_tests_passed": 4,
+  "fixture_not_performance_data": true,
+  "audit_source_sha256": "9ee483a130b95853f7cd7629fbba5b79ebaa611ba7f486076896fc7ad7f2e924",
+  "preserved_hashes": 13,
+  "R1_closed": false,
+  "R3_closed": false
+}

@@ -1,0 +1,30 @@
+{
+  "independent_channel_demand_pairs": 40,
+  "load_cases": 80,
+  "episodes": 720,
+  "slots": 100800,
+  "maximum_errors": {
+    "rate_mbps": 8.72546479513403e-12,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "allocator_modes": {
+    "full_targets": 81842,
+    "preserve_service": 17494,
+    "equal_fallback": 1464
+  },
+  "all_results_retained": true,
+  "no_parameter_selection": true,
+  "R1_closed": false,
+  "R3_policy_evaluation_completed": true,
+  "limitations": [
+    "compact far-field array, no XL visibility-region calibration",
+    "fixed topology and large-scale parameters, Doppler evolution within one CIR",
+    "centre-frequency policy features, current active wideband CSI for physical floor",
+    "analytical circuit/baseband power, not measured hardware energy",
+    "two training seeds, no multiplicity-adjusted or per-episode safety guarantee"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "7472c09d625831f32dca802e785072e34f78c41d47aa08908f31dd88a06e5cc7",
+  "post_hoc_diagnostic": true,
+  "policy_changed": false,
+  "interpretation": "Single first action then PRS, not repeated learned control; realized counts are noisy labels, not true conditional expectations; no calibration guarantee",
+  "uses_training_labels_only_for_diagnosis": true
+}

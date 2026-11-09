@@ -1,0 +1,118 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\risk_only\\collect.py": "82b6d286e0fa7b75cefa15180260f3ec355171fd282aed2f9b6acdec7b1e85aa",
+    "joint_power\\risk_only\\PLAN.md": "10e5354db98d6f5590d9cf973268edefd3957e5d4c280d07cbf481c2750e939c",
+    "joint_power\\strong_headroom\\study.py": "a14521d51e5b8ced9af1491efce3ac3660184976328d29d1743554ef0cc743e6",
+    "joint_power\\baseline_anchor\\control.py": "a55b523bc03357f965699689fddd212a9f4dda212330551c59e954c189ecf9d3",
+    "results\\joint_power_20260922_min4_high_confirmation\\output_hashes.json": "2d3eebdeb2701dfd5178b7283b244063c2498177b082b609b19cbad30802202e"
+  },
+  "behavior_checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "streams": {
+    "train": [
+      5409220000,
+      8
+    ],
+    "validation": [
+      5509220000,
+      4
+    ]
+  },
+  "root_slots": [
+    0,
+    36,
+    72,
+    108
+  ],
+  "reference": "Expanded PRS minimum1 fixed0.05",
+  "config": {
+    "mode": "validation",
+    "carrier_ghz": 14.0,
+    "bandwidth_mhz": 40.0,
+    "noise_figure_db": 7.0,
+    "subarrays": 16,
+    "antennas_per_subarray": 8,
+    "users": 3,
+    "array_aperture_m": 12.0,
+    "clusters_per_user": 4,
+    "slot_s": 0.05,
+    "episode_steps": 140,
+    "horizon": 8,
+    "visibility_discount": 0.93,
+    "uncertainty_penalty": 0.65,
+    "scan_period": 0,
+    "pilot_fraction": 0.015,
+    "symbols_per_processing_block": 200.0,
+    "wake_delay_slots": 4,
+    "speeds_mps": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "wake_delays": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "train_episodes": 110,
+    "test_trajectories": 20,
+    "controller_seeds": [
+      11,
+      22,
+      33
+    ],
+    "outage_target": 0.05,
+    "demand_levels_mbps": [
+      360.0,
+      460.0,
+      560.0
+    ],
+    "tx_power_w": 1.2,
+    "pa_efficiency": 0.4,
+    "fixed_power_w": 8.0,
+    "active_subarray_w": 2.0,
+    "waking_subarray_w": 1.2,
+    "sleeping_subarray_w": 0.05,
+    "wake_energy_j": 0.1,
+    "sleep_energy_j": 0.01,
+    "scan_energy_j_per_subarray": 0.002,
+    "compute_efficiency_gflop_w": 75.0,
+    "rl_hidden": 64,
+    "rl_lr": 0.0004,
+    "rl_gamma": 0.98,
+    "replay_size": 20000,
+    "epsilon_start": 0.8,
+    "epsilon_end": 0.04,
+    "dual_initial": 8.0,
+    "dual_lr": 5.0,
+    "seed": 2026
+  },
+  "host_environment_changed": false
+}

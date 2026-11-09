@@ -1,0 +1,33 @@
+{
+  "original_selected": [
+    {
+      "method": "MC",
+      "seed": 11,
+      "epoch": 0,
+      "price": 4.0,
+      "key": [
+        0.0,
+        0.0,
+        0.421616792678833
+      ]
+    },
+    {
+      "method": "MC",
+      "seed": 22,
+      "epoch": 0,
+      "price": 4.0,
+      "key": [
+        0.0,
+        0.0,
+        0.421616792678833
+      ]
+    }
+  ],
+  "causal_probe_passed": false,
+  "closed_loop_evaluation_launched": false,
+  "reason": "Both prespecified probes selected their unchanged baseline; do not run redundant development episodes or relabel a diagnostic intervention as a policy win.",
+  "exploratory_variant": "Clipping negative predicted risk credit is a post-hoc diagnostic only; not a validated policy and no safety guarantee.",
+  "source_sha256": "75e92732be9bcb13d48d2f04e855c6df8853e5302dda178cd94d857d3f91a0a4",
+  "validation_states_per_scenario": 32,
+  "independent_validation_trajectories_per_scenario": 4
+}

@@ -1,0 +1,55 @@
+{
+  "summary": [
+    {
+      "scenario": 0,
+      "trajectories": 4,
+      "model_seeds": 2,
+      "roots": 280,
+      "energy_gap_j": -23.32304313059418,
+      "failed_gap": 6.375,
+      "sum_predicted_energy_advantage_j": -18.74443591892535,
+      "sum_predicted_failed_advantage": 1.0243941419365683,
+      "selected_energy_mae_j": 0.3969501192058991,
+      "selected_failed_mae": 0.42278114418234053,
+      "fraction_changed": 0.9571428571428572,
+      "fraction_predicted_energy_saving_but_actual_cost": 0.02142857142857143,
+      "fraction_risk_underprediction": 0.07857142857142857
+    },
+    {
+      "scenario": 1,
+      "trajectories": 4,
+      "model_seeds": 2,
+      "roots": 280,
+      "energy_gap_j": -0.1593119520066928,
+      "failed_gap": 16.625,
+      "sum_predicted_energy_advantage_j": 4.47037173249122,
+      "sum_predicted_failed_advantage": 6.283733042072242,
+      "selected_energy_mae_j": 0.3824135426148028,
+      "selected_failed_mae": 0.7648933471979505,
+      "fraction_changed": 0.9285714285714286,
+      "fraction_predicted_energy_saving_but_actual_cost": 0.017857142857142856,
+      "fraction_risk_underprediction": 0.21071428571428572
+    },
+    {
+      "scenario": 2,
+      "trajectories": 4,
+      "model_seeds": 2,
+      "roots": 280,
+      "energy_gap_j": 8.057653588049014,
+      "failed_gap": 13.75,
+      "sum_predicted_energy_advantage_j": 1.6786432422154307,
+      "sum_predicted_failed_advantage": -16.99955505084654,
+      "selected_energy_mae_j": 1.5518003813832237,
+      "selected_failed_mae": 1.2960477003690487,
+      "fraction_changed": 0.8642857142857143,
+      "fraction_predicted_energy_saving_but_actual_cost": 0.11071428571428571,
+      "fraction_risk_underprediction": 0.3892857142857143
+    }
+  ],
+  "selected_policy_unchanged": true,
+  "max_energy_identity_error": 1.1368683772161603e-13,
+  "max_failed_identity_error": 0,
+  "actual_episodes_match_frozen": true,
+  "diagnostic_only": true,
+  "limitation": "Labels use future trace offline; root states are correlated actual-policy visits, not independent experiments or deployable clairvoyant choices"
+}

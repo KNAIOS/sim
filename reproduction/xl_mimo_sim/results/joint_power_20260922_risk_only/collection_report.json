@@ -1,0 +1,20 @@
+{
+  "unique_training_traces": 24,
+  "unique_validation_traces": 12,
+  "behavior_episodes": 72,
+  "training_roots": 192,
+  "validation_roots": 96,
+  "candidate_entries": 4896,
+  "physical_slot_checks": 155960,
+  "maximum_errors": {
+    "rate_mbps": 3.3935521059902385e-11,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "reference_suffixes_verified": true,
+  "train_validation_disjoint": true,
+  "outcome_labels_not_deployed": true
+}

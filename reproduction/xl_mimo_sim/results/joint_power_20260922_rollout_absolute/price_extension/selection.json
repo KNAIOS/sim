@@ -1,0 +1,92 @@
+[
+  {
+    "method": "Full power",
+    "seed": 0,
+    "parameter": 0.05,
+    "validation_key": [
+      0.0,
+      286.17148672716974,
+      0.0
+    ]
+  },
+  {
+    "method": "PRS original",
+    "seed": 0,
+    "parameter": 0.05,
+    "validation_key": [
+      0.0,
+      134.28007047928597,
+      0.007142857142857142
+    ]
+  },
+  {
+    "method": "MC signed",
+    "seed": 11,
+    "parameter": 4.0,
+    "validation_key": [
+      0.0,
+      150.29314457187942,
+      0.0488095238095238
+    ]
+  },
+  {
+    "method": "MC absolute",
+    "seed": 11,
+    "parameter": 4.0,
+    "validation_key": [
+      0.0,
+      133.49431600804726,
+      0.03392857142857143
+    ]
+  },
+  {
+    "method": "MC signed",
+    "seed": 22,
+    "parameter": 16.0,
+    "validation_key": [
+      0.0,
+      142.01884799425417,
+      0.038690476190476185
+    ]
+  },
+  {
+    "method": "MC absolute",
+    "seed": 22,
+    "parameter": 2.0,
+    "validation_key": [
+      0.0,
+      131.07983728004223,
+      0.036904761904761905
+    ]
+  },
+  {
+    "method": "PRS tuned",
+    "seed": 0,
+    "parameter": 0.05,
+    "validation_key": [
+      0.0,
+      134.28007047928597,
+      0.007142857142857142
+    ]
+  },
+  {
+    "method": "Raw full",
+    "seed": 0,
+    "parameter": 0.05,
+    "validation_key": [
+      0.14285714285714285,
+      101.20412491290102,
+      0.19285714285714284
+    ]
+  },
+  {
+    "method": "Raw coarse",
+    "seed": 0,
+    "parameter": 0.0,
+    "validation_key": [
+      0.06309523809523808,
+      110.16476080270319,
+      0.11309523809523808
+    ]
+  }
+]

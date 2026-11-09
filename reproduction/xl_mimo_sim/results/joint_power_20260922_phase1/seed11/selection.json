@@ -1,0 +1,13 @@
+{
+  "seed": 11,
+  "selected_episode": 120,
+  "validation_key": [
+    0.0,
+    149.88485292176114,
+    0.039880952380952385
+  ],
+  "training_episodes": 120,
+  "updates": 4137,
+  "feature_width": 229,
+  "parameters": 18945
+}

@@ -1,0 +1,13 @@
+split,behavior,scenario,states,below4,minimum_active,mean_active
+train,prs,0,64,0,4.0,5.5
+train,prs,1,64,0,4.0,5.546875
+train,prs,2,64,0,4.0,7.171875
+train,learned,0,64,45,1.0,4.765625
+train,learned,1,64,33,1.0,5.046875
+train,learned,2,64,12,2.0,8.09375
+validation,prs,0,32,0,4.0,5.5
+validation,prs,1,32,0,4.0,5.59375
+validation,prs,2,32,0,4.0,8.65625
+validation,learned,0,32,23,1.0,4.625
+validation,learned,1,32,12,1.0,6.1875
+validation,learned,2,32,2,3.0,8.21875

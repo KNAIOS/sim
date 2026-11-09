@@ -1,0 +1,62 @@
+{
+  "episodes": 168,
+  "independent_trajectories": 12,
+  "slots": 23520,
+  "errors": {
+    "rate_mbps": 3.808509063674137e-12,
+    "energy_j": 0.0,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "episode_energy_j": 6.821210263296962e-13
+  },
+  "hold_diagnostic": {
+    "events": 168,
+    "independent_trajectories": 12,
+    "ci95_energy_hold_minus_proposed_j": [
+      0.772467642651246,
+      1.9471409341756338
+    ],
+    "ci95_outage_hold_minus_proposed_pp": [
+      -1.7021316102198456,
+      0.08104127652933839
+    ],
+    "ci95_fraction_hold_saves_without_more_outage": [
+      0.12345679012345678,
+      0.2823529411764706
+    ],
+    "scope": "Overlapping conditional events clustered by whole shared trajectory, not policy confirmation"
+  },
+  "outcome": {
+    "passed": false,
+    "per_seed_outage": {
+      "11": [
+        0.0,
+        0.002976190476190476,
+        0.05357142857142857
+      ],
+      "22": [
+        0.0,
+        0.008928571428571428,
+        0.05714285714285714
+      ]
+    },
+    "nominal_energy_by_seed": {
+      "11": 133.27434048210716,
+      "22": 124.16065725233172
+    },
+    "nominal_prs_energy": 122.97435857714427,
+    "nominal_saving_vs_prs": -0.046701933285322905,
+    "selected_episodes": [
+      160,
+      80
+    ],
+    "independent_confirmation": false,
+    "multi_step_calibrated_search_confirmation_missing": true,
+    "manuscript_replacement_authorized_by_result": false
+  },
+  "source_sha256": "e2a25f5e6781318265de0f7115cd10a0b718000389a694b85a83c58cf05de391",
+  "old_sources_preserved": true,
+  "scope": "Physical accounting and descriptive evidence, not a scientific success certificate"
+}

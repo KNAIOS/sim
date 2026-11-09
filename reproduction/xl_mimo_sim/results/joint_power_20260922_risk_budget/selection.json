@@ -1,0 +1,102 @@
+[
+  {
+    "method": "Value PRS-added",
+    "seed": 11,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      130.53099442533693,
+      0.04583333333333333
+    ]
+  },
+  {
+    "method": "Myopic PRS-added",
+    "seed": 11,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      129.84550234901855,
+      0.04345238095238095
+    ]
+  },
+  {
+    "method": "Value PRS-added",
+    "seed": 22,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      125.59825017986257,
+      0.04404761904761905
+    ]
+  },
+  {
+    "method": "Myopic PRS-added",
+    "seed": 22,
+    "parameter": 0.0,
+    "validation_key": [
+      0.0,
+      205.90062196406802,
+      0.010714285714285714
+    ]
+  },
+  {
+    "method": "Value Visitation-added",
+    "seed": 11,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      129.50009559440235,
+      0.03988095238095238
+    ]
+  },
+  {
+    "method": "Myopic Visitation-added",
+    "seed": 11,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      132.3430307990118,
+      0.04285714285714285
+    ]
+  },
+  {
+    "method": "Value Visitation-added",
+    "seed": 22,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      128.77691103446833,
+      0.042261904761904764
+    ]
+  },
+  {
+    "method": "Myopic Visitation-added",
+    "seed": 22,
+    "parameter": 0.1,
+    "validation_key": [
+      0.0,
+      126.06245795306177,
+      0.049999999999999996
+    ]
+  },
+  {
+    "method": "Raw budget",
+    "seed": 0,
+    "parameter": 0.0,
+    "validation_key": [
+      0.1464285714285714,
+      100.71291960691362,
+      0.19642857142857142
+    ]
+  },
+  {
+    "method": "PRS budget",
+    "seed": 0,
+    "parameter": 1.0,
+    "validation_key": [
+      0.0,
+      132.83284205760282,
+      0.01726190476190476
+    ]
+  }
+]

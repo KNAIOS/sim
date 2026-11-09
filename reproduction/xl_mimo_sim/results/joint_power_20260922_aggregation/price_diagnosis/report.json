@@ -1,0 +1,46 @@
+{
+  "post_hoc_validation_diagnostic": true,
+  "original_gate_preserved": true,
+  "formal_policy_changed": false,
+  "source_sha256": "c221f597a93cbf45ce48efb5a3361f1aae774cc957c7816b8f1db48e1d48dac3",
+  "nominal_at_price_one": [
+    {
+      "method": "Visitation-added",
+      "seed": 11,
+      "scenario": 1,
+      "price": 1.0,
+      "energy_j": 107.14365719219667,
+      "outage": 0.02678571428571428
+    },
+    {
+      "method": "Visitation-added",
+      "seed": 22,
+      "scenario": 1,
+      "price": 1.0,
+      "energy_j": 101.94650981531805,
+      "outage": 0.01607142857142857
+    }
+  ],
+  "high_at_price_one": [
+    {
+      "method": "Visitation-added",
+      "seed": 11,
+      "scenario": 2,
+      "price": 1.0,
+      "energy_j": 141.96189852341232,
+      "outage": 0.08869047619047618
+    },
+    {
+      "method": "Visitation-added",
+      "seed": 22,
+      "scenario": 2,
+      "price": 1.0,
+      "energy_j": 134.46890973615112,
+      "outage": 0.10178571428571427
+    }
+  ],
+  "nominal_mean_energy_price_one": 104.54508350375735,
+  "nominal_prs_energy": 119.9814137008091,
+  "nominal_saving_price_one": 0.12865601196819076,
+  "limitation": "Scenario-specific hindsight parameter selection is a relaxation, not a causal adaptive controller or independent result. Fixed price1 is diagnostic, not a newly selected successful controller. Do not feed hidden speed/load labels at inference."
+}

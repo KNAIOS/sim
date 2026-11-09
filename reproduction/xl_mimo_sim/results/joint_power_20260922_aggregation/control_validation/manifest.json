@@ -1,0 +1,43 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\aggregation\\control.py": "ac0e5d39a40ba1b737d08278393ef0e67c53b904c7cd0e5888af59669e1c9726",
+    "joint_power\\aggregation\\PLAN.md": "722f08ca5af18bdc537ba9c8ab14ddd3d2d1fcc5ed48e1920d05a7b9f440566f",
+    "results\\joint_power_20260922_aggregation\\training\\output_hashes.json": "4934e98eda8c8c051724733bb4189637b3d085d380ba2bf477a66f202bfd80aa",
+    "results\\joint_power_20260922_rollout_absolute\\price_extension\\output_hashes.json": "ee651b8826a970750826e4327a5ffed7a86ed640a4ea4963537e499d09486ce2"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "stream": 3909220000,
+  "previously_examined_validation": true,
+  "prices": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ]
+}

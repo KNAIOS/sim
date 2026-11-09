@@ -1,0 +1,21 @@
+{
+  "episodes": 720,
+  "slot_aggregates_checked": 100800,
+  "decisions_checked": 25200,
+  "cached_example_slots_independently_replayed": 5040,
+  "replay_errors": {
+    "rate_mbps": 8.526512829121202e-13,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "table_rows": {
+    "summary": 32,
+    "paired": 56
+  },
+  "frozen_hashes_checked": 224,
+  "audit_source_sha256": "132a650756df6362b010e57cae050f00a19e5af8cbb5eae3d0b1aa9cad0a3112",
+  "no_result_changes": true
+}

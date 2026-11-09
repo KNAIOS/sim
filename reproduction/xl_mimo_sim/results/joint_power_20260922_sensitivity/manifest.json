@@ -1,0 +1,63 @@
+{
+  "input_hashes": {
+    "joint_power\\sensitivity\\study.py": "1ec577346de6e2ce42959754570b5530ee77a3dafd39a2bc24867b7e11e13d78",
+    "joint_power\\sensitivity\\test_study.py": "5ee02b1198bdaadc6ddbfb5d1bcaecacded9a90351c519c5cef5eba4f9646b6f",
+    "joint_power\\sensitivity\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "joint_power\\sensitivity\\PLAN.md": "6b83a260e37f12c2b69e7a6a880c465afae95504032c5f6d028adf0144d54685",
+    "joint_power\\matched_four\\control.py": "384532a91a09a2d5ad82baac1636e4d5e4166a3e6223a1e5d432a524df357343",
+    "joint_power\\anchor_confirmation\\domain_prs.py": "8ec71d3c7dd024f17472eaf2526bc87ac07dbad37eb2d7313fe186419202f4a1",
+    "results\\joint_power_20260922_risk_only\\training\\output_hashes.json": "b6d5d5390869e61071eb0d91823eb52d37443bbee5e851ab054fb8a93c958f58"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "settings": [
+    [
+      0.65,
+      0.93
+    ],
+    [
+      0.0,
+      0.93
+    ],
+    [
+      1.3,
+      0.93
+    ],
+    [
+      0.65,
+      0.8
+    ],
+    [
+      0.65,
+      1.0
+    ]
+  ],
+  "stream": 5709220000,
+  "trajectories_per_condition": 8,
+  "primary": "Value4",
+  "unrestricted_domain_ablation": "Value1",
+  "alpha": 0.1,
+  "no_retraining_or_selection": true,
+  "full_array_once_per_trace": true,
+  "host_environment_changed": false
+}

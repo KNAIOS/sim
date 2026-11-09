@@ -1,0 +1,53 @@
+{
+  "training_manifest_and_output_hashes_verified": 35,
+  "recursive_previous_evidence_intact": true,
+  "original_manuscript_hashes_unchanged": true,
+  "normalization_training_only": true,
+  "selected_checkpoints": [
+    {
+      "arm": "risk_only",
+      "seed": 11,
+      "epoch": 0,
+      "action_failure_count_span": 0.0,
+      "all_input_logit_span": 0.0,
+      "head_weights_nonzero": 0,
+      "energy_difference_max_abs": 0.0,
+      "checkpoint_sha256": "856bddf4b8de257892c7cceea8aa0e91735aedf4fd03f780bcd54227c9580daf"
+    },
+    {
+      "arm": "risk_only",
+      "seed": 22,
+      "epoch": 0,
+      "action_failure_count_span": 0.0,
+      "all_input_logit_span": 0.0,
+      "head_weights_nonzero": 0,
+      "energy_difference_max_abs": 0.0,
+      "checkpoint_sha256": "22c44b849dcbda3c6c21e30c1b7650307a76f6b691ebc2d2f2096067928a1f87"
+    },
+    {
+      "arm": "joint",
+      "seed": 11,
+      "epoch": 0,
+      "action_failure_count_span": 0.0,
+      "all_input_logit_span": 0.0,
+      "head_weights_nonzero": 0,
+      "energy_difference_max_abs": 0.0,
+      "checkpoint_sha256": "d2a1b5aa9e32536eb4996bb4c796ea5bae4af677a5413d0c0d979bc75279af02"
+    },
+    {
+      "arm": "joint",
+      "seed": 22,
+      "epoch": 0,
+      "action_failure_count_span": 0.0,
+      "all_input_logit_span": 0.0,
+      "head_weights_nonzero": 0,
+      "energy_difference_max_abs": 0.0,
+      "checkpoint_sha256": "440a7cf963926169ac9e8f682294bc1b7f68f7eaac7b4f70d5f0c742032d1120"
+    }
+  ],
+  "all_selected_heads_input_independent": true,
+  "closed_loop_not_run": true,
+  "development_stream5609220000_unused": true,
+  "limitation": "Reference-return prediction fit only, not new energy savings. No evidence that dropping the energy head improves closed-loop control.",
+  "R1_closed": false
+}

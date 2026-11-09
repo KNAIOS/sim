@@ -1,0 +1,409 @@
+method,seed,scenario,trajectory,parameter,final_failed,pathwise_target_exceeded
+Energy Value,11,0,0,0.1,7,0
+Energy Value,22,0,0,0.1,11,0
+Empty Value,11,0,0,0.1,7,0
+Empty Value,22,0,0,0.1,11,0
+Energy Myopic,11,0,0,0.1,7,0
+Energy Myopic,22,0,0,0.1,6,0
+Floor Value,11,0,0,0.1,9,0
+Floor Value,22,0,0,0.1,15,0
+Fixed-price Value,11,0,0,4.0,0,0
+Fixed-price Value,22,0,0,4.0,0,0
+PRS original,0,0,0,0.05,0,0
+PRS budget,0,0,0,1.0,0,0
+Raw full,0,0,0,0.05,18,0
+Raw coarse,0,0,0,0.0,18,0
+Full power,0,0,0,0.05,0,0
+Empty Raw budget,0,0,0,0.0,18,0
+Energy Raw budget,0,0,0,0.0,18,0
+Energy Value,11,0,1,0.1,0,0
+Energy Value,22,0,1,0.1,0,0
+Empty Value,11,0,1,0.1,0,0
+Empty Value,22,0,1,0.1,0,0
+Energy Myopic,11,0,1,0.1,0,0
+Energy Myopic,22,0,1,0.1,0,0
+Floor Value,11,0,1,0.1,0,0
+Floor Value,22,0,1,0.1,0,0
+Fixed-price Value,11,0,1,4.0,0,0
+Fixed-price Value,22,0,1,4.0,0,0
+PRS original,0,0,1,0.05,0,0
+PRS budget,0,0,1,1.0,0,0
+Raw full,0,0,1,0.05,0,0
+Raw coarse,0,0,1,0.0,0,0
+Full power,0,0,1,0.05,0,0
+Empty Raw budget,0,0,1,0.0,0,0
+Energy Raw budget,0,0,1,0.0,0,0
+Energy Value,11,0,2,0.1,0,0
+Energy Value,22,0,2,0.1,1,0
+Empty Value,11,0,2,0.1,2,0
+Empty Value,22,0,2,0.1,0,0
+Energy Myopic,11,0,2,0.1,0,0
+Energy Myopic,22,0,2,0.1,0,0
+Floor Value,11,0,2,0.1,2,0
+Floor Value,22,0,2,0.1,0,0
+Fixed-price Value,11,0,2,4.0,0,0
+Fixed-price Value,22,0,2,4.0,0,0
+PRS original,0,0,2,0.05,0,0
+PRS budget,0,0,2,1.0,0,0
+Raw full,0,0,2,0.05,11,0
+Raw coarse,0,0,2,0.0,8,0
+Full power,0,0,2,0.05,0,0
+Empty Raw budget,0,0,2,0.0,11,0
+Energy Raw budget,0,0,2,0.0,11,0
+Energy Value,11,0,3,0.1,5,0
+Energy Value,22,0,3,0.1,11,0
+Empty Value,11,0,3,0.1,5,0
+Empty Value,22,0,3,0.1,11,0
+Energy Myopic,11,0,3,0.1,6,0
+Energy Myopic,22,0,3,0.1,4,0
+Floor Value,11,0,3,0.1,5,0
+Floor Value,22,0,3,0.1,11,0
+Fixed-price Value,11,0,3,4.0,0,0
+Fixed-price Value,22,0,3,4.0,0,0
+PRS original,0,0,3,0.05,0,0
+PRS budget,0,0,3,1.0,0,0
+Raw full,0,0,3,0.05,6,0
+Raw coarse,0,0,3,0.0,6,0
+Full power,0,0,3,0.05,0,0
+Empty Raw budget,0,0,3,0.0,6,0
+Energy Raw budget,0,0,3,0.0,6,0
+Energy Value,11,0,4,0.1,1,0
+Energy Value,22,0,4,0.1,2,0
+Empty Value,11,0,4,0.1,0,0
+Empty Value,22,0,4,0.1,3,0
+Energy Myopic,11,0,4,0.1,0,0
+Energy Myopic,22,0,4,0.1,1,0
+Floor Value,11,0,4,0.1,5,0
+Floor Value,22,0,4,0.1,1,0
+Fixed-price Value,11,0,4,4.0,0,0
+Fixed-price Value,22,0,4,4.0,0,0
+PRS original,0,0,4,0.05,0,0
+PRS budget,0,0,4,1.0,0,0
+Raw full,0,0,4,0.05,14,0
+Raw coarse,0,0,4,0.0,42,1
+Full power,0,0,4,0.05,0,0
+Empty Raw budget,0,0,4,0.0,17,0
+Energy Raw budget,0,0,4,0.0,17,0
+Energy Value,11,0,5,0.1,12,0
+Energy Value,22,0,5,0.1,5,0
+Empty Value,11,0,5,0.1,12,0
+Empty Value,22,0,5,0.1,5,0
+Energy Myopic,11,0,5,0.1,8,0
+Energy Myopic,22,0,5,0.1,10,0
+Floor Value,11,0,5,0.1,13,0
+Floor Value,22,0,5,0.1,5,0
+Fixed-price Value,11,0,5,4.0,12,0
+Fixed-price Value,22,0,5,4.0,3,0
+PRS original,0,0,5,0.05,0,0
+PRS budget,0,0,5,1.0,0,0
+Raw full,0,0,5,0.05,8,0
+Raw coarse,0,0,5,0.0,11,0
+Full power,0,0,5,0.05,0,0
+Empty Raw budget,0,0,5,0.0,10,0
+Energy Raw budget,0,0,5,0.0,10,0
+Energy Value,11,0,6,0.1,20,0
+Energy Value,22,0,6,0.1,21,0
+Empty Value,11,0,6,0.1,20,0
+Empty Value,22,0,6,0.1,21,0
+Energy Myopic,11,0,6,0.1,21,0
+Energy Myopic,22,0,6,0.1,19,0
+Floor Value,11,0,6,0.1,20,0
+Floor Value,22,0,6,0.1,25,1
+Fixed-price Value,11,0,6,4.0,15,0
+Fixed-price Value,22,0,6,4.0,20,0
+PRS original,0,0,6,0.05,0,0
+PRS budget,0,0,6,1.0,0,0
+Raw full,0,0,6,0.05,7,0
+Raw coarse,0,0,6,0.0,7,0
+Full power,0,0,6,0.05,0,0
+Empty Raw budget,0,0,6,0.0,7,0
+Energy Raw budget,0,0,6,0.0,7,0
+Energy Value,11,0,7,0.1,1,0
+Energy Value,22,0,7,0.1,0,0
+Empty Value,11,0,7,0.1,1,0
+Empty Value,22,0,7,0.1,0,0
+Energy Myopic,11,0,7,0.1,6,0
+Energy Myopic,22,0,7,0.1,6,0
+Floor Value,11,0,7,0.1,1,0
+Floor Value,22,0,7,0.1,0,0
+Fixed-price Value,11,0,7,4.0,1,0
+Fixed-price Value,22,0,7,4.0,0,0
+PRS original,0,0,7,0.05,0,0
+PRS budget,0,0,7,1.0,0,0
+Raw full,0,0,7,0.05,5,0
+Raw coarse,0,0,7,0.0,4,0
+Full power,0,0,7,0.05,0,0
+Empty Raw budget,0,0,7,0.0,4,0
+Energy Raw budget,0,0,7,0.0,4,0
+Energy Value,11,1,0,0.1,5,0
+Energy Value,22,1,0,0.1,6,0
+Empty Value,11,1,0,0.1,5,0
+Empty Value,22,1,0,0.1,14,0
+Energy Myopic,11,1,0,0.1,8,0
+Energy Myopic,22,1,0,0.1,11,0
+Floor Value,11,1,0,0.1,15,0
+Floor Value,22,1,0,0.1,13,0
+Fixed-price Value,11,1,0,4.0,0,0
+Fixed-price Value,22,1,0,4.0,5,0
+PRS original,0,1,0,0.05,0,0
+PRS budget,0,1,0,1.0,0,0
+Raw full,0,1,0,0.05,24,1
+Raw coarse,0,1,0,0.0,30,1
+Full power,0,1,0,0.05,0,0
+Empty Raw budget,0,1,0,0.0,29,1
+Energy Raw budget,0,1,0,0.0,29,1
+Energy Value,11,1,1,0.1,13,0
+Energy Value,22,1,1,0.1,22,1
+Empty Value,11,1,1,0.1,18,0
+Empty Value,22,1,1,0.1,17,0
+Energy Myopic,11,1,1,0.1,11,0
+Energy Myopic,22,1,1,0.1,2,0
+Floor Value,11,1,1,0.1,18,0
+Floor Value,22,1,1,0.1,17,0
+Fixed-price Value,11,1,1,4.0,10,0
+Fixed-price Value,22,1,1,4.0,10,0
+PRS original,0,1,1,0.05,0,0
+PRS budget,0,1,1,1.0,0,0
+Raw full,0,1,1,0.05,46,1
+Raw coarse,0,1,1,0.0,37,1
+Full power,0,1,1,0.05,0,0
+Empty Raw budget,0,1,1,0.0,40,1
+Energy Raw budget,0,1,1,0.0,40,1
+Energy Value,11,1,2,0.1,16,0
+Energy Value,22,1,2,0.1,21,0
+Empty Value,11,1,2,0.1,15,0
+Empty Value,22,1,2,0.1,21,0
+Energy Myopic,11,1,2,0.1,17,0
+Energy Myopic,22,1,2,0.1,17,0
+Floor Value,11,1,2,0.1,11,0
+Floor Value,22,1,2,0.1,13,0
+Fixed-price Value,11,1,2,4.0,0,0
+Fixed-price Value,22,1,2,4.0,3,0
+PRS original,0,1,2,0.05,0,0
+PRS budget,0,1,2,1.0,0,0
+Raw full,0,1,2,0.05,27,1
+Raw coarse,0,1,2,0.0,27,1
+Full power,0,1,2,0.05,0,0
+Empty Raw budget,0,1,2,0.0,28,1
+Energy Raw budget,0,1,2,0.0,28,1
+Energy Value,11,1,3,0.1,17,0
+Energy Value,22,1,3,0.1,25,1
+Empty Value,11,1,3,0.1,12,0
+Empty Value,22,1,3,0.1,27,1
+Energy Myopic,11,1,3,0.1,13,0
+Energy Myopic,22,1,3,0.1,18,0
+Floor Value,11,1,3,0.1,12,0
+Floor Value,22,1,3,0.1,13,0
+Fixed-price Value,11,1,3,4.0,9,0
+Fixed-price Value,22,1,3,4.0,11,0
+PRS original,0,1,3,0.05,0,0
+PRS budget,0,1,3,1.0,0,0
+Raw full,0,1,3,0.05,34,1
+Raw coarse,0,1,3,0.0,11,0
+Full power,0,1,3,0.05,0,0
+Empty Raw budget,0,1,3,0.0,36,1
+Energy Raw budget,0,1,3,0.0,36,1
+Energy Value,11,1,4,0.1,9,0
+Energy Value,22,1,4,0.1,10,0
+Empty Value,11,1,4,0.1,8,0
+Empty Value,22,1,4,0.1,10,0
+Energy Myopic,11,1,4,0.1,11,0
+Energy Myopic,22,1,4,0.1,13,0
+Floor Value,11,1,4,0.1,8,0
+Floor Value,22,1,4,0.1,10,0
+Fixed-price Value,11,1,4,4.0,8,0
+Fixed-price Value,22,1,4,4.0,5,0
+PRS original,0,1,4,0.05,0,0
+PRS budget,0,1,4,1.0,0,0
+Raw full,0,1,4,0.05,15,0
+Raw coarse,0,1,4,0.0,13,0
+Full power,0,1,4,0.05,0,0
+Empty Raw budget,0,1,4,0.0,13,0
+Energy Raw budget,0,1,4,0.0,13,0
+Energy Value,11,1,5,0.1,4,0
+Energy Value,22,1,5,0.1,7,0
+Empty Value,11,1,5,0.1,5,0
+Empty Value,22,1,5,0.1,7,0
+Energy Myopic,11,1,5,0.1,7,0
+Energy Myopic,22,1,5,0.1,14,0
+Floor Value,11,1,5,0.1,2,0
+Floor Value,22,1,5,0.1,2,0
+Fixed-price Value,11,1,5,4.0,3,0
+Fixed-price Value,22,1,5,4.0,1,0
+PRS original,0,1,5,0.05,0,0
+PRS budget,0,1,5,1.0,0,0
+Raw full,0,1,5,0.05,12,0
+Raw coarse,0,1,5,0.0,17,0
+Full power,0,1,5,0.05,0,0
+Empty Raw budget,0,1,5,0.0,12,0
+Energy Raw budget,0,1,5,0.0,12,0
+Energy Value,11,1,6,0.1,5,0
+Energy Value,22,1,6,0.1,17,0
+Empty Value,11,1,6,0.1,17,0
+Empty Value,22,1,6,0.1,16,0
+Energy Myopic,11,1,6,0.1,24,1
+Energy Myopic,22,1,6,0.1,16,0
+Floor Value,11,1,6,0.1,17,0
+Floor Value,22,1,6,0.1,24,1
+Fixed-price Value,11,1,6,4.0,2,0
+Fixed-price Value,22,1,6,4.0,4,0
+PRS original,0,1,6,0.05,0,0
+PRS budget,0,1,6,1.0,0,0
+Raw full,0,1,6,0.05,23,1
+Raw coarse,0,1,6,0.0,22,1
+Full power,0,1,6,0.05,0,0
+Empty Raw budget,0,1,6,0.0,21,0
+Energy Raw budget,0,1,6,0.0,21,0
+Energy Value,11,1,7,0.1,22,1
+Energy Value,22,1,7,0.1,21,0
+Empty Value,11,1,7,0.1,22,1
+Empty Value,22,1,7,0.1,21,0
+Energy Myopic,11,1,7,0.1,26,1
+Energy Myopic,22,1,7,0.1,22,1
+Floor Value,11,1,7,0.1,26,1
+Floor Value,22,1,7,0.1,29,1
+Fixed-price Value,11,1,7,4.0,8,0
+Fixed-price Value,22,1,7,4.0,25,1
+PRS original,0,1,7,0.05,0,0
+PRS budget,0,1,7,1.0,0,0
+Raw full,0,1,7,0.05,53,1
+Raw coarse,0,1,7,0.0,34,1
+Full power,0,1,7,0.05,0,0
+Empty Raw budget,0,1,7,0.0,34,1
+Energy Raw budget,0,1,7,0.0,34,1
+Energy Value,11,2,0,0.1,15,0
+Energy Value,22,2,0,0.1,19,0
+Empty Value,11,2,0,0.1,6,0
+Empty Value,22,2,0,0.1,21,0
+Energy Myopic,11,2,0,0.1,15,0
+Energy Myopic,22,2,0,0.1,22,1
+Floor Value,11,2,0,0.1,11,0
+Floor Value,22,2,0,0.1,16,0
+Fixed-price Value,11,2,0,4.0,4,0
+Fixed-price Value,22,2,0,4.0,1,0
+PRS original,0,2,0,0.05,0,0
+PRS budget,0,2,0,1.0,6,0
+Raw full,0,2,0,0.05,85,1
+Raw coarse,0,2,0,0.0,48,1
+Full power,0,2,0,0.05,0,0
+Empty Raw budget,0,2,0,0.0,51,1
+Energy Raw budget,0,2,0,0.0,51,1
+Energy Value,11,2,1,0.1,6,0
+Energy Value,22,2,1,0.1,17,0
+Empty Value,11,2,1,0.1,22,1
+Empty Value,22,2,1,0.1,15,0
+Energy Myopic,11,2,1,0.1,16,0
+Energy Myopic,22,2,1,0.1,13,0
+Floor Value,11,2,1,0.1,1,0
+Floor Value,22,2,1,0.1,19,0
+Fixed-price Value,11,2,1,4.0,1,0
+Fixed-price Value,22,2,1,4.0,3,0
+PRS original,0,2,1,0.05,0,0
+PRS budget,0,2,1,1.0,0,0
+Raw full,0,2,1,0.05,39,1
+Raw coarse,0,2,1,0.0,44,1
+Full power,0,2,1,0.05,0,0
+Empty Raw budget,0,2,1,0.0,27,1
+Energy Raw budget,0,2,1,0.0,27,1
+Energy Value,11,2,2,0.1,14,0
+Energy Value,22,2,2,0.1,6,0
+Empty Value,11,2,2,0.1,12,0
+Empty Value,22,2,2,0.1,20,0
+Energy Myopic,11,2,2,0.1,10,0
+Energy Myopic,22,2,2,0.1,10,0
+Floor Value,11,2,2,0.1,14,0
+Floor Value,22,2,2,0.1,7,0
+Fixed-price Value,11,2,2,4.0,2,0
+Fixed-price Value,22,2,2,4.0,2,0
+PRS original,0,2,2,0.05,3,0
+PRS budget,0,2,2,1.0,4,0
+Raw full,0,2,2,0.05,70,1
+Raw coarse,0,2,2,0.0,16,0
+Full power,0,2,2,0.05,0,0
+Empty Raw budget,0,2,2,0.0,67,1
+Energy Raw budget,0,2,2,0.0,67,1
+Energy Value,11,2,3,0.1,16,0
+Energy Value,22,2,3,0.1,7,0
+Empty Value,11,2,3,0.1,16,0
+Empty Value,22,2,3,0.1,7,0
+Energy Myopic,11,2,3,0.1,16,0
+Energy Myopic,22,2,3,0.1,10,0
+Floor Value,11,2,3,0.1,19,0
+Floor Value,22,2,3,0.1,17,0
+Fixed-price Value,11,2,3,4.0,8,0
+Fixed-price Value,22,2,3,4.0,7,0
+PRS original,0,2,3,0.05,6,0
+PRS budget,0,2,3,1.0,6,0
+Raw full,0,2,3,0.05,50,1
+Raw coarse,0,2,3,0.0,36,1
+Full power,0,2,3,0.05,0,0
+Empty Raw budget,0,2,3,0.0,39,1
+Energy Raw budget,0,2,3,0.0,39,1
+Energy Value,11,2,4,0.1,14,0
+Energy Value,22,2,4,0.1,17,0
+Empty Value,11,2,4,0.1,15,0
+Empty Value,22,2,4,0.1,29,1
+Energy Myopic,11,2,4,0.1,19,0
+Energy Myopic,22,2,4,0.1,14,0
+Floor Value,11,2,4,0.1,20,0
+Floor Value,22,2,4,0.1,25,1
+Fixed-price Value,11,2,4,4.0,12,0
+Fixed-price Value,22,2,4,4.0,3,0
+PRS original,0,2,4,0.05,0,0
+PRS budget,0,2,4,1.0,4,0
+Raw full,0,2,4,0.05,72,1
+Raw coarse,0,2,4,0.0,22,1
+Full power,0,2,4,0.05,0,0
+Empty Raw budget,0,2,4,0.0,55,1
+Energy Raw budget,0,2,4,0.0,55,1
+Energy Value,11,2,5,0.1,22,1
+Energy Value,22,2,5,0.1,21,0
+Empty Value,11,2,5,0.1,14,0
+Empty Value,22,2,5,0.1,17,0
+Energy Myopic,11,2,5,0.1,17,0
+Energy Myopic,22,2,5,0.1,14,0
+Floor Value,11,2,5,0.1,11,0
+Floor Value,22,2,5,0.1,7,0
+Fixed-price Value,11,2,5,4.0,19,0
+Fixed-price Value,22,2,5,4.0,17,0
+PRS original,0,2,5,0.05,5,0
+PRS budget,0,2,5,1.0,6,0
+Raw full,0,2,5,0.05,62,1
+Raw coarse,0,2,5,0.0,8,0
+Full power,0,2,5,0.05,0,0
+Empty Raw budget,0,2,5,0.0,60,1
+Energy Raw budget,0,2,5,0.0,60,1
+Energy Value,11,2,6,0.1,12,0
+Energy Value,22,2,6,0.1,14,0
+Empty Value,11,2,6,0.1,20,0
+Empty Value,22,2,6,0.1,11,0
+Energy Myopic,11,2,6,0.1,13,0
+Energy Myopic,22,2,6,0.1,14,0
+Floor Value,11,2,6,0.1,17,0
+Floor Value,22,2,6,0.1,17,0
+Fixed-price Value,11,2,6,4.0,4,0
+Fixed-price Value,22,2,6,4.0,0,0
+PRS original,0,2,6,0.05,5,0
+PRS budget,0,2,6,1.0,5,0
+Raw full,0,2,6,0.05,24,1
+Raw coarse,0,2,6,0.0,28,1
+Full power,0,2,6,0.05,0,0
+Empty Raw budget,0,2,6,0.0,34,1
+Energy Raw budget,0,2,6,0.0,34,1
+Energy Value,11,2,7,0.1,8,0
+Energy Value,22,2,7,0.1,13,0
+Empty Value,11,2,7,0.1,6,0
+Empty Value,22,2,7,0.1,15,0
+Energy Myopic,11,2,7,0.1,8,0
+Energy Myopic,22,2,7,0.1,11,0
+Floor Value,11,2,7,0.1,10,0
+Floor Value,22,2,7,0.1,16,0
+Fixed-price Value,11,2,7,4.0,6,0
+Fixed-price Value,22,2,7,4.0,5,0
+PRS original,0,2,7,0.05,9,0
+PRS budget,0,2,7,1.0,9,0
+Raw full,0,2,7,0.05,50,1
+Raw coarse,0,2,7,0.0,32,1
+Full power,0,2,7,0.05,0,0
+Empty Raw budget,0,2,7,0.0,38,1
+Energy Raw budget,0,2,7,0.0,38,1

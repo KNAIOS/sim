@@ -1,0 +1,12 @@
+[
+  {
+    "seed": 11,
+    "epoch": 20,
+    "validation_prediction_loss": 12.762003898620605
+  },
+  {
+    "seed": 22,
+    "epoch": 20,
+    "validation_prediction_loss": 12.908088684082031
+  }
+]

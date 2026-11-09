@@ -1,0 +1,338 @@
+{
+  "new_selected_episodes": 48,
+  "independently_checked_slots": 6720,
+  "maximum_errors": {
+    "rate_mbps": 7.219114195322618e-12,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "new_candidate_validation_episodes": 432,
+  "reused_previously_verified_episodes": 108,
+  "training_states_each": 384,
+  "common_prediction_validation_states": 192,
+  "training_coverage": [
+    {
+      "split": "train",
+      "behavior": "prs",
+      "scenario": 0,
+      "states": 64,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 5.5
+    },
+    {
+      "split": "train",
+      "behavior": "prs",
+      "scenario": 1,
+      "states": 64,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 5.546875
+    },
+    {
+      "split": "train",
+      "behavior": "prs",
+      "scenario": 2,
+      "states": 64,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 7.171875
+    },
+    {
+      "split": "train",
+      "behavior": "learned",
+      "scenario": 0,
+      "states": 64,
+      "below4": 45,
+      "minimum_active": 1.0,
+      "mean_active": 4.765625
+    },
+    {
+      "split": "train",
+      "behavior": "learned",
+      "scenario": 1,
+      "states": 64,
+      "below4": 33,
+      "minimum_active": 1.0,
+      "mean_active": 5.046875
+    },
+    {
+      "split": "train",
+      "behavior": "learned",
+      "scenario": 2,
+      "states": 64,
+      "below4": 12,
+      "minimum_active": 2.0,
+      "mean_active": 8.09375
+    },
+    {
+      "split": "validation",
+      "behavior": "prs",
+      "scenario": 0,
+      "states": 32,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 5.5
+    },
+    {
+      "split": "validation",
+      "behavior": "prs",
+      "scenario": 1,
+      "states": 32,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 5.59375
+    },
+    {
+      "split": "validation",
+      "behavior": "prs",
+      "scenario": 2,
+      "states": 32,
+      "below4": 0,
+      "minimum_active": 4.0,
+      "mean_active": 8.65625
+    },
+    {
+      "split": "validation",
+      "behavior": "learned",
+      "scenario": 0,
+      "states": 32,
+      "below4": 23,
+      "minimum_active": 1.0,
+      "mean_active": 4.625
+    },
+    {
+      "split": "validation",
+      "behavior": "learned",
+      "scenario": 1,
+      "states": 32,
+      "below4": 12,
+      "minimum_active": 1.0,
+      "mean_active": 6.1875
+    },
+    {
+      "split": "validation",
+      "behavior": "learned",
+      "scenario": 2,
+      "states": 32,
+      "below4": 2,
+      "minimum_active": 3.0,
+      "mean_active": 8.21875
+    }
+  ],
+  "paired_differences": [
+    {
+      "scenario": 0,
+      "reference": "PRS-added",
+      "metric": "energy_j",
+      "difference": -1.2912179344663368,
+      "ci_low": -21.584645528330583,
+      "ci_high": 9.702320237553351,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 0,
+      "reference": "PRS-added",
+      "metric": "outage",
+      "difference": -0.004166666666666667,
+      "ci_low": -0.011904761904761904,
+      "ci_high": 0.003571428571428571,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 0,
+      "reference": "Previous absolute",
+      "metric": "energy_j",
+      "difference": 3.400478612529632,
+      "ci_low": -12.320567905511204,
+      "ci_high": 13.566040908982833,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 0,
+      "reference": "Previous absolute",
+      "metric": "outage",
+      "difference": -0.007142857142857143,
+      "ci_low": -0.019345238095238096,
+      "ci_high": 0.0005952380952380952,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 0,
+      "reference": "PRS original",
+      "metric": "energy_j",
+      "difference": -15.430982135240194,
+      "ci_low": -32.21727871534899,
+      "ci_high": 10.287929290016006,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 0,
+      "reference": "PRS original",
+      "metric": "outage",
+      "difference": 0.005357142857142857,
+      "ci_low": 0.0,
+      "ci_high": 0.015178571428571428,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "PRS-added",
+      "metric": "energy_j",
+      "difference": 5.424454233817855,
+      "ci_low": -10.811736932702654,
+      "ci_high": 16.072011145414706,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "PRS-added",
+      "metric": "outage",
+      "difference": -0.01488095238095238,
+      "ci_low": -0.02857142857142857,
+      "ci_high": -0.0026785714285714286,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "Previous absolute",
+      "metric": "energy_j",
+      "difference": -4.035924701960209,
+      "ci_low": -11.205153855296267,
+      "ci_high": 2.0693100107521616,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "Previous absolute",
+      "metric": "outage",
+      "difference": -0.00595238095238095,
+      "ci_low": -0.022321428571428565,
+      "ci_high": 0.004464285714285714,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "PRS original",
+      "metric": "energy_j",
+      "difference": 10.208537305744096,
+      "ci_low": -13.407295435642979,
+      "ci_high": 32.554018541236076,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 1,
+      "reference": "PRS original",
+      "metric": "outage",
+      "difference": 0.010416666666666666,
+      "ci_low": 0.0,
+      "ci_high": 0.028273809523809524,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "PRS-added",
+      "metric": "energy_j",
+      "difference": 5.747408824853544,
+      "ci_low": -5.355380196546726,
+      "ci_high": 18.13924744994472,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "PRS-added",
+      "metric": "outage",
+      "difference": 0.0041666666666666675,
+      "ci_low": -0.01964285714285714,
+      "ci_high": 0.022619047619047622,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "Previous absolute",
+      "metric": "energy_j",
+      "difference": 0.5161984231671859,
+      "ci_low": -10.249054237956337,
+      "ci_high": 10.079049419733877,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "Previous absolute",
+      "metric": "outage",
+      "difference": 0.0065476190476190495,
+      "ci_low": -0.015476190476190477,
+      "ci_high": 0.025,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "PRS original",
+      "metric": "energy_j",
+      "difference": -0.8757843424910092,
+      "ci_low": -32.003171214193145,
+      "ci_high": 24.799035705435074,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    },
+    {
+      "scenario": 2,
+      "reference": "PRS original",
+      "metric": "outage",
+      "difference": 0.03482142857142857,
+      "ci_low": 0.013087797619047622,
+      "ci_high": 0.06668154761904767,
+      "independent_trajectories": 4,
+      "training_seeds": 2
+    }
+  ],
+  "repeated_control_validation": true,
+  "uncertainty": "Descriptive two-way seed/whole-trajectory bootstrap, not post-selection significance",
+  "gate": {
+    "passed": false,
+    "nominal_saving_vs_stronger_prs": -0.0850843225701654,
+    "per_seed_outage": {
+      "11": [
+        0.006547619047619047,
+        0.011904761904761904,
+        0.04107142857142857
+      ],
+      "22": [
+        0.004166666666666667,
+        0.008928571428571428,
+        0.04285714285714285
+      ]
+    },
+    "nominal_energy_by_seed": {
+      "11": 130.74791234998116,
+      "22": 129.63198966312524
+    },
+    "nominal_stronger_prs_energy": 119.9814137008091,
+    "required_saving": 0.01,
+    "noninitial_checkpoints": true,
+    "previously_examined_validation": true,
+    "development_launched": false,
+    "reused_frozen_reference_episodes": 108,
+    "new_candidate_episodes": 432
+  },
+  "source_sha256": "ed6b0034c00ea1f757688759bc675427c7468d419ac3ea8da2face0e44bab9e2"
+}

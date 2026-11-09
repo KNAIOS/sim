@@ -1,0 +1,122 @@
+{
+  "input_hashes": {
+    "joint_power\\anchor_confirmation\\study.py": "a5f5832add55936deb4cb15462ead628d2388e956687eacbfa44c9cd436aa9ce",
+    "joint_power\\anchor_confirmation\\__init__.py": "4cd8cb11f712afafc79715d009478f4460e56392d0711b2e632f704fc8acc88a",
+    "joint_power\\anchor_confirmation\\PLAN.md": "70f5043c2bbe9f30c727587dc472bec788846cdd5f7358fb022c12548b625bcf",
+    "results\\joint_power_20260922_baseline_anchor\\output_hashes.json": "5e1519f3bb1ef56692e86c9055f7a588fe4b296c322d6ee21da533c5ea7de759"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "stream": 4409220000,
+  "trajectories_per_scenario": 8,
+  "fixed_specifications": [
+    [
+      "Energy Value",
+      11,
+      0.1
+    ],
+    [
+      "Energy Value",
+      22,
+      0.1
+    ],
+    [
+      "Empty Value",
+      11,
+      0.1
+    ],
+    [
+      "Empty Value",
+      22,
+      0.1
+    ],
+    [
+      "Energy Myopic",
+      11,
+      0.1
+    ],
+    [
+      "Energy Myopic",
+      22,
+      0.1
+    ],
+    [
+      "Floor Value",
+      11,
+      0.1
+    ],
+    [
+      "Floor Value",
+      22,
+      0.1
+    ],
+    [
+      "Fixed-price Value",
+      11,
+      4.0
+    ],
+    [
+      "Fixed-price Value",
+      22,
+      4.0
+    ],
+    [
+      "PRS original",
+      0,
+      0.05
+    ],
+    [
+      "PRS budget",
+      0,
+      1.0
+    ],
+    [
+      "Raw full",
+      0,
+      0.05
+    ],
+    [
+      "Raw coarse",
+      0,
+      0.0
+    ],
+    [
+      "Full power",
+      0,
+      0.05
+    ],
+    [
+      "Empty Raw budget",
+      0,
+      0.0
+    ],
+    [
+      "Energy Raw budget",
+      0,
+      0.0
+    ]
+  ],
+  "previously_examined": false,
+  "no_retuning": true,
+  "host_environment_changed": false
+}

@@ -1,0 +1,6 @@
+# Preserve source and CSV bytes: archived SHA-256 records depend on them.
+* -text
+
+# Keep binary experiment arrays and model checkpoints in Git LFS.
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "selected_epoch": 0,
+  "calibrated": {
+    "objective": 0.14438464028353337,
+    "bce": 0.1440172791481018,
+    "energy_mse": 3.6736113543156534e-05,
+    "brier": 0.005196684040129185,
+    "mean_prediction": 0.0821031853556633,
+    "mean_actual": 0.07826797664165497,
+    "mean_risk_error": 0.0038352087140083313
+  },
+  "analytic": {
+    "objective": 0.25539844018931035,
+    "bce": 0.2550310790538788,
+    "energy_mse": 3.6736113543156534e-05,
+    "brier": 0.005318238399922848,
+    "mean_prediction": 0.07376284152269363,
+    "mean_actual": 0.07826797664165497,
+    "mean_risk_error": -0.004505135118961334
+  },
+  "training_trajectories": 48,
+  "validation_trajectories": 12,
+  "training_branches": 28560,
+  "validation_branches": 7140,
+  "scope": "Trajectory-held-out prediction, not reliability guarantee or RL advantage"
+}

@@ -1,0 +1,16 @@
+{
+  "maximum_errors": {
+    "rate_mbps": 1.4210854715202004e-13,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "episodes": 3,
+  "slots": 420,
+  "modes": {
+    "full_targets": 349,
+    "preserve_service": 71
+  }
+}

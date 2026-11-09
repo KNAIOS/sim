@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "reference": {
+    "method": "PRS original",
+    "energy_j": 126.39013541779045,
+    "worst_outage": 0.008333333333333333
+  },
+  "feasible_baselines": [
+    {
+      "method": "PRS original",
+      "energy_j": 126.39013541779045,
+      "worst_outage": 0.008333333333333333
+    },
+    {
+      "method": "PRS budget",
+      "energy_j": 126.83495752552565,
+      "worst_outage": 0.0077380952380952375
+    },
+    {
+      "method": "Full power",
+      "energy_j": 285.653311577801,
+      "worst_outage": 0.0023809523809523807
+    }
+  ],
+  "per_seed_outage": {
+    "11": [
+      0.02261904761904762,
+      0.03154761904761905,
+      0.049999999999999996
+    ],
+    "22": [
+      0.022619047619047615,
+      0.030952380952380946,
+      0.04464285714285714
+    ]
+  },
+  "per_seed_nominal_energy": {
+    "11": 137.09673535407876,
+    "22": 125.60221667115816
+  },
+  "nominal_energy_j": 131.34947601261848,
+  "nominal_saving": -0.03923835177828261,
+  "required_saving": 0.02,
+  "split": "locked development, not final test"
+}

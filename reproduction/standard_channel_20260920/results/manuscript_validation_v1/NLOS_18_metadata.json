@@ -1,0 +1,37 @@
+{
+  "seed": 965010018,
+  "speed_mps": 2.0,
+  "steps": 140,
+  "slot_s": 0.05,
+  "carrier_hz": 14000000000.0,
+  "bandwidth_hz": 40000000.0,
+  "spec_version": "16.1",
+  "scenario": "UMi outdoor NLOS",
+  "topology": "fixed; Doppler evolution only; no moving visibility regions",
+  "antenna": "8x16 single-V omnidirectional planar half-wavelength array",
+  "subarrays": "16 columns of 8 elements in native Sionna antenna order",
+  "normalization": false,
+  "pathloss": true,
+  "shadow_fading": true,
+  "h_shape": [
+    140,
+    99,
+    3,
+    128
+  ],
+  "frequency_samples": 99,
+  "sionna": "2.1.0",
+  "torch": "2.9.1+cpu",
+  "pathloss_db": [
+    [
+      [
+        98.43745477309184,
+        101.7573951007734,
+        100.15292635246051
+      ]
+    ]
+  ],
+  "source_sha256": "186056643ff186e02848c817c476f3a6f367e44c81490bf4e92bc7414e028ae6",
+  "channel_sha256": "39968398f2fd58d6c23a043a4d2af7ce5774a3b502e58613a6698af57ac4c67e",
+  "demand_sha256": "7075c3f1a4d4dd50bb72e0872826b20d5f7ffb91366a3bcf7869f40a0f2e2e0c"
+}

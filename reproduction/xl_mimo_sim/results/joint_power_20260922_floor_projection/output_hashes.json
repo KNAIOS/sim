@@ -1,0 +1,12 @@
+{
+  "results\\joint_power_20260922_floor_projection\\all_episodes.csv": "65f5ca6f53eb0ebc628455f67005e1c7796315c8ba0b5a5e8781ed84aa0b8c01",
+  "results\\joint_power_20260922_floor_projection\\decisions.csv": "415063ec18359d4151bebfacc6486686a1c2c92991ee85c9822d4314a0355010",
+  "results\\joint_power_20260922_floor_projection\\episode_ledgers.csv": "b0073c56a71c7902dd2a8053f4c0d37681f0363970a16097b1750a1061129633",
+  "results\\joint_power_20260922_floor_projection\\gate.json": "ab5d2f3f6ee3659c0a9182618bee36c8841299a4e16a0097041bdf125cc07695",
+  "results\\joint_power_20260922_floor_projection\\manifest.json": "7e36d3864d7ff9675e78ef256f948d74092d7438d1f160e4769eaeacafdc6009",
+  "results\\joint_power_20260922_floor_projection\\new_episodes.csv": "52305f9e78a8c9b418278d04fa91044849fbdc4206df418bc1ddccfc52bcff8f",
+  "results\\joint_power_20260922_floor_projection\\paired_differences.csv": "fbe0b5102b244c872b5917eaeff1ac6cd3c14750522f57598f130b647ba63951",
+  "results\\joint_power_20260922_floor_projection\\slots.csv": "03f1443754752e527ebbacc0f211c88c5c7f73cfff4b58bb4fc75d5e47630b5e",
+  "results\\joint_power_20260922_floor_projection\\summary.csv": "abdfce596696426a6d3422e1e22002af58edfe5b4fc538881aa7b883615fb7ef",
+  "results\\joint_power_20260922_floor_projection\\verification.json": "96fbdd8201d2c312c193192abc70c173fb15c4666c93c2eb6e9138468ed7cd13"
+}

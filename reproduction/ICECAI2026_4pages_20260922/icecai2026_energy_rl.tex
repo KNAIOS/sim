@@ -1,0 +1,185 @@
+\documentclass[letterpaper,conference]{IEEEtran}
+\usepackage{amsmath,amsfonts,graphicx,cite,booktabs,array,url}
+\usepackage{xcolor,soul}
+\sethlcolor{yellow}
+\ifdefined\CLEANVERSION
+% Preserve identical line/float geometry in the clean and marked versions.
+\sethlcolor{white}
+\newcommand{\rev}[1]{\hl{#1}}
+\newcommand{\revbox}[1]{\colorbox{white}{#1}}
+\else
+\newcommand{\rev}[1]{\hl{#1}}
+\newcommand{\revbox}[1]{\colorbox{yellow}{#1}}
+\fi
+\graphicspath{{./}}
+\hyphenation{sub-array sub-arrays}
+\begin{document}
+\title{\rev{Energy-Efficient XL-MIMO Subarray Activation}\\
+\rev{via Readiness-Aware Reinforcement Learning}}
+\author{\IEEEauthorblockN{\revbox{An Lei\textsuperscript{*}}}
+\IEEEauthorblockA{\revbox{Beijing University of Posts and Telecommunications}\\
+\revbox{Beijing, China; leian2002@bupt.edu.cn\textsuperscript{*}}\\
+\revbox{\textsuperscript{*}Corresponding author}}}
+\maketitle
+
+\begin{abstract}
+\rev{Sleeping subarrays save circuit energy but cannot immediately exploit a changing channel. This paper studies a readiness-aware reinforcement-learning controller for mobile extra-large-scale multiple-input multiple-output (XL-MIMO) systems. A causal tracker ranks locations according to forecast utility after RF recovery, and a double deep Q-network selects the activation count. Simulations include active-only observations, pilot costs, and switching energy. At 2 m/s and four-slot recovery, the controller saves 50.2\% relative to full activation with 3.46\% mean rate outage. Predictive rate search nevertheless has lower mean energy and outage. Optimized computation, coarse-search, parameter-sensitivity, and standardized-channel comparisons distinguish lower decision latency from an unestablished learning-driven energy advantage and identify the controller's reliability limits.}
+\end{abstract}
+\begin{IEEEkeywords}
+XL-MIMO, energy efficiency, reinforcement learning, subarray activation, wake-up delay.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\rev{Spatial non-stationarity makes only part of an XL-MIMO aperture useful to each user}~\cite{decarvalho2020}; \rev{antenna selection can therefore reduce circuit energy}~\cite{ubiali2021}. \rev{RF reconfiguration using reinforcement learning (RL)}~\cite{hoffmann2024} \rev{and risk-aware antenna selection with channel tracking under incomplete CSI}~\cite{he2024} \rev{are established. The issue considered here is that predicted spatial utility may expire before sleeping RF hardware becomes available.}
+
+\rev{We investigate this interaction by separating a readiness-aligned location ranking from learned activation-count selection. The state distinguishes active, commanded, and recovering hardware. A common energy model charges operation, observation, and transitions; predictive rate search (PRS) provides a causal non-learning comparator. Fixed-count tests isolate ranking, while complete-policy, sensitivity, and standardized-channel tests assess operating limits. Energy saving against full activation is not treated as evidence that learning outperforms search.}
+
+\section{System and Control Model}
+\subsection{Channel, Hardware, and Energy}
+\rev{A fixed BS serves $K=3$ moving single-antenna users through $Q=16$ independently switched modules with $N_s=8$ antennas each. Their centers span 12 m; antennas within each module are half-wavelength spaced. A controlled spherical-wave simulator combines distance-dependent path power, correlated shadowing, moving visibility regions (VRs), and cluster birth/death, following near-field modeling principles}~\cite{liu2023}. \rev{It is not a calibrated 3GPP realization. Available-antenna CSI is idealized for inner-loop regularized zero forcing (RZF). With channel matrix $\mathbf H_{\mathcal A}$ and receiver noise power $\sigma_n^2$, the precoder is $\mathbf H_{\mathcal A}^{H}(\mathbf H_{\mathcal A}\mathbf H_{\mathcal A}^{H}+K\sigma_n^2\mathbf I/P_{\rm tx})^{-1}$, followed by unit-norm columns $\mathbf w_j$. For $p=P_{\rm tx}/K$,}
+\begin{equation}
+R_k=(1-\eta_{\rm p})B\log_2\!\left(1+
+\frac{p|\mathbf h_{k,\mathcal A}\mathbf w_k|^2}
+{\sigma_n^2+p\sum_{j\ne k}|\mathbf h_{k,\mathcal A}\mathbf w_j|^2}\right).
+\end{equation}
+\rev{The controller observes only already-active modules. All modules are initially active; the initial observation is charged, but pre-episode boot energy is excluded. There are no periodic full-array scans. Exclusion switches a module off immediately; inclusion makes a sleeping module available after $d$ physical slots. Retaining a waking module preserves its countdown, whereas cancellation resets it. Decisions occur every four slots.}
+
+\rev{Let $n_a,n_w,n_s$ denote active, waking, and sleeping counts, and let $N_{\rm on},N_{\rm off},N_{\rm obs}$ count transitions and observed modules. Slot energy is}
+\begin{align}
+E_t={}&\Delta t[P_0+P_{\rm tx}/\eta_{\rm PA}+n_aP_a+n_wP_w\notag\\
+&+n_sP_s+P_{\rm proc}(n_a)]
++e_{\rm on}N_{\rm on}+e_{\rm off}N_{\rm off}+e_{\rm obs}N_{\rm obs}.
+\end{align}
+\rev{The declared processing approximation is $P_{\rm proc}(n)=(8nN_sK^2+8K^3/3)(B/N_c)/(\xi10^9)$, with $N_c=200$, bandwidth $B$ in Hz, and $\xi=75$ GFLOP/s/W. We use 14 GHz, $B=40$ MHz, 7-dB noise figure, $\eta_{\rm p}=.015$, $\Delta t=.05$ s, $P_{\rm tx}=1.2$ W, $\eta_{\rm PA}=.4$, $P_0=8$ W, $(P_a,P_w,P_s)=(2,1.2,.05)$ W, and $(e_{\rm on},e_{\rm off},e_{\rm obs})=(.10,.01,.002)$ J. These are model settings, not measured hardware specifications. Controller computation energy is not separately measured.}
+
+\rev{The objective minimizes expected episode energy with mean user--slot rate outage at most $\epsilon=.05$. A violation is $R_k<R_{{\rm req},k}$, not a decoding error; demand is a rate requirement, not packet arrivals. Achievable-rate efficiency is $\sum_{t,k}R_k\Delta t/\sum_tE_t$ in Mbit/J, not packet goodput.}
+
+\subsection{Readiness-Aligned Ranking}
+\rev{The causal tracker filters measured module/user dB gains with weights .75/.25 on observation/advected prior. Unobserved modules retain the prior. Relative gain $z_{qk}=g_{qk}-\max_r g_{rk}$ gives the soft visibility score $p_{qk}=[1+\exp(-(z_{qk}+8)/1.8)]^{-1}$, clipped to [.01,.995]; unobserved scores mix .96 of the previous value with .04 of the updated score. Centroid displacement, clipped to $\pm.55$ modules/slot, updates drift with weights .72/.28. Forecasts linearly translate gain and visibility with edge extension. At horizon $h$, transported visibility $p^{\rm adv}$ is mixed as $.97^hp^{\rm adv}+(1-.97^h)(.8\bar p^{\rm adv}+.02)$ and clipped as above; $\bar p^{\rm adv}$ is its neighbor mean. Uncertainty starts at .12, resets to .08 on observation, otherwise grows by .035 up to .65, and increases by $.045h$ up to .8 in forecasts. These are shared heuristics, not calibrated probabilities.}
+
+\rev{For module readiness time $\tau_q$ (zero if active, remaining recovery if waking, or $d$ if sleeping), define}
+\begin{equation}
+V_q=\sum_{k=1}^{K}\sum_{h=\max(1,\tau_q)}^{H}
+\gamma_v^{h-1}[\hat p_{qk}(h)-\beta\hat\sigma_{qk}(h)]^+
+\tilde g_{qk}(h)w_k,
+\label{eq:score}
+\end{equation}
+\rev{where $\tilde g_{qk}=10^{(\hat g_{qk}-\max_r\hat g_{rk})/10}$, $w_k=R_{{\rm req},k}/\operatorname{mean}_j R_{{\rm req},j}$, $H=8$, $\beta=.65$, and $\gamma_v=.93$. An empty sum is zero. Removing terms before readiness prevents those unavailable samples from inflating a module's score; it does not prove optimal energy or RZF conditioning. The retention forecast is revised at the next decision.}
+
+\subsection{Learned Count and Search Comparator}
+\rev{RA-DQN selects $M\in\{4,\ldots,16\}$ and commands the top-$M$ locations. The four-module floor is imposed, not a rank requirement. Locations cannot be independently exchanged at a fixed count. The 72-entry input is}
+\begin{equation}
+\mathbf s=[\bar{\mathbf V},\mathbf b,\mathbf c,\boldsymbol\tau/H,
+\mathbf R_{\rm req}/560,\hat{\mathbf v},C_{\rm prev},d/H],
+\end{equation}
+\rev{with normalized scores $\bar{\mathbf V}=\mathbf V/\max(\max_qV_q,10^{-9})$, active/command indicators $\mathbf b,\mathbf c$, drift $\hat{\mathbf v}$ clipped to $[-1,1]$, rate in Mbit/s, and preceding slot outage $C_{\rm prev}$. The partially observed state feeds a 72--64--64--13 network with SiLU hidden activations and layer normalization after the first linear layer.}
+
+\rev{Double DQN}~\cite{vanhasselt2016} \rev{uses reward $-e_n-\mu c_n$, where $e_n$ is decision-interval energy normalized by the corresponding full-array interval energy and $c_n$ is mean outage. Every ten episodes, $\mu\leftarrow\operatorname{clip}_{[0,80]}[\mu+50(\bar c-.05)]$, starting at 8. This heuristic constraint pricing does not guarantee feasibility. Training uses discount .98, Huber loss, AdamW at $4\times10^{-4}$, weight decay $10^{-5}$, batch 64, replay 20000, gradient-norm limit 5, and target copies every 100 updates. Replay rewards are recalculated with the current price.}
+
+\rev{PRS shares the causal tracker and ranking. It scales the latest observed complex-channel amplitudes by forecast gains, holds phases, excludes unavailable modules, and evaluates predicted RZF rates for every count over eight slots. It selects the smallest count satisfying predicted mean outage, otherwise the least normalized rate shortfall. It sees no future true CSI. Search grids may skip counts, but keep the same prediction and rate calculation.}
+
+\rev{The policies have equal observation access, but different representations: relative-gain normalization can map uniformly stronger channels to the same RL input, and the score omits complex inter-user correlation. PRS retains complex-channel estimates for rate evaluation. This information loss can obstruct count selection; it does not quantify the observed performance gap.}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=.96\textwidth]{fig_policy_speed.pdf}
+\caption{\rev{Energy, rate outage, and achievable-rate efficiency at nominal demand and four-slot recovery. Each DQN uses five independently trained seeds and 80 shared test trajectories; bands are crossed seed/trajectory 95\% bootstrap intervals. PRS and full-array bands resample trajectories only. Lower energy must be read jointly with outage.}}
+\label{fig:policy}
+\end{figure*}
+
+\section{Evaluation}
+\subsection{Protocol and Main Comparison}
+\rev{Each episode spans 140 slots (7 s). UE speeds are .5, 2, or 3 m/s; demand multipliers are .85, 1, or 1.15. Nominal requirements switch among 360/460/560 Mbit/s with per-slot probability .04. One randomly selected user reverses direction with probability .035 per slot. Four scatterer clusters per user have VR widths 1.2--3 m; local VR width is $2+.06y_k$ m, where $y_k$ is the user's transverse coordinate. Cluster birth/death probabilities are $.004+.0015v$ and $.006+.002v$; shadowing has 2.5-dB deviation and correlation $\exp(-v\Delta t/8)$.}
+
+\rev{CSI-DQN uses current support, Future-DQN ungated prediction, and RA-DQN readiness-aligned prediction; other state inputs are shared. Each has five seeds (11/22/33/44/55), 300 training episodes, matched trajectory streams, and exploration $.04+.76\exp(-4e/299)$. Training samples speed, load, and recovery delay. Every 25 episodes, 20 fixed validation trajectories select minimum energy among checkpoints with mean outage at most 5\%, or least outage if none qualifies. Test trajectories never select policies. Main intervals use 2000 paired bootstrap resamples, additionally crossing training seeds for DQN.}
+
+\rev{At 2 m/s, Fig. 1 gives RA-DQN 152.10 J, 3.46\% outage (95\% interval 2.36--4.72\%), and 87.67 Mbit/J, versus 305.65 J for full activation. This is 50.2\% saving, not equal service quality. PRS uses 141.39 J with 2.73\% outage; the paired PRS-minus-RA energy interval is [-17.41,-4.77] J. Future-DQN uses 154.46 J/3.12\%; its energy difference from RA is 2.36 J with interval [-1.97,6.42]. Thus learned count selection does not establish an incremental energy benefit. At demand multiplier 1.15, RA/PRS outage reaches 19.11\%/10.85\%, both above target.}
+
+\rev{A separate 40-trajectory fixed-count test isolates ranking. At $M=5$, $d=4$, unaligned-minus-aligned outage is -0.20 percentage points (interval [-1.05,0.71]); this does not establish improvement. Both rankings coincide at zero delay.}
+
+\subsection{Heuristic Sensitivity}
+\rev{Table I varies one ranking parameter at a time on 40 new nominal trajectories, freezing all five RL checkpoints and giving PRS matching parameters (1920 episode evaluations). All eight settings retain higher mean RA energy and outage. Increasing $\beta$ from 0 to 1.3 reduces RA energy from 153.42 to 150.93 J but raises outage from 2.75\% to 3.50\%, nonmonotonically. At $\beta=.975$ and 1.3, outage interval upper endpoints reach 5.16\% and 5.05\%. These are sensitivity tests, not probability calibration or joint retraining.}
+\begin{table}[!t]
+\caption{\rev{Frozen-policy sensitivity: energy (J) / outage (\%).}}
+\label{tab:sensitivity}
+\centering\footnotesize
+\revbox{\begin{tabular}{@{}lrr@{}}
+\toprule
+$(\beta,\gamma_v)$ & RA-DQN & PRS\\
+\midrule
+$(0,.93)$ & 153.42 / 2.75 & 141.11 / 1.80\\
+$(.325,.93)$ & 152.78 / 3.07 & 140.64 / 1.80\\
+$(.65,.93)$ & 152.32 / 3.02 & 141.03 / 2.32\\
+$(.975,.93)$ & 151.50 / 3.59 & 140.85 / 2.11\\
+$(1.3,.93)$ & 150.93 / 3.50 & 141.71 / 2.20\\
+$(.65,.80)$ & 151.27 / 3.52 & 141.10 / 2.37\\
+$(.65,.90)$ & 152.29 / 3.13 & 141.09 / 2.22\\
+$(.65,1)$ & 152.02 / 3.14 & 140.90 / 2.18\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Computation and Coarse Search}
+\rev{A second benchmark removes duplicate RL scoring and batches exact Gram-domain RZF for search; original antenna-domain replay reproduces all evaluated actions and energy. On an i5-10200H CPU with one BLAS/PyTorch thread, 210 common calibration states receive three warmed, interleaved timings per path, clearing caches each time. Decision timing includes prediction, ranking, and inference/search, but excludes common observation updates, physical simulation, and training. Optimized RL medians are .47--.48 ms across seeds; full PRS takes .84 ms, versus 10.95 ms before batching. This is implementation-specific latency, not controller electrical energy.}
+
+\rev{Uniform strides $\delta=1,2,3,4,6,12$ over 4--16 retain both endpoints. Local grids retain endpoints and the previous count, then nearest neighbors (lower first on ties), with 7/5/4/3 candidates. All use the same CSI and eight-step forecast, without artificial noise. Before evaluating energy, calibration P95 selects the most candidates fitting each budget: 1 ms selects uniform $\delta=3$ and seven local candidates; 2 ms or more admits full PRS. No search fits the primary budget .65806 ms (the largest RL calibration P95); neither search nor all RL models fit .25/.5 ms. Fixed 5/10/20/200-ms budgets also retain full PRS. The physical decision period remains 200 ms.}
+
+\rev{Evaluation uses 24 new trajectories, eight per speed/load pair (.5,.85), (2,1), and (3,1.15), disjoint from calibration, with all five RL models, ten searches, and full activation (384 episodes). Table II retains every search variant. At 1 ms, RL-minus-uniform energy is 10.80 J (10000 crossed seed/trajectory bootstrap interval [3.84,18.64]); outage differs by .042 percentage points ([-.750,.970]), not evidence of equivalence. High-load RL uses 154.96 J versus 177.16 J for that grid, but outage is 17.74\% versus 8.57\%. One RL evaluation P95 exceeds the primary budget at .687 ms; individual calls reach 22.4 ms. Full PRS evaluation P95 is .964 ms; grids are not reselected retrospectively. Neither an energy advantage nor a hard deadline guarantee follows.}
+
+\rev{Reconstructing the same slot records attributes the nominal 10.80-J difference to active-operation increments (8.19 J), recovery increments (1.65 J), transitions (.78 J), and pilots (.18 J); the common sleeping baseline cancels. Extra active operation accounts for 75.8\% of the difference. This is energy accounting, not causal attribution to state compression. Re-scoring these trajectories with discount .98 and each frozen model's own constraint price also gives higher mean RL cost than stride-three PRS for all five seeds. Thus reliability pricing alone does not explain the loss.}
+\begin{table}[!t]
+\caption{\rev{Coarse-search benchmark: nominal mean energy/outage; P95 across all 24 traces (maximum seed P95 for RL).}}
+\label{tab:budget}
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\revbox{\begin{tabular}{@{}lrrr@{}}
+\toprule
+Method & Energy (J) & Outage (\%) & P95 (ms)\\
+\midrule
+RA-DQN & 150.53 & 1.619 & .687\\
+Full PRS & 139.39 & 1.696 & .964\\
+Grid $\delta=2$ & 139.75 & 1.637 & .902\\
+Grid $\delta=3$ & 139.73 & 1.577 & .940\\
+Grid $\delta=4$ & 140.21 & 1.399 & .920\\
+Grid $\delta=6$ & 140.83 & 1.369 & .875\\
+Grid $\delta=12$ & 142.71 & 1.339 & .758\\
+Local, 7 counts & 140.08 & 1.815 & .894\\
+Local, 5 counts & 140.08 & 1.815 & .853\\
+Local, 4 counts & 140.08 & 1.815 & .866\\
+Local, 3 counts & 140.27 & 1.607 & .913\\
+Full array & 305.65 & .000 & .008\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Standardized-Channel Transfer}
+\rev{Sionna 2.1.0 generates separate UMi LOS/NLOS channels using TR 38.901 V16.1 parameters}~\cite{tr38901v16,sionna210}. \rev{A compact half-wavelength $8\times16$ planar array, with one switched column per module, uses vertically polarized omnidirectional elements. BS/UE heights are 10/1.5 m and UE horizontal coordinates (25,-12), (35,0), (28,14) m. Path loss, shadow fading, delays, and angular statistics are retained; channels are not normalized to unit power. Geometry and large-scale parameters stay fixed; 2-m/s Doppler evolves fading, not moving VRs. Control observes active CSI at center frequency; rates average spectral efficiency over 99 equal-power frequency samples. This compact 0.161-m aperture is not the geometric model's 12-m near-field array.}
+
+\rev{Table III uses 20 new realizations per link state, shared across two loads and the five frozen RL models, PRS, and full array (560 evaluations), with no retraining. At half load in LOS, RA saves 48.3\% against full activation but PRS uses less energy. In half-load NLOS, RA outage is 4.56\% with 4000-resample crossed interval [0.53,9.80]\%, not a certified 5\% target. Nominal NLOS defeats even full activation. These tests expose channel-dependent reliability, not full 3GPP calibration or measured-hardware validation.}
+\begin{table}[!t]
+\caption{\rev{UMi transfer: energy (J) / outage (\%); full-array energy is 305.65 J in every row.}}
+\label{tab:standard}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\revbox{\begin{tabular}{@{}lrrr@{}}
+\toprule
+State / load & RA-DQN & PRS & Full outage\\
+\midrule
+LOS / .5 & 158.12 / .00 & 138.51 / .00 & .00\\
+LOS / 1 & 162.80 / 11.57 & 159.28 / 8.13 & 1.71\\
+NLOS / .5 & 159.10 / 4.56 & 151.32 / 3.04 & .83\\
+NLOS / 1 & 168.61 / 59.15 & 275.74 / 38.57 & 33.87\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\section{Conclusion}
+\rev{Readiness-aware RL subarray activation reduces modeled energy relative to full activation in the nominal geometric setting. It does not outperform predictive search in energy at comparable reliability. Equal-implementation and coarse-search tests separate online latency from operating-energy benefit; sensitivity and standardized transfer show that heuristic pricing does not guarantee reliability. Deployment requires workload, channel, and hardware validation.}
+
+% In two-column mode this starts the right column of the final page.
+\newpage
+\section*{Acknowledgment}
+\rev{OpenAI Codex assisted manuscript revision, simulation coding, and analysis/plotting scripts. Numerical observations came from executing the simulator, not from language-model generation.}
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+\end{document}

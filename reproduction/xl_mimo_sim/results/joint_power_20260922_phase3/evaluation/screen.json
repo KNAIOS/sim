@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "per_seed_outage": {
+    "11": [
+      0.0,
+      0.002976190476190476,
+      0.05357142857142857
+    ],
+    "22": [
+      0.0,
+      0.008928571428571428,
+      0.05714285714285714
+    ]
+  },
+  "nominal_energy_by_seed": {
+    "11": 133.27434048210716,
+    "22": 124.16065725233172
+  },
+  "nominal_prs_energy": 122.97435857714427,
+  "nominal_saving_vs_prs": -0.046701933285322905,
+  "selected_episodes": [
+    160,
+    80
+  ],
+  "independent_confirmation": false,
+  "multi_step_calibrated_search_confirmation_missing": true,
+  "manuscript_replacement_authorized_by_result": false
+}

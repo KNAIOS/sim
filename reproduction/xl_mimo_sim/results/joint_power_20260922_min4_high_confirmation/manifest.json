@@ -1,0 +1,85 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\matched_four\\high_confirmation.py": "b4fffa7e85e86fbe718d22a2727b79c7eb0eab7f4f9e0744190f2cd3c105a341",
+    "joint_power\\matched_four\\HIGH_CONFIRMATION_PLAN.md": "0d4df3809fc8fd50cb67388988d477f1cf791aacca1f48dfa14a7b4ed3b1f0a7",
+    "joint_power\\anchor_confirmation\\domain_prs.py": "8ec71d3c7dd024f17472eaf2526bc87ac07dbad37eb2d7313fe186419202f4a1",
+    "results\\joint_power_20260922_matched_four\\output_hashes.json": "8d129e087124ddc3b777085816da51e1eaf72ea8597af7fcf4e2ed2e8aad8a4f"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "stream": 5309220000,
+  "unique_traces": 24,
+  "specifications": [
+    [
+      "Energy Value min4",
+      11
+    ],
+    [
+      "Energy Value min4",
+      22
+    ],
+    [
+      "Energy Myopic min4",
+      11
+    ],
+    [
+      "Energy Myopic min4",
+      22
+    ],
+    [
+      "Energy Value min1",
+      11
+    ],
+    [
+      "Energy Value min1",
+      22
+    ],
+    [
+      "PRS original",
+      0
+    ],
+    [
+      "PRS budget",
+      0
+    ],
+    [
+      "Expanded PRS",
+      0
+    ],
+    [
+      "Expanded budgetPRS",
+      0
+    ],
+    [
+      "Raw full min4",
+      0
+    ],
+    [
+      "Full array",
+      0
+    ]
+  ],
+  "generated_after_development_hypothesis": true,
+  "no_retuning": true,
+  "host_environment_changed": false
+}

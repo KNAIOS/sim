@@ -1,0 +1,43 @@
+{
+  "input_hashes": {
+    "joint_power\\risk_budget\\control.py": "5316e3b342c581456c2b0ee57a3820eef717a7f7e8493d43db34db88de32f37c",
+    "joint_power\\risk_budget\\study.py": "d53ae769fd893996df961bf6c5b414fe34ca4a802b6dd11f3e28a427a47d3455",
+    "joint_power\\risk_budget\\test_control.py": "66969545b33aa440afcbbddf1a6c73e157588ca2bbbe62ebe7bbaaabcd53b6d5",
+    "joint_power\\risk_budget\\__init__.py": "dd81dfc401210b138fdd83110b01e5adb7e1b18295618be7771c476d92147007",
+    "joint_power\\risk_budget\\PLAN.md": "0daafc8bf295ba88717a269b79b1dc545bb6c3ed00f9a244b7ba299fe577ef18",
+    "results\\joint_power_20260922_aggregation\\control_validation\\output_hashes.json": "a6dedb90eb7e09d9516a2b8fa1c4f06e1e9ca0059c27ae06ed55898af1f2d733",
+    "results\\joint_power_20260922_aggregation\\training\\output_hashes.json": "4934e98eda8c8c051724733bb4189637b3d085d380ba2bf477a66f202bfd80aa"
+  },
+  "checkpoints": {
+    "PRS-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed11_selected.pt",
+      "sha256": "b916de5584e97490ee8c2bb109d17d61b0f5975cee62a0460d160702ab03a221",
+      "epoch": 20
+    },
+    "PRS-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\prs_added_seed22_selected.pt",
+      "sha256": "4cfb932ea5aba6ca8f7cdf91112e615902b2ec74d3e561a0e653190d54ce2e4d",
+      "epoch": 20
+    },
+    "Visitation-added 11": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed11_selected.pt",
+      "sha256": "daa01cfcd08e43fee94cc8dc97b745c502e55a296180b647acf0f0fe2dbd15b6",
+      "epoch": 20
+    },
+    "Visitation-added 22": {
+      "path": "results\\joint_power_20260922_aggregation\\training\\visitation_added_seed22_selected.pt",
+      "sha256": "24e449ea0a180e4587b25b36d7f41dee0b3b5c8fb6b83eaf22c84e245258d9ba",
+      "epoch": 20
+    }
+  },
+  "factors": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "stream": 3909220000,
+  "previously_examined_validation": true,
+  "host_environment_changed": false
+}

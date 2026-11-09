@@ -1,0 +1,28 @@
+[
+  {
+    "seed": 11,
+    "selected_episode": 120,
+    "validation_key": [
+      0.0,
+      149.88485292176114,
+      0.039880952380952385
+    ],
+    "training_episodes": 120,
+    "updates": 4137,
+    "feature_width": 229,
+    "parameters": 18945
+  },
+  {
+    "seed": 22,
+    "selected_episode": 120,
+    "validation_key": [
+      0.0,
+      147.74883631364122,
+      0.04464285714285714
+    ],
+    "training_episodes": 120,
+    "updates": 4137,
+    "feature_width": 229,
+    "parameters": 18945
+  }
+]

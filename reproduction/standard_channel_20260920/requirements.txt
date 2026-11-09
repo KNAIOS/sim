@@ -1,0 +1,2 @@
+torch==2.9.1
+sionna-no-rt==2.1.0

@@ -1,0 +1,20 @@
+{
+  "results\\joint_power_20260922_phase1\\manifest.json": "2d09f3d3b046568183db78e7904433ebbbab3bc5090eb80aed036ccf3e246608",
+  "results\\joint_power_20260922_phase1\\training_complete.json": "7ede4a62e8d4dd0053c0bf637ba04cbda88b835b48ed058047b57aca0e8e59e1",
+  "results\\joint_power_20260922_phase1\\evaluation\\episodes.csv": "da00b675b6eafa209819e6fbb2c6d73c4d2861647fe16c2b7ffb4a9dcc3a743a",
+  "results\\joint_power_20260922_phase1\\evaluation\\screen.json": "21b5c3d77db313373964f33fe4cba9fb33633a7730e98286d9cf7f9ad58493e7",
+  "results\\joint_power_20260922_phase1\\evaluation\\slots.csv": "1bea5487fef7e68364b76fc91f6d86372e9a70c0d3f0c00aacf6d15c57914b49",
+  "results\\joint_power_20260922_phase1\\evaluation\\summary.csv": "d6414f01cfc053c2bc2604311d694b98210feb42959915eadc29926501b5d2e9",
+  "results\\joint_power_20260922_phase1\\seed11\\history.csv": "d7145ffa4dbb2a6a61c8a40ef0c5e25f931a377056760eade6a49f110bb9f64e",
+  "results\\joint_power_20260922_phase1\\seed11\\initial.pt": "d7cedfcaf2d4ddf444fd10c78174e12705f8e9fc87236d6963a790f2e8cf15c9",
+  "results\\joint_power_20260922_phase1\\seed11\\last.pt": "d4d79a0c1e037eac788597290bd3f9b045bbe03b4c83e7acfe23cd7f870f8995",
+  "results\\joint_power_20260922_phase1\\seed11\\selected.pt": "764527db5ebcfce6cf6972cfcd6272d2309d4b67060b057822d94ce46d25d7f9",
+  "results\\joint_power_20260922_phase1\\seed11\\selection.json": "22095610c025f77d1632cbe49b8df30d47813c15d59fa36e397b3975fb209c7a",
+  "results\\joint_power_20260922_phase1\\seed11\\validation.csv": "9008d674496c94c52568843cad17392a676d2655ebbb14e2d1964dc1b048e234",
+  "results\\joint_power_20260922_phase1\\seed22\\history.csv": "684e3f7d46abe34ab7d0445b3c217a8287df9fb6bbc7349dd40feecbf546250a",
+  "results\\joint_power_20260922_phase1\\seed22\\initial.pt": "1e9117e4256951600221ca2a93141518851d7a2beb1857513d531fd29e081c3e",
+  "results\\joint_power_20260922_phase1\\seed22\\last.pt": "70e025806e21816e9a38acfd2cfe4ce8572567591b6f432af3ecd69464739540",
+  "results\\joint_power_20260922_phase1\\seed22\\selected.pt": "03ad270cf4cea9ae34425237b486c0a6a505adfee7d507ff770167f62839a7f2",
+  "results\\joint_power_20260922_phase1\\seed22\\selection.json": "426d1ccbfd1a2b188475faadd379f3ccea404d6cd502c26d05f73a9d2d2bea52",
+  "results\\joint_power_20260922_phase1\\seed22\\validation.csv": "3d6d0469b14f5cd1b610a454d3f0e30c019dfea6cef29c2986575057aef977d2"
+}

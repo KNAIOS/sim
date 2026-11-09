@@ -1,0 +1,22 @@
+{
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\anchor_confirmation\\domain_analysis.py": "4200f8dd480e7e99d1195b6c2e23b1d14dc4d881ef8a1cee7a4d8f2fcee97454",
+    "joint_power\\anchor_confirmation\\DOMAIN_PLAN.md": "9d7cc670da8e51db16ddf3024b65838b4346b1ce840d3aab5338280a09ebc5ad",
+    "joint_power\\anchor_confirmation\\frontier.py": "8c2c43aec05655dc82b7d640774f9ae113e77f1e599dc1374417aefabeb024f1",
+    "results\\joint_power_20260922_anchor_confirmation\\expanded_prs\\output_hashes.json": "8e6c866f14eba258380faab100982eeb5ced4325f776e5ce7a5d7cbffc89883c",
+    "results\\joint_power_20260922_anchor_confirmation\\output_hashes.json": "b96d5b55e722e6e9156203b11a1497018f220efbc11f2fbc2dff15d62fff9e1a"
+  },
+  "baselines": [
+    "PRS original",
+    "PRS budget",
+    "Raw full",
+    "Raw coarse",
+    "Full power",
+    "Empty Raw budget",
+    "Energy Raw budget",
+    "Expanded PRS",
+    "Expanded budgetPRS"
+  ],
+  "posthoc_strengthened_baseline_analysis": true,
+  "primary_unchanged": true
+}

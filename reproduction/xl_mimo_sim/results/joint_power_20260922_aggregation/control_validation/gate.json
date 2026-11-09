@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "nominal_saving_vs_stronger_prs": -0.0850843225701654,
+  "per_seed_outage": {
+    "11": [
+      0.006547619047619047,
+      0.011904761904761904,
+      0.04107142857142857
+    ],
+    "22": [
+      0.004166666666666667,
+      0.008928571428571428,
+      0.04285714285714285
+    ]
+  },
+  "nominal_energy_by_seed": {
+    "11": 130.74791234998116,
+    "22": 129.63198966312524
+  },
+  "nominal_stronger_prs_energy": 119.9814137008091,
+  "required_saving": 0.01,
+  "noninitial_checkpoints": true,
+  "previously_examined_validation": true,
+  "development_launched": false,
+  "reused_frozen_reference_episodes": 108,
+  "new_candidate_episodes": 432
+}

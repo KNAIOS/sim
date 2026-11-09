@@ -1,0 +1,63 @@
+{
+  "gate": {
+    "passed": false,
+    "nominal_development_failure_unchanged": true,
+    "condition": [
+      3.0,
+      1.15
+    ],
+    "primary": {
+      "method": "Energy Value min4",
+      "energy_j": 148.56501972599355,
+      "outage": 0.024305555555555556,
+      "circuit_j": 136.44821133333335,
+      "pa_j": 8.003975059326889,
+      "switching_j": 2.6183333333333336,
+      "pilot_j": 1.4944999999999997,
+      "mean_active": 5.095238095238096,
+      "mean_command": 5.746428571428571
+    },
+    "reference": {
+      "method": "Expanded budgetPRS",
+      "energy_j": 145.21412527635655,
+      "outage": 0.049503968253968245,
+      "circuit_j": 130.92262346666666,
+      "pa_j": 9.803668476356549,
+      "switching_j": 3.11875,
+      "pilot_j": 1.3690833333333334,
+      "mean_active": 4.614285714285715,
+      "mean_command": 5.395238095238096
+    },
+    "saving": -0.023075540642206294,
+    "energy_interval": {
+      "reference": "Expanded budgetPRS",
+      "metric": "energy_j",
+      "difference": 3.350894449637019,
+      "ci_low": -1.2005633408169223,
+      "ci_high": 7.6717380467309955
+    },
+    "per_seed": {
+      "11": {
+        "energy_j": 149.81713841374975,
+        "outage": 0.024007936507936506
+      },
+      "22": {
+        "energy_j": 147.31290103823738,
+        "outage": 0.0246031746031746
+      }
+    },
+    "conditional_hypothesis_only": true,
+    "R1_closed": false
+  },
+  "episodes": 288,
+  "physical_slots": 40320,
+  "max_physical_errors": {
+    "rate_mbps": 6.139089236967266e-12,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "all_baselines_preserved": true
+}

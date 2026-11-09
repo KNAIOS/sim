@@ -1,0 +1,36 @@
+{
+  "summary": [
+    {
+      "horizon": 4,
+      "events": 186,
+      "mean_energy_difference": 1.7385711530246544,
+      "mean_outage_difference": -0.004480286738351254,
+      "mean_weighted_cost_difference": 0.19012111556658462,
+      "hold_lower_energy_no_higher_outage": 0.005376344086021506,
+      "hold_higher_outage": 0.0
+    },
+    {
+      "horizon": 8,
+      "events": 181,
+      "mean_energy_difference": 1.3455642377537214,
+      "mean_outage_difference": -0.007136279926335175,
+      "mean_weighted_cost_difference": 0.10518598538288638,
+      "hold_lower_energy_no_higher_outage": 0.14917127071823205,
+      "hold_higher_outage": 0.0055248618784530384
+    },
+    {
+      "horizon": 16,
+      "events": 168,
+      "mean_energy_difference": 1.2480608800688213,
+      "mean_outage_difference": -0.00570436507936508,
+      "mean_weighted_cost_difference": 0.017695808029880116,
+      "hold_lower_energy_no_higher_outage": 0.20238095238095238,
+      "hold_higher_outage": 0.011904761904761904
+    }
+  ],
+  "independent_trajectories": 12,
+  "base_policy_rollouts": 24,
+  "weights_updated": false,
+  "prior_data_preserved": true,
+  "conclusion": "Conditional finite-horizon hold outcomes; no guaranteed deployed-policy improvement"
+}

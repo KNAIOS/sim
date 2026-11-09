@@ -1,0 +1,38 @@
+{
+  "episodes": 108,
+  "independent_environment_trajectories": 12,
+  "slots": 15120,
+  "errors": {
+    "rate_mbps": 1.1937117960769683e-11,
+    "energy_j": 0.0,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "episode_energy_j": 6.821210263296962e-13
+  },
+  "frozen_input_files": 32,
+  "verified_output_files": 18,
+  "outcome": {
+    "passed": false,
+    "rl_outage_by_scenario": [
+      0.0002976190476190476,
+      0.023511904761904758,
+      0.024702380952380948
+    ],
+    "nominal_energy_saving_vs_full_search": -0.37690932210449724,
+    "nominal_search_energy_j": 109.13363148219469,
+    "nominal_rl_energy_by_seed": {
+      "11": 141.85350299454092,
+      "22": 158.6807260913605
+    },
+    "selected_episodes": [
+      120,
+      120
+    ],
+    "independent_confirmation": false,
+    "manuscript_replacement_authorized_by_result": false
+  },
+  "sources_preserved": true,
+  "scope": "Physical replay and statistics, not scientific success"
+}

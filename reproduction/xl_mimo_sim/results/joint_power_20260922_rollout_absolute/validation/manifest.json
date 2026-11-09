@@ -1,0 +1,28 @@
+{
+  "source": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\rollout\\control.py": "7cf2192ad952148e5212cfefb103c4f9c211e54bb48f9d2e48982f78019190d0"
+  },
+  "checkpoints": {
+    "MC signed 11": {
+      "path": "results\\joint_power_20260922_rollout\\probe\\seed11_epoch020.pt",
+      "sha256": "6abaaf147b3859ad9f467946a4cdc2a604c150face291a28b37d52b3c1a0479a",
+      "epoch": 20
+    },
+    "MC absolute 11": {
+      "path": "results\\joint_power_20260922_rollout_absolute\\seed11_selected.pt",
+      "sha256": "82d1f72251f308e97c7bf7b0e2e0b20b7373b39ef0b7da16dab0d284cd2139d1",
+      "epoch": 20
+    },
+    "MC signed 22": {
+      "path": "results\\joint_power_20260922_rollout\\probe\\seed22_epoch020.pt",
+      "sha256": "82d7430b74c909a596d72fd0aa9c49ab60b03bf7444a437e314e7af9d551ddf8",
+      "epoch": 20
+    },
+    "MC absolute 22": {
+      "path": "results\\joint_power_20260922_rollout_absolute\\seed22_selected.pt",
+      "sha256": "846b50ee59181d3bf1ed5531adbe8ef8913d183a0efe149b49de38aff390e1ea",
+      "epoch": 20
+    }
+  },
+  "stream": 3909220000
+}

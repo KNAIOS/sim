@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "risk_only",
+    "seed": 11,
+    "epoch": 0,
+    "risk_loss": 39.152408599853516,
+    "energy_huber": 0.0,
+    "failed_user_slots_mae": 7.373247146606445,
+    "failed_user_slots_bias": 0.32536736130714417,
+    "reference_difference_mae": 3.8976714611053467,
+    "outage_percentage_points_mae": 3.0585877895355225,
+    "outage_percentage_points_bias": 0.022635160014033318
+  },
+  {
+    "arm": "risk_only",
+    "seed": 22,
+    "epoch": 0,
+    "risk_loss": 39.152408599853516,
+    "energy_huber": 0.0,
+    "failed_user_slots_mae": 7.373247146606445,
+    "failed_user_slots_bias": 0.32536736130714417,
+    "reference_difference_mae": 3.8976714611053467,
+    "outage_percentage_points_mae": 3.0585877895355225,
+    "outage_percentage_points_bias": 0.022635160014033318
+  },
+  {
+    "arm": "joint",
+    "seed": 11,
+    "epoch": 0,
+    "risk_loss": 39.152408599853516,
+    "energy_huber": 0.7718547582626343,
+    "failed_user_slots_mae": 7.373247146606445,
+    "failed_user_slots_bias": 0.32536736130714417,
+    "reference_difference_mae": 3.8976714611053467,
+    "outage_percentage_points_mae": 3.0585877895355225,
+    "outage_percentage_points_bias": 0.022635160014033318
+  },
+  {
+    "arm": "joint",
+    "seed": 22,
+    "epoch": 0,
+    "risk_loss": 39.152408599853516,
+    "energy_huber": 0.7718547582626343,
+    "failed_user_slots_mae": 7.373247146606445,
+    "failed_user_slots_bias": 0.32536736130714417,
+    "reference_difference_mae": 3.8976714611053467,
+    "outage_percentage_points_mae": 3.0585877895355225,
+    "outage_percentage_points_bias": 0.022635160014033318
+  }
+]

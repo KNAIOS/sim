@@ -1,0 +1,46 @@
+{
+  "summary": [
+    {
+      "method": "PRS power selection",
+      "samples": 400,
+      "median_ms": 0.66415,
+      "p95_ms": 0.7718899999999996
+    },
+    {
+      "method": "Joint full selection",
+      "samples": 400,
+      "median_ms": 2.3767,
+      "p95_ms": 2.798875
+    },
+    {
+      "method": "Joint coarse selection",
+      "samples": 400,
+      "median_ms": 1.645,
+      "p95_ms": 1.9252999999999993
+    },
+    {
+      "method": "PDS-branch selection",
+      "samples": 400,
+      "median_ms": 3.5586,
+      "p95_ms": 4.1206949999999996
+    }
+  ],
+  "numerical_cases": 40,
+  "input_hashes": {
+    "D:\\\u5f85\u53d1\u8868\u520a\\xl_mimo_sim\\joint_power\\benchmark_budgeted.py": "17435b179eb891cfcfeba245c57ef7a6a5012bbc66e4781ab56cf4fb2f2485f8",
+    "joint_power\\budgeted.py": "582d5690211a162d06393fd1935e540233bba7070cb814e0b47f024ee00d4318",
+    "joint_power\\model.py": "b537cb066563c4e32975d5f7e1584c09c7a5c081707c84cf9be96b2b5f112106",
+    "results\\joint_power_20260922_phase3\\PDS-branch_seed11\\selected.pt": "a61f86c73d9f3f8bcf212598f51774a40b27d73be9a260445dd03c1c59a4de2c",
+    "results\\joint_power_20260922_phase3\\manifest.json": "319de57f01de8a74dbf108dc0db65a50ba987c45dd7410b8c3f19dec889ff2da",
+    "results\\joint_power_20260922_phase3\\training_complete.json": "d0ed62a46b7b81258a28a245c1cd1af40c26d502e44c9732d56eab98c1d1b2ab"
+  },
+  "python": "3.12.13",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "cpu": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.2",
+  "torch_threads": 1,
+  "scope": "Prepared-state selection including forecasts/features/solves/network; excludes shared CSI update, actual per-slot power/beam execution, data generation and training. Local descriptive wall time, not controller electricity or energy-performance validation.",
+  "seed_selection": "Seed11 fixed in benchmark code, not fastest seed selected after timing",
+  "prior_data_unchanged": true
+}

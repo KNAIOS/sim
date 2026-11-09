@@ -1,0 +1,14 @@
+{
+  "variant": "PDS-branch",
+  "seed": 22,
+  "selected_episode": 80,
+  "selected_price": 8.0,
+  "validation_key": [
+    0.0,
+    128.8750930247351,
+    0.03869047619047619
+  ],
+  "updates": 22388,
+  "transitions": 95200,
+  "parameters": 44482
+}

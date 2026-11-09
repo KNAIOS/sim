@@ -1,0 +1,99 @@
+{
+  "new_selected_episodes": 120,
+  "independently_replayed_slots": 16800,
+  "candidate_episodes": 600,
+  "reused_reference_episodes": 156,
+  "max_physical_errors": {
+    "rate_mbps": 7.66249286243692e-11,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "ledger_accounting_correct": true,
+  "gate": {
+    "passed": false,
+    "reference": {
+      "method": "PRS budget",
+      "energy_j": 119.79966775574927,
+      "worst_outage": 0.01726190476190476
+    },
+    "feasible_baselines": [
+      {
+        "method": "PRS original",
+        "energy_j": 119.9814137008091,
+        "worst_outage": 0.007142857142857142
+      },
+      {
+        "method": "PRS tuned",
+        "energy_j": 119.9814137008091,
+        "worst_outage": 0.007142857142857142
+      },
+      {
+        "method": "Full power",
+        "energy_j": 285.22734232169245,
+        "worst_outage": 0.0
+      },
+      {
+        "method": "PRS budget",
+        "energy_j": 119.79966775574927,
+        "worst_outage": 0.01726190476190476
+      }
+    ],
+    "families": [
+      {
+        "method": "Value PRS-added",
+        "nominal_energy_j": 127.83916354117822,
+        "nominal_saving": -0.0671078303974939,
+        "per_seed_nominal_energy": {
+          "11": 127.32914473199067,
+          "22": 128.34918235036574
+        },
+        "per_seed_outage": {
+          "11": [
+            0.02142857142857143,
+            0.04107142857142857,
+            0.04583333333333333
+          ],
+          "22": [
+            0.016666666666666666,
+            0.03214285714285714,
+            0.04404761904761905
+          ]
+        },
+        "myopic_nominal_energy_j": 157.20366121204466,
+        "passed": false
+      },
+      {
+        "method": "Value Visitation-added",
+        "nominal_energy_j": 119.82210174880242,
+        "nominal_saving": -0.0001872625648586812,
+        "per_seed_nominal_energy": {
+          "11": 119.62756753164652,
+          "22": 120.01663596595833
+        },
+        "per_seed_outage": {
+          "11": [
+            0.010714285714285713,
+            0.0369047619047619,
+            0.03988095238095238
+          ],
+          "22": [
+            0.019642857142857142,
+            0.042261904761904764,
+            0.03988095238095238
+          ]
+        },
+        "myopic_nominal_energy_j": 123.81607199922786,
+        "passed": false
+      }
+    ],
+    "required_saving": 0.01,
+    "development_launched": false
+  },
+  "independent_test": false,
+  "source_sha256": "d20bca94ee26adc9c84316efd980e0a39f992d61d18a9268679764415f888cf0",
+  "uncertainty": "Descriptive whole-trajectory/seed bootstrap after validation selection",
+  "limitations": "Expected PRS-tail counts and empirical factors are not hard safety bounds; pathwise overspending and empty estimated feasible sets are explicitly retained"
+}

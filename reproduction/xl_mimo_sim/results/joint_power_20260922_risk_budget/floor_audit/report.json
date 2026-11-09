@@ -1,0 +1,31 @@
+{
+  "summary": [
+    {
+      "scenario": 0,
+      "states": 280,
+      "below_current_slot": 6,
+      "below_causal_floor": 6,
+      "positive_floor": 8,
+      "max_deficit": 0.9426028169691563
+    },
+    {
+      "scenario": 1,
+      "states": 280,
+      "below_current_slot": 8,
+      "below_causal_floor": 8,
+      "positive_floor": 16,
+      "max_deficit": 1.2369202971458435
+    },
+    {
+      "scenario": 2,
+      "states": 280,
+      "below_current_slot": 3,
+      "below_causal_floor": 3,
+      "positive_floor": 23,
+      "max_deficit": 0.44048821926116943
+    }
+  ],
+  "policy_modified": false,
+  "source_sha256": "873fcc6aea21f395cb09ffe90b16db5a61751baa68e8561a540eed8f46368a39",
+  "scope": "Existing selected predictions only. Current-slot service is deterministic given the simulator causal CSI/action; later zero-active availability is determined by hardware. This proves a lower-bound inconsistency, not that fixing it suffices for a reliable energy win."
+}

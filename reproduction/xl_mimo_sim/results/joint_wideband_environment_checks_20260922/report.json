@@ -1,0 +1,24 @@
+{
+  "fixed_schedule_episodes": 4,
+  "verified_slots": 560,
+  "frequency_bins": 99,
+  "maximum_errors": {
+    "rate_mbps": 2.2737367544323206e-13,
+    "circuit_j": 0.0,
+    "pa_j": 0.0,
+    "switching_j": 0.0,
+    "pilot_j": 0.0,
+    "energy_j": 0.0
+  },
+  "allocator_modes": {
+    "full_targets": 233,
+    "zero_channel": 192,
+    "preserve_service": 100,
+    "equal_fallback": 35
+  },
+  "causal_lower_bound_checks": 140,
+  "fresh_test_data": false,
+  "learned_policy_evaluated": false,
+  "R3_closed": false,
+  "scope": "Numerical/causal adapter audit only; not standardized-channel policy evidence"
+}

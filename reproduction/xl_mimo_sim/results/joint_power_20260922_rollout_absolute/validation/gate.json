@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "nominal_saving_vs_stronger_prs": -0.17884372222709,
+  "per_seed_outage": {
+    "11": [
+      0.01488095238095238,
+      0.016666666666666663,
+      0.03392857142857143
+    ],
+    "22": [
+      0.008928571428571428,
+      0.010119047619047618,
+      0.04345238095238095
+    ]
+  },
+  "nominal_energy_by_seed": {
+    "11": 133.69016217976647,
+    "22": 149.18851047049384
+  },
+  "nominal_stronger_prs_energy": 119.9814137008091,
+  "required_saving": 0.01,
+  "noninitial_checkpoints": true
+}
